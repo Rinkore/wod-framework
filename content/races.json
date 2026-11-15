@@ -1,0 +1,361 @@
+[
+  {
+    "id": "borderlander",
+    "name": "檐上跑者",
+    "subtitle": "在楼宇檐脊之间长大",
+    "description": "你从小在高层檐廊的雨布与缆索间穿梭。下雨的时候，别人躲，你赶路；等他们绕到门口，你已经站在对面楼顶。",
+    "passive": {
+      "hpPct": 0.05,
+      "manaPct": 0.05
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "室内",
+        "旧文明"
+      ],
+      "perk": "extra-loot",
+      "label": "高处熟路"
+    },
+    "trait": {
+      "name": "高处切入",
+      "description": "攻击敌方后排时暴击率 +15%；命中后排后获得 1 回合闪避 +8 与暴击 +15%，可叠加。"
+    },
+    "base": {
+      "hp": 58,
+      "mana": 22,
+      "attack": 1,
+      "armor": 1,
+      "hit": 11,
+      "evasion": 11,
+      "initiative": 8,
+      "crit": 4
+    },
+    "traitSkillId": "trait-high-ground"
+  },
+  {
+    "id": "dinturan",
+    "name": "闸门守卫",
+    "subtitle": "守着排水闸门长大的人",
+    "description": "你的童年是沉重的铁闸门和不断上涨的污水。你知道怎么站住脚跟，也知道一次退让会让整条巷道灌满水。",
+    "passive": {
+      "hpPct": 0.15,
+      "manaPct": -0.05
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "积水",
+        "地下"
+      ],
+      "perk": "field-rest",
+      "label": "闸后歇脚"
+    },
+    "trait": {
+      "name": "闸前不退",
+      "description": "受到伤害 -8%，护甲 +6。"
+    },
+    "base": {
+      "hp": 72,
+      "mana": 16,
+      "attack": 1,
+      "armor": 3,
+      "hit": 9,
+      "evasion": 8,
+      "initiative": 5,
+      "crit": 2
+    },
+    "traitSkillId": "trait-gate-guard"
+  },
+  {
+    "id": "gnome",
+    "name": "管道孩童",
+    "subtitle": "在下水管网里认路",
+    "description": "你比同龄人更熟悉管道的回声。哪里能钻过去、哪里会塌，你听一声滴水就知道。",
+    "passive": {
+      "hpPct": -0.05,
+      "manaPct": 0.15
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "地下",
+        "狭窄"
+      ],
+      "perk": "swift",
+      "label": "管道捷径"
+    },
+    "trait": {
+      "name": "管线脉络",
+      "description": "先攻 +4，闪避 +6。"
+    },
+    "base": {
+      "hp": 54,
+      "mana": 30,
+      "attack": 0,
+      "armor": 1,
+      "hit": 10,
+      "evasion": 10,
+      "initiative": 7,
+      "crit": 3
+    },
+    "traitSkillId": "trait-pipe-lines"
+  },
+  {
+    "id": "halfling",
+    "name": "回声猎手",
+    "subtitle": "靠回声判断猎物的位置",
+    "description": "废墟里的回声比眼睛可靠。你学会在雨声里分辨脚步，也学会抢在对手之前出手。",
+    "passive": {
+      "hpPct": 0.05,
+      "manaPct": 0.05
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "地下",
+        "低温"
+      ],
+      "perk": "swift",
+      "label": "回声探路"
+    },
+    "trait": {
+      "name": "回声定位",
+      "description": "每回合额外行动 +1。"
+    },
+    "base": {
+      "hp": 58,
+      "mana": 22,
+      "attack": 1,
+      "armor": 1,
+      "hit": 11,
+      "evasion": 12,
+      "initiative": 9,
+      "crit": 4
+    },
+    "traitSkillId": "trait-echo-location"
+  },
+  {
+    "id": "kargashian",
+    "name": "鸦群唤者",
+    "subtitle": "和雨鸦共享一顿饭的人",
+    "description": "你懂得在废墟顶层呼唤鸦群。它们替你探路，也替你撕开猎物的防线——只要你舍得把最后一块干粮分出去。",
+    "passive": {
+      "hpPct": 0.1
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "露天",
+        "高温"
+      ],
+      "perk": "extra-loot",
+      "label": "鸦群视野"
+    },
+    "trait": {
+      "name": "鸦群盘旋",
+      "description": "群攻每多命中 1 个目标，伤害 +10%。"
+    },
+    "base": {
+      "hp": 62,
+      "mana": 24,
+      "attack": 2,
+      "armor": 1,
+      "hit": 10,
+      "evasion": 9,
+      "initiative": 6,
+      "crit": 3
+    },
+    "traitSkillId": "trait-raven-spiral"
+  },
+  {
+    "id": "kerasi",
+    "name": "试水人",
+    "subtitle": "喝过过滤塔最后一口水",
+    "description": "你走遍荒原寻找还能喝的水，身体早被滤芯和苦味磨出了耐性。毒素与诅咒没能拖垮你。",
+    "passive": {
+      "hpPct": 0.1
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "积水",
+        "室内"
+      ],
+      "perk": "field-rest",
+      "label": "净水营地"
+    },
+    "trait": {
+      "name": "滤净体质",
+      "description": "受到的负面效果持续 -1 回合。"
+    },
+    "base": {
+      "hp": 68,
+      "mana": 20,
+      "attack": 1,
+      "armor": 2,
+      "hit": 9,
+      "evasion": 9,
+      "initiative": 6,
+      "crit": 3
+    },
+    "traitSkillId": "trait-filtered-body"
+  },
+  {
+    "id": "mag-mor",
+    "name": "碎镜拾荒者",
+    "subtitle": "在镜面废料场里活下来的人",
+    "description": "镜面废料的碎片磨厚了你的皮。恶意落在你身上时，会先被卸掉一层。",
+    "passive": {
+      "manaPct": 0.1
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "旧文明",
+        "室内"
+      ],
+      "perk": "extra-loot",
+      "label": "镜面回廊"
+    },
+    "trait": {
+      "name": "镜像折返",
+      "description": "受到负面效果时 25% 概率反弹给施加者。"
+    },
+    "base": {
+      "hp": 60,
+      "mana": 28,
+      "attack": 1,
+      "armor": 1,
+      "hit": 10,
+      "evasion": 9,
+      "initiative": 6,
+      "crit": 4
+    },
+    "traitSkillId": "trait-mirror-return"
+  },
+  {
+    "id": "partan",
+    "name": "旧校舍学徒",
+    "subtitle": "在倒塌的教室里读完最后一本书",
+    "description": "你在旧校舍的废墟里自学了线路、剂量和一种奇怪的坚持。你更擅长把学过的东西用在增益与辅助上。",
+    "passive": {
+      "manaPct": 0.1
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "旧文明",
+        "干燥"
+      ],
+      "perk": "field-rest",
+      "label": "旧校舍笔记"
+    },
+    "trait": {
+      "name": "旧校舍底子",
+      "description": "增益类技能等级 +2。"
+    },
+    "base": {
+      "hp": 56,
+      "mana": 28,
+      "attack": 0,
+      "armor": 1,
+      "hit": 10,
+      "evasion": 9,
+      "initiative": 6,
+      "crit": 3
+    },
+    "traitSkillId": "trait-old-school"
+  },
+  {
+    "id": "targeshian",
+    "name": "拆件匠",
+    "subtitle": "把最后半格电拆成三份用",
+    "description": "你修过荒原上几乎所有型号的旧机器。别人眼里的废件，在你这儿还能再点亮一次雨灯。",
+    "passive": {
+      "hpPct": 0.15,
+      "manaPct": -0.05
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "机械",
+        "地下"
+      ],
+      "perk": "swift",
+      "label": "拆件熟路"
+    },
+    "trait": {
+      "name": "拆件经验",
+      "description": "技能法力消耗 -20%。"
+    },
+    "base": {
+      "hp": 70,
+      "mana": 18,
+      "attack": 2,
+      "armor": 3,
+      "hit": 9,
+      "evasion": 8,
+      "initiative": 5,
+      "crit": 2
+    },
+    "traitSkillId": "trait-disassembly"
+  },
+  {
+    "id": "tirem-ag",
+    "name": "雨夜赌徒",
+    "subtitle": "在雨声里押上最后一块干粮",
+    "description": "你在雨夜里赌过太多次命。越是逼近绝境，你的手越稳，出手越狠。",
+    "passive": {
+      "hpPct": -0.05,
+      "manaPct": 0.15
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "高温",
+        "露天"
+      ],
+      "perk": "extra-loot",
+      "label": "赌徒直觉"
+    },
+    "trait": {
+      "name": "雨夜赌命",
+      "description": "生命低于 40% 时造成伤害 +30%。"
+    },
+    "base": {
+      "hp": 55,
+      "mana": 26,
+      "attack": 2,
+      "armor": 1,
+      "hit": 11,
+      "evasion": 10,
+      "initiative": 8,
+      "crit": 5
+    },
+    "traitSkillId": "trait-rain-gamble"
+  },
+  {
+    "id": "woodlander",
+    "name": "长夜守灯人",
+    "subtitle": "守着聚落最后一盏雨灯的人",
+    "description": "你负责在长夜里给檐廊的雨灯添油。灯不能灭，人也一样——电见底的时候，你总能再多榨出一点。",
+    "passive": {
+      "hpPct": 0.05,
+      "manaPct": 0.05
+    },
+    "dungeonAffinity": {
+      "tags": [
+        "低温",
+        "室内"
+      ],
+      "perk": "field-rest",
+      "label": "守灯人的火种"
+    },
+    "trait": {
+      "name": "守灯余温",
+      "description": "法力低于 30% 时每回合额外恢复 4 点法力。"
+    },
+    "base": {
+      "hp": 64,
+      "mana": 26,
+      "attack": 1,
+      "armor": 2,
+      "hit": 9,
+      "evasion": 8,
+      "initiative": 6,
+      "crit": 3
+    },
+    "traitSkillId": "trait-lamp-warmth"
+  }
+]

@@ -1,0 +1,1180 @@
+{
+  "weapons": {
+    "sword": [
+      {
+        "id": "heavy-strike",
+        "tier": 0,
+        "cost": 1,
+        "minLevel": 1,
+        "row": 0,
+        "requires": [],
+        "requiresAny": [],
+        "links": [],
+        "role": "root"
+      },
+      {
+        "id": "sword-stem-1",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 2,
+        "row": 0,
+        "requires": [
+          "heavy-strike"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "block-stance",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 4,
+        "row": 0,
+        "requires": [
+          "sword-stem-1"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "sword-passive-a",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 8,
+        "row": -1,
+        "requires": [
+          "block-stance"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "provoke",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": -1,
+        "requires": [
+          "sword-passive-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "shield-bash",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": -1,
+        "requires": [
+          "provoke"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "sword-link-left",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": -1,
+        "requires": [
+          "shield-bash"
+        ],
+        "requiresAny": [],
+        "links": [
+          "requiem"
+        ],
+        "role": "connection"
+      },
+      {
+        "id": "sword-passive-b",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 12,
+        "row": 1,
+        "requires": [
+          "block-stance"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "sword-mechanic-b",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": 1,
+        "requires": [
+          "sword-passive-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "sword-terminal-b",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": 1,
+        "requires": [
+          "sword-mechanic-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "sword-link-right",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": 1,
+        "requires": [
+          "sword-terminal-b"
+        ],
+        "requiresAny": [],
+        "links": [
+          "axe-terminal-a"
+        ],
+        "role": "connection"
+      }
+    ],
+    "axe": [
+      {
+        "id": "cleave",
+        "tier": 0,
+        "cost": 1,
+        "minLevel": 1,
+        "row": 0,
+        "requires": [],
+        "requiresAny": [],
+        "links": [],
+        "role": "root"
+      },
+      {
+        "id": "berserk",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 2,
+        "row": 0,
+        "requires": [
+          "cleave"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "axe-stem-2",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 4,
+        "row": 0,
+        "requires": [
+          "berserk"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "axe-passive-a",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 8,
+        "row": -1,
+        "requires": [
+          "axe-stem-2"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "axe-mechanic-a",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": -1,
+        "requires": [
+          "axe-passive-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "axe-terminal-a",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": -1,
+        "requires": [
+          "axe-mechanic-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "intimidate",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": -1,
+        "requires": [
+          "axe-terminal-a"
+        ],
+        "requiresAny": [],
+        "links": [
+          "sword-terminal-b"
+        ],
+        "role": "connection"
+      },
+      {
+        "id": "axe-passive-b",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 12,
+        "row": 1,
+        "requires": [
+          "axe-stem-2"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "ground-slam",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": 1,
+        "requires": [
+          "axe-passive-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "axe-terminal-b",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": 1,
+        "requires": [
+          "ground-slam"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "axe-link-right",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": 1,
+        "requires": [
+          "axe-terminal-b"
+        ],
+        "requiresAny": [],
+        "links": [
+          "thorn-aura"
+        ],
+        "role": "connection"
+      }
+    ],
+    "hammer": [
+      {
+        "id": "armor-breaker",
+        "tier": 0,
+        "cost": 1,
+        "minLevel": 1,
+        "row": 0,
+        "requires": [],
+        "requiresAny": [],
+        "links": [],
+        "role": "root"
+      },
+      {
+        "id": "hammer-stem-1",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 2,
+        "row": 0,
+        "requires": [
+          "armor-breaker"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "hammer-stem-2",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 4,
+        "row": 0,
+        "requires": [
+          "hammer-stem-1"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "hammer-passive-a",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 8,
+        "row": -1,
+        "requires": [
+          "hammer-stem-2"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "hammer-mechanic-a",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": -1,
+        "requires": [
+          "hammer-passive-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "thorn-aura",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": -1,
+        "requires": [
+          "hammer-mechanic-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "hammer-link-left",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": -1,
+        "requires": [
+          "thorn-aura"
+        ],
+        "requiresAny": [],
+        "links": [
+          "axe-terminal-b"
+        ],
+        "role": "connection"
+      },
+      {
+        "id": "hammer-passive-b",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 12,
+        "row": 1,
+        "requires": [
+          "hammer-stem-2"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "hammer-mechanic-b",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": 1,
+        "requires": [
+          "hammer-passive-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "hammer-terminal-b",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": 1,
+        "requires": [
+          "hammer-mechanic-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "hammer-link-right",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": 1,
+        "requires": [
+          "hammer-terminal-b"
+        ],
+        "requiresAny": [],
+        "links": [
+          "piercing-shot"
+        ],
+        "role": "connection"
+      }
+    ],
+    "bow": [
+      {
+        "id": "quick-shot",
+        "tier": 0,
+        "cost": 1,
+        "minLevel": 1,
+        "row": 0,
+        "requires": [],
+        "requiresAny": [],
+        "links": [],
+        "role": "root"
+      },
+      {
+        "id": "eagle-eye",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 2,
+        "row": 0,
+        "requires": [
+          "quick-shot"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "keen-insight",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 4,
+        "row": 0,
+        "requires": [
+          "eagle-eye"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "bow-passive-a",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 8,
+        "row": -1,
+        "requires": [
+          "keen-insight"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "hunter-mark",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": -1,
+        "requires": [
+          "bow-passive-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "piercing-shot",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": -1,
+        "requires": [
+          "hunter-mark"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "bow-link-left",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": -1,
+        "requires": [
+          "piercing-shot"
+        ],
+        "requiresAny": [],
+        "links": [
+          "hammer-terminal-b"
+        ],
+        "role": "connection"
+      },
+      {
+        "id": "bow-passive-b",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 12,
+        "row": 1,
+        "requires": [
+          "keen-insight"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "scatter-shot",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": 1,
+        "requires": [
+          "bow-passive-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "arrow-rain",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": 1,
+        "requires": [
+          "scatter-shot"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "weak-spot",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": 1,
+        "requires": [
+          "arrow-rain"
+        ],
+        "requiresAny": [],
+        "links": [
+          "backstab"
+        ],
+        "role": "connection"
+      }
+    ],
+    "dagger": [
+      {
+        "id": "twin-strike",
+        "tier": 0,
+        "cost": 1,
+        "minLevel": 1,
+        "row": 0,
+        "requires": [],
+        "requiresAny": [],
+        "links": [],
+        "role": "root"
+      },
+      {
+        "id": "shadow-step",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 2,
+        "row": 0,
+        "requires": [
+          "twin-strike"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "dagger-stem-2",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 4,
+        "row": 0,
+        "requires": [
+          "shadow-step"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "dagger-passive-a",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 8,
+        "row": -1,
+        "requires": [
+          "dagger-stem-2"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "venom-blade",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": -1,
+        "requires": [
+          "dagger-passive-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "backstab",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": -1,
+        "requires": [
+          "venom-blade"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "dagger-link-left",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": -1,
+        "requires": [
+          "backstab"
+        ],
+        "requiresAny": [],
+        "links": [
+          "arrow-rain"
+        ],
+        "role": "connection"
+      },
+      {
+        "id": "dagger-passive-b",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 12,
+        "row": 1,
+        "requires": [
+          "dagger-stem-2"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "corrosive-touch",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": 1,
+        "requires": [
+          "dagger-passive-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "shadow-drain",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": 1,
+        "requires": [
+          "corrosive-touch"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "dagger-link-right",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": 1,
+        "requires": [
+          "shadow-drain"
+        ],
+        "requiresAny": [],
+        "links": [
+          "staff-terminal-a"
+        ],
+        "role": "connection"
+      }
+    ],
+    "staff": [
+      {
+        "id": "arcane-missile",
+        "tier": 0,
+        "cost": 1,
+        "minLevel": 1,
+        "row": 0,
+        "requires": [],
+        "requiresAny": [],
+        "links": [],
+        "role": "root"
+      },
+      {
+        "id": "mana-surge",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 2,
+        "row": 0,
+        "requires": [
+          "arcane-missile"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "ice-barrier",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 4,
+        "row": 0,
+        "requires": [
+          "mana-surge"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "staff-passive-a",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 8,
+        "row": -1,
+        "requires": [
+          "ice-barrier"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "chain-lightning",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": -1,
+        "requires": [
+          "staff-passive-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "staff-terminal-a",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": -1,
+        "requires": [
+          "chain-lightning"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "staff-link-left",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": -1,
+        "requires": [
+          "staff-terminal-a"
+        ],
+        "requiresAny": [],
+        "links": [
+          "shadow-drain"
+        ],
+        "role": "connection"
+      },
+      {
+        "id": "staff-passive-b",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 12,
+        "row": 1,
+        "requires": [
+          "ice-barrier"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "frost-lance",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": 1,
+        "requires": [
+          "staff-passive-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "staff-terminal-b",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": 1,
+        "requires": [
+          "frost-lance"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "staff-link-right",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": 1,
+        "requires": [
+          "staff-terminal-b"
+        ],
+        "requiresAny": [],
+        "links": [
+          "sacred-shield"
+        ],
+        "role": "connection"
+      }
+    ],
+    "book": [
+      {
+        "id": "lesser-heal",
+        "tier": 0,
+        "cost": 1,
+        "minLevel": 1,
+        "row": 0,
+        "requires": [],
+        "requiresAny": [],
+        "links": [],
+        "role": "root"
+      },
+      {
+        "id": "book-stem-1",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 2,
+        "row": 0,
+        "requires": [
+          "lesser-heal"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "book-stem-2",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 4,
+        "row": 0,
+        "requires": [
+          "book-stem-1"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "book-passive-a",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 8,
+        "row": -1,
+        "requires": [
+          "book-stem-2"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "healing-wave",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": -1,
+        "requires": [
+          "book-passive-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "sacred-shield",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": -1,
+        "requires": [
+          "healing-wave"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "renew",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": -1,
+        "requires": [
+          "sacred-shield"
+        ],
+        "requiresAny": [],
+        "links": [
+          "staff-terminal-b"
+        ],
+        "role": "connection"
+      },
+      {
+        "id": "book-passive-b",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 12,
+        "row": 1,
+        "requires": [
+          "book-stem-2"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "purifying-light",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": 1,
+        "requires": [
+          "book-passive-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "book-terminal-b",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": 1,
+        "requires": [
+          "purifying-light"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "holy-smite",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": 1,
+        "requires": [
+          "book-terminal-b"
+        ],
+        "requiresAny": [],
+        "links": [
+          "battle-horn"
+        ],
+        "role": "connection"
+      }
+    ],
+    "instrument": [
+      {
+        "id": "discordant-note",
+        "tier": 0,
+        "cost": 1,
+        "minLevel": 1,
+        "row": 0,
+        "requires": [],
+        "requiresAny": [],
+        "links": [],
+        "role": "root"
+      },
+      {
+        "id": "instrument-stem-1",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 2,
+        "row": 0,
+        "requires": [
+          "discordant-note"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "inspiring-note",
+        "tier": 1,
+        "cost": 1,
+        "minLevel": 4,
+        "row": 0,
+        "requires": [
+          "instrument-stem-1"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "stem"
+      },
+      {
+        "id": "instrument-passive-a",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 8,
+        "row": -1,
+        "requires": [
+          "inspiring-note"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "war-song",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": -1,
+        "requires": [
+          "instrument-passive-a"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "battle-horn",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": -1,
+        "requires": [
+          "war-song"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "instrument-link-left",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": -1,
+        "requires": [
+          "battle-horn"
+        ],
+        "requiresAny": [],
+        "links": [
+          "book-terminal-b"
+        ],
+        "role": "connection"
+      },
+      {
+        "id": "instrument-passive-b",
+        "tier": 2,
+        "cost": 2,
+        "minLevel": 12,
+        "row": 1,
+        "requires": [
+          "inspiring-note"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "passive"
+      },
+      {
+        "id": "hypnotize",
+        "tier": 3,
+        "cost": 3,
+        "minLevel": 16,
+        "row": 1,
+        "requires": [
+          "instrument-passive-b"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "mechanic"
+      },
+      {
+        "id": "requiem",
+        "tier": 4,
+        "cost": 3,
+        "minLevel": 18,
+        "row": 1,
+        "requires": [
+          "hypnotize"
+        ],
+        "requiresAny": [],
+        "links": [],
+        "role": "terminal"
+      },
+      {
+        "id": "war-cry",
+        "tier": 5,
+        "cost": 2,
+        "minLevel": 20,
+        "row": 1,
+        "requires": [
+          "requiem"
+        ],
+        "requiresAny": [],
+        "links": [
+          "shield-bash"
+        ],
+        "role": "connection"
+      }
+    ]
+  }
+}

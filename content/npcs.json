@@ -1,0 +1,38 @@
+[
+  {
+    "id": "npc-warrior",
+    "name": "滤水游侠",
+    "raceId": "borderlander",
+    "weaponType": "sword",
+    "level": 1,
+    "passiveSkillIds": [],
+    "skillLevels": {
+      "block-stance": 2,
+      "shield-bash": 1,
+      "war-cry": 1
+    },
+    "equipment": [
+      "iron-sword",
+      "leather-armor"
+    ],
+    "position": "front"
+  },
+  {
+    "id": "npc-priest",
+    "name": "雨幕医师",
+    "raceId": "dinturan",
+    "weaponType": "book",
+    "level": 1,
+    "passiveSkillIds": [],
+    "skillLevels": {
+      "lesser-heal": 2,
+      "holy-smite": 1,
+      "renew": 1
+    },
+    "equipment": [
+      "prayer-book",
+      "cloth-vest"
+    ],
+    "position": "back"
+  }
+]

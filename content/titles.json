@@ -1,0 +1,114 @@
+[
+  {
+    "id": "fame-5",
+    "name": "荒原行者",
+    "description": "你的名字开始在荒原的小酒馆里被提起。",
+    "fameThreshold": 5,
+    "color": "#9aa7b8"
+  },
+  {
+    "id": "fame-10",
+    "name": "矿道守望者",
+    "description": "你让沉井重新有了人声。",
+    "fameThreshold": 10,
+    "color": "#b08a5a"
+  },
+  {
+    "id": "fame-20",
+    "name": "锈炉见证者",
+    "description": "你见过铁水如何记住一个名字。",
+    "fameThreshold": 20,
+    "color": "#d08a4f"
+  },
+  {
+    "id": "fame-35",
+    "name": "档案解读者",
+    "description": "你从低语里分辨出了真正的句子。",
+    "fameThreshold": 35,
+    "color": "#8d9bd6"
+  },
+  {
+    "id": "fame-50",
+    "name": "霜原行者",
+    "description": "你的脚印在冰层上留了足够久。",
+    "fameThreshold": 50,
+    "color": "#77c6d8"
+  },
+  {
+    "id": "fame-70",
+    "name": "冰川破晓",
+    "description": "军械库的冰层第一次出现了裂缝。",
+    "fameThreshold": 70,
+    "color": "#a8d8e8"
+  },
+  {
+    "id": "fame-90",
+    "name": "黑曜挑战者",
+    "description": "你走到了王庭阶梯下面，并且没有回头。",
+    "fameThreshold": 90,
+    "color": "#b07ad0"
+  },
+  {
+    "id": "fame-120",
+    "name": "王庭觊觎者",
+    "description": "王庭记住了你的脚步声。",
+    "fameThreshold": 120,
+    "color": "#8e5fb0"
+  },
+  {
+    "id": "fame-160",
+    "name": "荒原传奇",
+    "description": "行会开始用你的名字给新的悬赏命名。",
+    "fameThreshold": 160,
+    "color": "#c9a227"
+  },
+  {
+    "id": "fame-220",
+    "name": "燃烬之名",
+    "description": "即使火灭了，你的名字还会被念出来。",
+    "fameThreshold": 220,
+    "color": "#e0b84a"
+  },
+  {
+    "id": "crypt-warden",
+    "name": "墓窖守夜人",
+    "description": "冻眠墓穴的钟声停了一夜。",
+    "fameThreshold": 9999,
+    "color": "#7aa2e8"
+  },
+  {
+    "id": "altar-silencer",
+    "name": "止祭者",
+    "description": "燃烬祭坛的火第一次没有等到黎明。",
+    "fameThreshold": 9999,
+    "color": "#d0704f"
+  },
+  {
+    "id": "foundry-witness",
+    "name": "炉心见证者",
+    "description": "你在炉心关闭前听见了最后一声锤响。",
+    "fameThreshold": 9999,
+    "color": "#d08a4f"
+  },
+  {
+    "id": "archive-reader",
+    "name": "低语解读者",
+    "description": "你合上了那本不该被读完的书。",
+    "fameThreshold": 9999,
+    "color": "#8d9bd6"
+  },
+  {
+    "id": "vault-breaker",
+    "name": "破冰者",
+    "description": "冰川军械库的门终于不再需要钥匙。",
+    "fameThreshold": 9999,
+    "color": "#77c6d8"
+  },
+  {
+    "id": "throne-challenger",
+    "name": "王庭挑战者",
+    "description": "你坐过那张椅子，然后站了起来。",
+    "fameThreshold": 9999,
+    "color": "#b07ad0"
+  }
+]

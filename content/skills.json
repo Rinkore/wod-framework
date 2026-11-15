@@ -1,0 +1,3061 @@
+[
+  {
+    "id": "heavy-strike",
+    "name": "重击",
+    "description": "蓄力一击，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "cutting",
+    "power": 6,
+    "cooldown": 1,
+    "energyCost": 8,
+    "target": "enemy",
+    "weaponTypes": [
+      "sword",
+      "axe",
+      "hammer"
+    ],
+    "range": "melee",
+    "levelScale": 1.13,
+    "weaponScale": 1,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.15
+  },
+  {
+    "id": "shield-bash",
+    "name": "盾击",
+    "description": "用盾牌猛撞目标，有概率击晕 1 回合。",
+    "kind": "attack",
+    "damageType": "crushing",
+    "power": 4,
+    "cooldown": 3,
+    "energyCost": 10,
+    "target": "enemy",
+    "weaponTypes": [
+      "sword",
+      "axe",
+      "hammer"
+    ],
+    "effects": [
+      {
+        "type": "stun",
+        "chance": 0.45,
+        "duration": 1
+      }
+    ],
+    "range": "melee",
+    "levelScale": 0.63,
+    "weaponScale": 1,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.38,
+    "executeBonusPct": 0.62
+  },
+  {
+    "id": "armor-breaker",
+    "name": "破甲怒击",
+    "description": "狠狠砸在护甲接缝上：目标护甲降低（数值随等级提升），持续 3 回合。",
+    "kind": "attack",
+    "damageType": "crushing",
+    "power": 5,
+    "cooldown": 3,
+    "energyCost": 12,
+    "target": "enemy",
+    "weaponTypes": [
+      "sword",
+      "axe",
+      "hammer"
+    ],
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": -8,
+        "duration": 3,
+        "perLevel": -0.8
+      }
+    ],
+    "range": "melee",
+    "levelScale": 0.9,
+    "weaponScale": 1,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.15
+  },
+  {
+    "id": "cleave",
+    "name": "裂地斩",
+    "description": "横扫全场敌人，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "cutting",
+    "power": 6,
+    "cooldown": 2,
+    "energyCost": 14,
+    "target": "all-enemies",
+    "weaponTypes": [
+      "axe",
+      "hammer"
+    ],
+    "range": "melee",
+    "levelScale": 0.81,
+    "weaponScale": 1,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.15
+  },
+  {
+    "id": "war-cry",
+    "name": "战吼",
+    "description": "吼出进军号令：全队造成伤害提升（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 15,
+    "target": "all-allies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 10,
+        "duration": 3,
+        "perLevel": 0.64
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "ground-slam",
+    "name": "大地践踏",
+    "description": "砸震地面波及所有敌人，每人有 25% 概率被击晕 1 回合。",
+    "kind": "attack",
+    "damageType": "crushing",
+    "power": 8,
+    "cooldown": 4,
+    "energyCost": 18,
+    "target": "all-enemies",
+    "weaponTypes": [
+      "axe",
+      "hammer"
+    ],
+    "effects": [
+      {
+        "type": "stun",
+        "chance": 0.25,
+        "duration": 1
+      }
+    ],
+    "range": "melee",
+    "levelScale": 0.72,
+    "weaponScale": 1,
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "berserk",
+    "name": "狂暴姿态",
+    "description": "舍弃防御换取爆发：自身造成伤害提升（数值随等级提升），但受到伤害也提高 8%，持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 5,
+    "energyCost": 12,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 12,
+        "duration": 3,
+        "perLevel": 0.4
+      },
+      {
+        "type": "mod",
+        "kind": "damageTaken",
+        "base": 8,
+        "duration": 3,
+        "perLevel": 0
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "twin-strike",
+    "name": "疾风连击",
+    "description": "快到只剩残影的一刀，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "piercing",
+    "power": 4,
+    "cooldown": 0,
+    "energyCost": 6,
+    "target": "enemy",
+    "weaponTypes": [
+      "dagger",
+      "sword"
+    ],
+    "range": "melee",
+    "levelScale": 0.77,
+    "weaponScale": 1,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.15
+  },
+  {
+    "id": "backstab",
+    "name": "背刺",
+    "description": "从阴影里刺向要害，半血以下目标受到毁灭性伤害。",
+    "kind": "attack",
+    "damageType": "piercing",
+    "power": 5,
+    "cooldown": 2,
+    "energyCost": 10,
+    "target": "enemy",
+    "weaponTypes": [
+      "dagger"
+    ],
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "crit",
+        "base": 10,
+        "duration": 2,
+        "perLevel": 0.8
+      }
+    ],
+    "range": "melee",
+    "levelScale": 1.17,
+    "weaponScale": 1,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.5,
+    "executeBonusPct": 0.8
+  },
+  {
+    "id": "venom-blade",
+    "name": "淬毒之刃",
+    "description": "涂毒的刀锋：命中后目标每回合受到（数值随等级提升）自然伤害，持续 3 回合。",
+    "kind": "attack",
+    "damageType": "poison",
+    "power": 4,
+    "cooldown": 2,
+    "energyCost": 10,
+    "target": "enemy",
+    "weaponTypes": [
+      "dagger",
+      "sword"
+    ],
+    "effects": [
+      {
+        "type": "dot",
+        "base": 3,
+        "duration": 3,
+        "damageType": "poison",
+        "perLevel": 0.4
+      }
+    ],
+    "range": "melee",
+    "levelScale": 0.72,
+    "weaponScale": 1,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "arrow-rain",
+    "name": "箭雨",
+    "description": "箭雨覆盖敌群，伤口会让每一支箭更深。",
+    "kind": "attack",
+    "damageType": "piercing",
+    "power": 8,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "weaponTypes": [
+      "bow"
+    ],
+    "range": "ranged",
+    "levelScale": 0.68,
+    "weaponScale": 1,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.35
+  },
+  {
+    "id": "quick-shot",
+    "name": "快速射击",
+    "description": "先手快箭，可在先攻阶段使用，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "piercing",
+    "power": 3,
+    "cooldown": 0,
+    "energyCost": 5,
+    "target": "enemy",
+    "weaponTypes": [
+      "bow"
+    ],
+    "phases": [
+      "initiative",
+      "main"
+    ],
+    "range": "ranged",
+    "levelScale": 0.54,
+    "weaponScale": 1,
+    "effects": [],
+    "ailmentEfficiency": 1,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.15
+  },
+  {
+    "id": "weak-spot",
+    "name": "弱点洞察",
+    "description": "瞄准破绽：目标闪避降低（数值随等级提升），持续 3 回合。",
+    "kind": "attack",
+    "damageType": "piercing",
+    "power": 4,
+    "cooldown": 3,
+    "energyCost": 12,
+    "target": "enemy",
+    "weaponTypes": [
+      "bow",
+      "dagger"
+    ],
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "evasion",
+        "base": -8,
+        "duration": 3,
+        "perLevel": -0.4
+      }
+    ],
+    "range": "ranged",
+    "levelScale": 0.9,
+    "weaponScale": 1,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.4,
+    "executeBonusPct": 0.7
+  },
+  {
+    "id": "shadow-step",
+    "name": "影袭姿态",
+    "description": "融入阴影：自身闪避提升（数值随等级提升）、暴击率提升（数值随等级提升），持续 2 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 10,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "evasion",
+        "base": 10,
+        "duration": 2,
+        "perLevel": 0.64
+      },
+      {
+        "type": "mod",
+        "kind": "crit",
+        "base": 8,
+        "duration": 2,
+        "perLevel": 0.4
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "frost-lance",
+    "name": "冻蚀长钉",
+    "description": "钉入目标的霜蚀钢钉：伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "ice",
+    "power": 7,
+    "cooldown": 2,
+    "energyCost": 12,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "initiative",
+        "base": -6,
+        "duration": 2,
+        "perLevel": -0.4
+      }
+    ],
+    "range": "magic",
+    "levelScale": 0.95,
+    "weaponScale": 0,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "chain-lightning",
+    "name": "电弧链",
+    "description": "旧电池组的放电在敌阵中跳跃，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "lightning",
+    "power": 9,
+    "cooldown": 3,
+    "energyCost": 18,
+    "target": "all-enemies",
+    "range": "magic",
+    "levelScale": 0.86,
+    "weaponScale": 0,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "corrosive-touch",
+    "name": "腐蚀术",
+    "description": "腐蚀已经中毒的目标，让毒素进一步侵蚀。",
+    "kind": "attack",
+    "damageType": "poison",
+    "power": 4,
+    "cooldown": 3,
+    "energyCost": 12,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "chaosResist",
+        "base": -12,
+        "duration": 3,
+        "perLevel": -0.64
+      }
+    ],
+    "range": "magic",
+    "levelScale": 0.63,
+    "weaponScale": 0,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.4
+  },
+  {
+    "id": "arcane-missile",
+    "name": "电磁飞弹",
+    "description": "一道被旧线路放大的电磁脉冲，击中后留下持续抽搐的麻痹感。",
+    "kind": "attack",
+    "damageType": "lightning",
+    "power": 3,
+    "cooldown": 0,
+    "energyCost": 6,
+    "target": "enemy",
+    "range": "magic",
+    "levelScale": 0.68,
+    "weaponScale": 0,
+    "effects": [],
+    "ailmentEfficiency": 1,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.15
+  },
+  {
+    "id": "mana-surge",
+    "name": "电容涌动",
+    "description": "短接一整组电容：自身每回合额外恢复（数值随等级提升）点法力，持续 4 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 5,
+    "energyCost": 10,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "energyRegen",
+        "base": 6,
+        "duration": 4,
+        "perLevel": 0.4
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "ice-barrier",
+    "name": "冻蚀护壁",
+    "description": "凝出厚实的霜蚀屏障：吸收（数值随等级提升）点伤害，持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 16,
+    "target": "self",
+    "effects": [
+      {
+        "type": "shield",
+        "base": 12,
+        "duration": 3,
+        "perLevel": 2
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "piercing-shot",
+    "name": "贯穿射击",
+    "description": "瞄准伤口的一箭；目标带伤口时伤害显著提高。",
+    "kind": "attack",
+    "damageType": "piercing",
+    "power": 7,
+    "cooldown": 2,
+    "energyCost": 10,
+    "target": "enemy",
+    "weaponTypes": [
+      "bow"
+    ],
+    "range": "ranged",
+    "levelScale": 1.08,
+    "weaponScale": 1,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.5
+  },
+  {
+    "id": "hunter-mark",
+    "name": "猎手标记",
+    "description": "标记猎物：目标受到伤害提高（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 10,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageTaken",
+        "base": 8,
+        "duration": 3,
+        "perLevel": 0.64
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "eagle-eye",
+    "name": "鹰眼透镜",
+    "description": "戴上拾来的战术透镜：自身命中提升（数值随等级提升）、暴击率提升（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 12,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "hit",
+        "base": 6,
+        "duration": 3,
+        "perLevel": 0.64
+      },
+      {
+        "type": "mod",
+        "kind": "crit",
+        "base": 6,
+        "duration": 3,
+        "perLevel": 0.48
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "scatter-shot",
+    "name": "散射",
+    "description": "一箭分五，覆盖敌阵，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "piercing",
+    "power": 6,
+    "cooldown": 2,
+    "energyCost": 14,
+    "target": "all-enemies",
+    "weaponTypes": [
+      "bow"
+    ],
+    "range": "ranged",
+    "levelScale": 0.72,
+    "weaponScale": 1,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "keen-insight",
+    "name": "锐利感知",
+    "description": "预判攻击轨迹：自身闪避提升（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "evasion",
+        "base": 8,
+        "duration": 3,
+        "perLevel": 0.48
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "lesser-heal",
+    "name": "次级治疗",
+    "description": "缝合伤口，恢复量随等级提升。",
+    "kind": "heal",
+    "power": 8,
+    "cooldown": 0,
+    "energyCost": 10,
+    "target": "ally",
+    "levelScale": 0.99,
+    "weaponScale": 0,
+    "effects": []
+  },
+  {
+    "id": "healing-wave",
+    "name": "医疗波",
+    "description": "医用喷雾覆盖全队，每人恢复量随等级提升。",
+    "kind": "heal",
+    "power": 6,
+    "cooldown": 2,
+    "energyCost": 18,
+    "target": "all-allies",
+    "levelScale": 0.54,
+    "weaponScale": 0,
+    "effects": []
+  },
+  {
+    "id": "renew",
+    "name": "再生剂",
+    "description": "立即恢复（数值随等级提升）点生命，并在此后每回合继续恢复同量，持续 3 回合。",
+    "kind": "heal",
+    "power": 4,
+    "cooldown": 2,
+    "energyCost": 12,
+    "target": "ally",
+    "effects": [
+      {
+        "type": "hot",
+        "base": 4,
+        "duration": 3,
+        "perLevel": 0.4
+      }
+    ],
+    "levelScale": 0.45,
+    "weaponScale": 0
+  },
+  {
+    "id": "holy-smite",
+    "name": "沉眠祷言",
+    "description": "沉眠祷言在已入睡的目标身上回响，造成额外伤害。",
+    "kind": "attack",
+    "damageType": "sleep",
+    "power": 7,
+    "cooldown": 1,
+    "energyCost": 10,
+    "target": "enemy",
+    "range": "magic",
+    "levelScale": 0.99,
+    "weaponScale": 0,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.5
+  },
+  {
+    "id": "shadow-drain",
+    "name": "蚀毒汲取",
+    "description": "把目标体内的毒素抽出来反哺自己，留下一道缓慢溃烂的伤口。",
+    "kind": "attack",
+    "damageType": "poison",
+    "power": 6,
+    "cooldown": 2,
+    "energyCost": 12,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "hot",
+        "base": 2,
+        "duration": 2,
+        "perLevel": 0.24
+      }
+    ],
+    "range": "magic",
+    "levelScale": 0.77,
+    "weaponScale": 0,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.38,
+    "executeBonusPct": 0.62
+  },
+  {
+    "id": "sacred-shield",
+    "name": "辐光护罩",
+    "description": "滤光片拼成的屏障：为目标附加可吸收（数值随等级提升）点伤害的护罩，持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 14,
+    "target": "ally",
+    "effects": [
+      {
+        "type": "shield",
+        "base": 15,
+        "duration": 3,
+        "perLevel": 1.76
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "purifying-light",
+    "name": "滤光护符",
+    "description": "分发给全队的滤光片：全队混沌抗性提升（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 14,
+    "target": "all-allies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "chaosResist",
+        "base": 10,
+        "duration": 3,
+        "perLevel": 0.64
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "war-song",
+    "name": "战歌",
+    "description": "激昂的旋律响彻战场：全队造成伤害提升（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 16,
+    "target": "all-allies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 10,
+        "duration": 3,
+        "perLevel": 0.8
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "intimidate",
+    "name": "威吓",
+    "description": "让目标直面恐惧：其造成伤害降低（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 10,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": -10,
+        "duration": 3,
+        "perLevel": -0.64
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "provoke",
+    "name": "挑衅战吼",
+    "description": "逼目标只盯着自己：嘲讽其 2 回合，使其只能攻击施放者。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "taunt",
+        "duration": 2
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "battle-horn",
+    "name": "冲锋号角",
+    "description": "号角撕开战幕：全队先攻提升（数值随等级提升），持续 2 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 12,
+    "target": "all-allies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "initiative",
+        "base": 5,
+        "duration": 2,
+        "perLevel": 0.4
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "requiem",
+    "name": "静默挽歌",
+    "description": "安抚的低声哼唱流过全队，每人恢复量随等级提升。",
+    "kind": "heal",
+    "power": 5,
+    "cooldown": 3,
+    "energyCost": 20,
+    "target": "all-allies",
+    "levelScale": 0.5,
+    "weaponScale": 0,
+    "effects": []
+  },
+  {
+    "id": "hypnotize",
+    "name": "白噪低语",
+    "description": "白噪耳机里的循环低语：有 50% 概率沉默其 2 回合，无法使用技能。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 14,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "silence",
+        "chance": 0.5,
+        "duration": 2
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "inspiring-note",
+    "name": "激昂音符",
+    "description": "为同伴奏响高潮乐章：其暴击率提升（数值随等级提升）、造成伤害提升（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 12,
+    "target": "ally",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "crit",
+        "base": 8,
+        "duration": 3,
+        "perLevel": 0.56
+      },
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 6,
+        "duration": 3,
+        "perLevel": 0.4
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "discordant-note",
+    "name": "尖锐音符",
+    "description": "尖锐音符刺入已经睡眠的目标，梦境会变成伤害。",
+    "kind": "attack",
+    "damageType": "sleep",
+    "power": 4,
+    "cooldown": 1,
+    "energyCost": 8,
+    "target": "enemy",
+    "weaponTypes": [
+      "instrument"
+    ],
+    "range": "melee",
+    "levelScale": 0.81,
+    "weaponScale": 1,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.4
+  },
+  {
+    "id": "block-stance",
+    "name": "格挡姿态",
+    "description": "收拢防线：自身受到伤害降低（数值随等级提升）、护甲提升（数值随等级提升），持续 2 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageTaken",
+        "base": -12,
+        "duration": 2,
+        "perLevel": -0.64
+      },
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": 8,
+        "duration": 2,
+        "perLevel": 0.64
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "thorn-aura",
+    "name": "荆棘镜面",
+    "description": "拼贴的镜片与铁刺：3 回合内反弹 25% 所受到的攻击伤害。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 12,
+    "target": "self",
+    "effects": [
+      {
+        "type": "reflect",
+        "percent": 0.25,
+        "duration": 3
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "bite",
+    "name": "咬噬",
+    "description": "野兽的撕咬，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "piercing",
+    "power": 4,
+    "cooldown": 0,
+    "energyCost": 0,
+    "target": "enemy",
+    "levelScale": 0.9,
+    "weaponScale": 0.25,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "wild-slash",
+    "name": "乱爪",
+    "description": "毫无章法的疯狂抓挠，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "cutting",
+    "power": 5,
+    "cooldown": 1,
+    "energyCost": 6,
+    "target": "enemy",
+    "levelScale": 0.81,
+    "weaponScale": 0.25,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "crushing-blow",
+    "name": "碎重击",
+    "description": "沉重的一击，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "crushing",
+    "power": 7,
+    "cooldown": 2,
+    "energyCost": 10,
+    "target": "enemy",
+    "levelScale": 1.03,
+    "weaponScale": 0.25,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "sweeping-pick",
+    "name": "横扫镐",
+    "description": "镐尖横扫前方所有目标，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "cutting",
+    "power": 6,
+    "cooldown": 2,
+    "energyCost": 10,
+    "target": "all-enemies",
+    "levelScale": 0.81,
+    "weaponScale": 0.25,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "bone-shield",
+    "name": "骨盾",
+    "description": "骨架拼成屏障：吸收（数值随等级提升）点伤害并提升护甲 8 点，持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 12,
+    "target": "self",
+    "effects": [
+      {
+        "type": "shield",
+        "base": 10,
+        "duration": 3,
+        "perLevel": 1.2
+      },
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": 8,
+        "duration": 3,
+        "perLevel": 0
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "frost-bolt",
+    "name": "冰霜箭",
+    "description": "寒冰凝聚的箭矢，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "ice",
+    "power": 6,
+    "cooldown": 1,
+    "energyCost": 8,
+    "target": "enemy",
+    "range": "magic",
+    "levelScale": 0.99,
+    "weaponScale": 0,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "wail",
+    "name": "凄厉哀嚎",
+    "description": "刺骨的嚎叫动摇所有敌人：其造成伤害降低（数值随等级提升），持续 2 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 10,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": -8,
+        "duration": 2,
+        "perLevel": -0.4
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "frost-nova",
+    "name": "冰霜新星",
+    "description": "寒气爆发席卷全场，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "ice",
+    "power": 8,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "range": "magic",
+    "levelScale": 0.77,
+    "weaponScale": 0,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "ember-bite",
+    "name": "灼焰撕咬",
+    "description": "燃着火苗的獠牙：伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "fire",
+    "power": 5,
+    "cooldown": 1,
+    "energyCost": 8,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 3,
+        "duration": 2,
+        "damageType": "fire",
+        "perLevel": 0.24
+      }
+    ],
+    "range": "magic",
+    "levelScale": 0.81,
+    "weaponScale": 0,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "ember-bolt",
+    "name": "火焰箭",
+    "description": "速发的火苗箭，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "fire",
+    "power": 6,
+    "cooldown": 0,
+    "energyCost": 6,
+    "target": "enemy",
+    "range": "magic",
+    "levelScale": 0.9,
+    "weaponScale": 0,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "sacrificial-flame",
+    "name": "燃素引火",
+    "description": "以血引燃燃料：伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "fire",
+    "power": 8,
+    "cooldown": 2,
+    "energyCost": 12,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 4,
+        "duration": 3,
+        "damageType": "fire",
+        "perLevel": 0.32
+      }
+    ],
+    "range": "magic",
+    "levelScale": 0.99,
+    "weaponScale": 0,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "fire-chorus",
+    "name": "燃油合唱",
+    "description": "齐声点燃燃油沟，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "fire",
+    "power": 8,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "range": "magic",
+    "levelScale": 0.72,
+    "weaponScale": 0,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "magma-slam",
+    "name": "熔芯重锤",
+    "description": "裹着熔芯的旧世界重锤，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "fire",
+    "power": 9,
+    "cooldown": 2,
+    "energyCost": 14,
+    "target": "enemy",
+    "range": "magic",
+    "levelScale": 0.99,
+    "weaponScale": 0,
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "eruption",
+    "name": "熔芯喷发",
+    "description": "地下的熔芯管路破裂，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "fire",
+    "power": 10,
+    "cooldown": 3,
+    "energyCost": 20,
+    "target": "all-enemies",
+    "range": "magic",
+    "levelScale": 0.81,
+    "weaponScale": 0,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "harden",
+    "name": "硬壳",
+    "description": "外壳变得坚硬：自身护甲提升（数值随等级提升）、受到伤害降低（数值随等级提升），持续 3 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 10,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": 12,
+        "duration": 3,
+        "perLevel": 0.8
+      },
+      {
+        "type": "mod",
+        "kind": "damageTaken",
+        "base": -8,
+        "duration": 3,
+        "perLevel": -0.4
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "slag-spit",
+    "name": "熔渣喷吐",
+    "description": "喷出黏稠熔渣：伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "fire",
+    "power": 5,
+    "cooldown": 1,
+    "energyCost": 8,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 3,
+        "duration": 3,
+        "damageType": "fire",
+        "perLevel": 0.24
+      }
+    ],
+    "range": "magic",
+    "levelScale": 0.72,
+    "weaponScale": 0,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "slag-wave",
+    "name": "熔渣浪潮",
+    "description": "熔渣横扫全场，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "fire",
+    "power": 8,
+    "cooldown": 2,
+    "energyCost": 14,
+    "target": "all-enemies",
+    "range": "magic",
+    "levelScale": 0.81,
+    "weaponScale": 0,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "venom-cloud",
+    "name": "孢毒雾",
+    "description": "孢毒弥漫整个敌阵：伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "poison",
+    "power": 4,
+    "cooldown": 2,
+    "energyCost": 12,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 3,
+        "duration": 3,
+        "damageType": "poison",
+        "perLevel": 0.32
+      }
+    ],
+    "range": "magic",
+    "levelScale": 0.63,
+    "weaponScale": 0,
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "void-lance",
+    "name": "虚空之矛",
+    "description": "从虚空刺出的长矛，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "sleep",
+    "power": 14,
+    "cooldown": 2,
+    "energyCost": 14,
+    "target": "enemy",
+    "range": "magic",
+    "levelScale": 1.08,
+    "weaponScale": 0,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "forbidden-word",
+    "name": "禁词",
+    "description": "念出不可言说之词：有 50% 概率沉默目标 2 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 14,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "silence",
+        "chance": 0.5,
+        "duration": 2
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "hailstorm",
+    "name": "冰雹风暴",
+    "description": "冰雹砸落全场：伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "ice",
+    "power": 10,
+    "cooldown": 3,
+    "energyCost": 18,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "stun",
+        "chance": 0.15,
+        "duration": 1
+      }
+    ],
+    "range": "magic",
+    "levelScale": 0.77,
+    "weaponScale": 0,
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "absolute-zero",
+    "name": "绝对零度",
+    "description": "冻结一切的温度：伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "ice",
+    "power": 15,
+    "cooldown": 3,
+    "energyCost": 20,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "initiative",
+        "base": -8,
+        "duration": 2,
+        "perLevel": -0.4
+      }
+    ],
+    "range": "magic",
+    "levelScale": 1.03,
+    "weaponScale": 0,
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "shadow-breath",
+    "name": "暗蚀吐息",
+    "description": "喷吐吞噬光线的暗蚀雾，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "sleep",
+    "power": 10,
+    "cooldown": 2,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "range": "magic",
+    "levelScale": 0.9,
+    "weaponScale": 0,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "dark-mend",
+    "name": "暗蚀敷愈",
+    "description": "用暗蚀菌丝缝合伤口，恢复量随等级提升。",
+    "kind": "heal",
+    "power": 14,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "self",
+    "levelScale": 0.9,
+    "weaponScale": 0,
+    "effects": []
+  },
+  {
+    "id": "tyrant-cleave",
+    "name": "暴君横扫",
+    "description": "王庭之主的横扫，碾压所有敌人，伤害随等级与武器伤害提升。",
+    "kind": "attack",
+    "damageType": "cutting",
+    "power": 16,
+    "cooldown": 2,
+    "energyCost": 20,
+    "target": "all-enemies",
+    "levelScale": 0.95,
+    "weaponScale": 0.25,
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90
+  },
+  {
+    "id": "dominate",
+    "name": "支配",
+    "description": "意志碾压：有 60% 概率沉默目标 2 回合，并削弱其造成伤害（数值随等级提升），持续 2 回合。",
+    "kind": "buff",
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "silence",
+        "chance": 0.6,
+        "duration": 2
+      },
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": -10,
+        "duration": 2,
+        "perLevel": -0.4
+      }
+    ],
+    "levelScale": 0,
+    "weaponScale": 0
+  },
+  {
+    "id": "sword-stem-1",
+    "name": "战技架势",
+    "description": "压低重心，稳住刀线：命中与造成伤害提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "sword"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "hit",
+        "base": 3,
+        "perLevel": 0.25,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 8,
+        "perLevel": 0.5,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "sword-passive-a",
+    "name": "前哨训练",
+    "description": "旧前哨的操典：生命、护甲与承伤能力提升，并熟练使用剑、斧、锤。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0.08,
+      "manaPct": 0,
+      "base": {
+        "armor": 3
+      },
+      "modifiers": [
+        {
+          "kind": "damageTaken",
+          "amount": -4
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "sword",
+        "axe",
+        "hammer"
+      ]
+    }
+  },
+  {
+    "id": "sword-passive-b",
+    "name": "斗笼本能",
+    "description": "在斗笼里活下来的人更懂要害：命中与暴击提升，并熟练使用剑、斧、匕首。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {
+        "hit": 2
+      },
+      "modifiers": [
+        {
+          "kind": "crit",
+          "amount": 4
+        },
+        {
+          "kind": "critDamage",
+          "amount": 15
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "sword",
+        "axe",
+        "dagger"
+      ]
+    }
+  },
+  {
+    "id": "sword-mechanic-b",
+    "name": "裂锋连斩",
+    "description": "连续两次短促斩击，留下持续流血伤口。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "sword"
+    ],
+    "damageType": "cutting",
+    "range": "melee",
+    "levelScale": 0.7,
+    "weaponScale": 0.8,
+    "power": 5,
+    "cooldown": 2,
+    "energyCost": 10,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 4,
+        "perLevel": 0.5,
+        "duration": 2,
+        "damageType": "cutting"
+      }
+    ],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "sword-terminal-b",
+    "name": "处决",
+    "description": "把全部力量压进一次斩击；目标流血时，这一击会顺着伤口撕开。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "sword"
+    ],
+    "damageType": "cutting",
+    "range": "melee",
+    "levelScale": 1.4,
+    "weaponScale": 1.3,
+    "power": 12,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "enemy",
+    "effects": [],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.6
+  },
+  {
+    "id": "sword-link-left",
+    "name": "战吼·剑式",
+    "description": "用剑脊敲盾，给全队打出进攻节拍：造成伤害提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "sword",
+      "instrument"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 14,
+    "target": "all-allies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 8,
+        "perLevel": 0.6,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "sword-link-right",
+    "name": "血暴·剑式",
+    "description": "横扫敌群，流血的目标会承受更多撕裂。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "sword",
+      "axe"
+    ],
+    "damageType": "cutting",
+    "range": "melee",
+    "levelScale": 0.6,
+    "weaponScale": 0.7,
+    "power": 5,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 4,
+        "perLevel": 0.4,
+        "duration": 2,
+        "damageType": "cutting"
+      }
+    ],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.4
+  },
+  {
+    "id": "axe-stem-2",
+    "name": "抗冲击",
+    "description": "把肩膀顶上去：护甲提升、受到伤害降低，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "axe"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageTaken",
+        "base": -10,
+        "perLevel": -0.5,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": 6,
+        "perLevel": 0.5,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "axe-passive-a",
+    "name": "撕裂本能",
+    "description": "伤口越深越兴奋：造成伤害与生命提升，但受到的伤害也略微增加。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0.05,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "damageDealt",
+          "amount": 6
+        },
+        {
+          "kind": "damageTaken",
+          "amount": 3
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "axe",
+        "sword",
+        "hammer"
+      ]
+    }
+  },
+  {
+    "id": "axe-passive-b",
+    "name": "盾墙操典",
+    "description": "把斧面当盾用：护甲与承伤能力提升，并熟练使用斧、剑、锤。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0.04,
+      "manaPct": 0,
+      "base": {
+        "armor": 5
+      },
+      "modifiers": [
+        {
+          "kind": "damageTaken",
+          "amount": -5
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "axe",
+        "sword",
+        "hammer"
+      ]
+    }
+  },
+  {
+    "id": "axe-mechanic-a",
+    "name": "裂创",
+    "description": "一斧劈开防线，留下难以愈合的裂口。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "axe"
+    ],
+    "damageType": "cutting",
+    "range": "melee",
+    "levelScale": 0.8,
+    "weaponScale": 0.8,
+    "power": 6,
+    "cooldown": 2,
+    "energyCost": 10,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 6,
+        "perLevel": 0.6,
+        "duration": 3,
+        "damageType": "cutting"
+      }
+    ],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "axe-terminal-a",
+    "name": "血暴",
+    "description": "旋风般的连续劈砍，流血目标会被反复撕开。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "axe"
+    ],
+    "damageType": "cutting",
+    "range": "melee",
+    "levelScale": 0.7,
+    "weaponScale": 0.8,
+    "power": 6,
+    "cooldown": 3,
+    "energyCost": 18,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 5,
+        "perLevel": 0.5,
+        "duration": 2,
+        "damageType": "cutting"
+      }
+    ],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.5
+  },
+  {
+    "id": "axe-terminal-b",
+    "name": "盾墙反击",
+    "description": "架住攻势并借力反弹：护甲、减伤与反伤提升，持续 2 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "axe"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 12,
+    "target": "self",
+    "effects": [
+      {
+        "type": "reflect",
+        "percent": 0.35,
+        "duration": 2
+      },
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": 10,
+        "perLevel": 0.6,
+        "duration": 2
+      },
+      {
+        "type": "mod",
+        "kind": "damageTaken",
+        "base": -6,
+        "perLevel": -0.4,
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "id": "axe-link-right",
+    "name": "余震·斧式",
+    "description": "把斧头砸进地面，冲击波震裂周围敌人的护甲。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "axe",
+      "hammer"
+    ],
+    "damageType": "crushing",
+    "range": "melee",
+    "levelScale": 0.6,
+    "weaponScale": 0.8,
+    "power": 5,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": -6,
+        "perLevel": -0.4,
+        "duration": 2
+      }
+    ],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.4,
+    "executeBonusPct": 0.7
+  },
+  {
+    "id": "hammer-stem-1",
+    "name": "支点",
+    "description": "把重心沉到脚下：护甲提升、受到伤害降低，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "hammer"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": 10,
+        "perLevel": 0.7,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "damageTaken",
+        "base": -6,
+        "perLevel": -0.4,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "hammer-stem-2",
+    "name": "沉肩",
+    "description": "把肩膀送进挥击里：造成伤害与命中提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "hammer"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 8,
+        "perLevel": 0.5,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "hit",
+        "base": 3,
+        "perLevel": 0.3,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "hammer-passive-a",
+    "name": "逆咒镜面",
+    "description": "把落在身上的诅咒折射回去：减伤、治疗提升，受到的负修正反转为增益。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "damageTaken",
+          "amount": -4
+        },
+        {
+          "kind": "healing",
+          "amount": 8
+        }
+      ],
+      "hooks": {
+        "invertDebuffSign": true
+      },
+      "weaponProficiencies": [
+        "hammer"
+      ]
+    }
+  },
+  {
+    "id": "hammer-passive-b",
+    "name": "拆解思维",
+    "description": "把一切看成可拆的零件：回蓝与减伤提升，单体攻击扩散为全体。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "energyRegen",
+          "amount": 2
+        },
+        {
+          "kind": "damageTaken",
+          "amount": -3
+        }
+      ],
+      "hooks": {
+        "spreadSingleTarget": true,
+        "spreadPenaltyPct": -0.35
+      },
+      "weaponProficiencies": [
+        "hammer"
+      ]
+    }
+  },
+  {
+    "id": "hammer-mechanic-a",
+    "name": "颅骨震荡",
+    "description": "锤头敲在头盔上，震得目标短暂失去行动。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "hammer"
+    ],
+    "damageType": "crushing",
+    "range": "melee",
+    "levelScale": 0.9,
+    "weaponScale": 0.9,
+    "power": 7,
+    "cooldown": 3,
+    "energyCost": 14,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "stun",
+        "chance": 0.35,
+        "duration": 1
+      }
+    ],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "hammer-mechanic-b",
+    "name": "拆甲",
+    "description": "专挑甲片接缝下手，大幅削弱目标护甲。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "hammer"
+    ],
+    "damageType": "crushing",
+    "range": "melee",
+    "levelScale": 0.8,
+    "weaponScale": 0.9,
+    "power": 6,
+    "cooldown": 2,
+    "energyCost": 12,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": -12,
+        "perLevel": -0.8,
+        "duration": 3
+      }
+    ],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.30000000000000004
+  },
+  {
+    "id": "hammer-terminal-b",
+    "name": "熔芯重锤",
+    "description": "对残血目标砸下终结重锤，生命越低伤害越高。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "hammer"
+    ],
+    "damageType": "crushing",
+    "range": "melee",
+    "levelScale": 1.3,
+    "weaponScale": 1.2,
+    "power": 12,
+    "cooldown": 3,
+    "energyCost": 18,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "armor",
+        "base": -10,
+        "perLevel": -0.5,
+        "duration": 2
+      }
+    ],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.4,
+    "executeBonusPct": 0.5
+  },
+  {
+    "id": "hammer-link-left",
+    "name": "余震·锤式",
+    "description": "震地横扫，残血敌人会受到额外冲击。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "hammer",
+      "axe"
+    ],
+    "damageType": "crushing",
+    "range": "melee",
+    "levelScale": 0.6,
+    "weaponScale": 0.8,
+    "power": 5,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "stun",
+        "chance": 0.2,
+        "duration": 1
+      }
+    ],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.3,
+    "executeBonusPct": 0.3
+  },
+  {
+    "id": "hammer-link-right",
+    "name": "废料弹幕·锤式",
+    "description": "横扫的锤风把周围敌人震得站立不稳，重击会直接砸出晕眩。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "hammer",
+      "bow"
+    ],
+    "damageType": "crushing",
+    "range": "ranged",
+    "levelScale": 0.6,
+    "weaponScale": 0.7,
+    "power": 5,
+    "cooldown": 3,
+    "energyCost": 15,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "stun",
+        "chance": 0.35,
+        "duration": 1
+      }
+    ],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.4,
+    "executeBonusPct": 0.7
+  },
+  {
+    "id": "bow-passive-a",
+    "name": "雨幕瞄准",
+    "description": "在雨线里算提前量：命中大幅提升，并熟练使用弓。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {
+        "hit": 4
+      },
+      "modifiers": [
+        {
+          "kind": "hit",
+          "amount": 3
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "bow"
+      ]
+    }
+  },
+  {
+    "id": "bow-passive-b",
+    "name": "毒性专精",
+    "description": "懂得让毒素在伤口里多停留一会儿：持续伤害提升，并熟练使用弓、匕首。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "dotPotency",
+          "amount": 15
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "bow",
+        "dagger"
+      ]
+    }
+  },
+  {
+    "id": "bow-link-left",
+    "name": "废料弹幕·弓式",
+    "description": "箭矢擦过目标留下难以愈合的创口，伤口会持续暴露要害。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "bow",
+      "hammer"
+    ],
+    "damageType": "piercing",
+    "range": "ranged",
+    "levelScale": 0.6,
+    "weaponScale": 0.7,
+    "power": 5,
+    "cooldown": 3,
+    "energyCost": 15,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "evasion",
+        "base": -6,
+        "perLevel": -0.4,
+        "duration": 2
+      }
+    ],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.4,
+    "executeBonusPct": 0.7
+  },
+  {
+    "id": "dagger-stem-2",
+    "name": "磨刃",
+    "description": "把刃口重新磨亮：造成伤害与暴击率提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "dagger"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 8,
+        "perLevel": 0.5,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "crit",
+        "base": 5,
+        "perLevel": 0.3,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "dagger-passive-a",
+    "name": "配药手法",
+    "description": "懂得把药草和毒物分开用：治疗提升，并熟练使用匕首、法杖。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "healing",
+          "amount": 10
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "dagger",
+        "staff"
+      ]
+    }
+  },
+  {
+    "id": "dagger-passive-b",
+    "name": "腐蚀研究",
+    "description": "长期接触腐蚀物，反而学会了与它共处：持续伤害与混沌抗性提升。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "dotPotency",
+          "amount": 12
+        },
+        {
+          "kind": "chaosResist",
+          "amount": 8
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "dagger",
+        "book"
+      ]
+    }
+  },
+  {
+    "id": "dagger-link-left",
+    "name": "弱点洞察·刃式",
+    "description": "毒刃横扫，已中毒的目标会承受更高爆发。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "dagger",
+      "bow"
+    ],
+    "damageType": "piercing",
+    "range": "melee",
+    "levelScale": 0.9,
+    "weaponScale": 1,
+    "power": 6,
+    "cooldown": 2,
+    "energyCost": 12,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "crit",
+        "base": 8,
+        "perLevel": 0.4,
+        "duration": 2
+      }
+    ],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "ailmentBonusPct": 0.5
+  },
+  {
+    "id": "dagger-link-right",
+    "name": "孢毒雾·刃式",
+    "description": "割开孢囊，让毒雾顺着刃风铺开。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "dagger",
+      "staff"
+    ],
+    "damageType": "poison",
+    "range": "melee",
+    "levelScale": 0.5,
+    "weaponScale": 0.5,
+    "power": 4,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 5,
+        "perLevel": 0.5,
+        "duration": 3,
+        "damageType": "poison"
+      }
+    ],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.4,
+    "executeBonusPct": 0.7
+  },
+  {
+    "id": "staff-passive-a",
+    "name": "雷声回路",
+    "description": "把旧电池的余电接进回路：伤害、元素抗性与技能量级提升。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "damageDealt",
+          "amount": 6
+        },
+        {
+          "kind": "elementalResist",
+          "amount": 8
+        }
+      ],
+      "hooks": {
+        "skillPowerPct": 0.05
+      },
+      "weaponProficiencies": [
+        "staff"
+      ]
+    }
+  },
+  {
+    "id": "staff-passive-b",
+    "name": "接线直觉",
+    "description": "闭着眼也能接对线：法力上限与回蓝提升，并熟练使用法杖。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0.06,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "energyRegen",
+          "amount": 3
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "staff"
+      ]
+    }
+  },
+  {
+    "id": "staff-terminal-a",
+    "name": "雷暴核心",
+    "description": "雷暴核心在残血目标身上过载，造成额外电击。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "staff"
+    ],
+    "damageType": "lightning",
+    "range": "magic",
+    "levelScale": 1,
+    "weaponScale": 0.3,
+    "power": 8,
+    "cooldown": 4,
+    "energyCost": 22,
+    "target": "all-enemies",
+    "effects": [],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.35,
+    "executeBonusPct": 0.4
+  },
+  {
+    "id": "staff-terminal-b",
+    "name": "绝对零度",
+    "description": "绝对零度冻结残血目标，低生命时伤害更高。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "staff"
+    ],
+    "damageType": "ice",
+    "range": "magic",
+    "levelScale": 1.3,
+    "weaponScale": 0.4,
+    "power": 11,
+    "cooldown": 3,
+    "energyCost": 20,
+    "target": "enemy",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "evasion",
+        "base": -8,
+        "perLevel": -0.5,
+        "duration": 2
+      }
+    ],
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.4,
+    "executeBonusPct": 0.5
+  },
+  {
+    "id": "staff-link-left",
+    "name": "余烬扩散",
+    "description": "把炉膛里的余火推向整片区域，火舌会沿着裂缝持续灼烧。",
+    "kind": "attack",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "staff",
+      "dagger"
+    ],
+    "damageType": "fire",
+    "range": "magic",
+    "levelScale": 0.5,
+    "weaponScale": 0.3,
+    "power": 4,
+    "cooldown": 3,
+    "energyCost": 16,
+    "target": "all-enemies",
+    "effects": [
+      {
+        "type": "dot",
+        "base": 5,
+        "perLevel": 0.5,
+        "duration": 3,
+        "damageType": "fire"
+      }
+    ],
+    "ailmentEfficiency": 3,
+    "baseCritRate": 5,
+    "baseHitRate": 90,
+    "executeThreshold": 0.4,
+    "executeBonusPct": 0.7
+  },
+  {
+    "id": "staff-link-right",
+    "name": "电容涌动·杖式",
+    "description": "把电容接到自己身上：回蓝与造成伤害提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "staff",
+      "book"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 10,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "energyRegen",
+        "base": 6,
+        "perLevel": 0.4,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 8,
+        "perLevel": 0.5,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "book-stem-1",
+    "name": "祷念",
+    "description": "低声念完一段旧祷词：治疗与回蓝提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "book"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "healing",
+        "base": 10,
+        "perLevel": 0.5,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "energyRegen",
+        "base": 2,
+        "perLevel": 0.2,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "book-stem-2",
+    "name": "定心",
+    "description": "把呼吸压稳：混沌抗性与减伤提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "book"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "chaosResist",
+        "base": 12,
+        "perLevel": 0.5,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "damageTaken",
+        "base": -6,
+        "perLevel": -0.4,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "book-passive-a",
+    "name": "疗雾之手",
+    "description": "把治疗雾化到每一次触碰里：治疗与技能量级提升，并熟练使用书、法杖。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "healing",
+          "amount": 10
+        }
+      ],
+      "hooks": {
+        "skillPowerPct": 0.04
+      },
+      "weaponProficiencies": [
+        "book",
+        "staff"
+      ]
+    }
+  },
+  {
+    "id": "book-passive-b",
+    "name": "滤塔祝祷",
+    "description": "在滤塔里学会的祝祷：治疗与混沌抗性提升，并熟练使用书、法杖。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "healing",
+          "amount": 6
+        },
+        {
+          "kind": "chaosResist",
+          "amount": 10
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "book",
+        "staff"
+      ]
+    }
+  },
+  {
+    "id": "book-terminal-b",
+    "name": "滤塔圣所",
+    "description": "展开一圈滤光屏障，为全队吸收伤害并稳住心神。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "book"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 20,
+    "target": "all-allies",
+    "effects": [
+      {
+        "type": "shield",
+        "base": 18,
+        "perLevel": 1.2,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "chaosResist",
+        "base": 12,
+        "perLevel": 0.4,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "instrument-stem-1",
+    "name": "起拍",
+    "description": "敲出第一个拍点：先攻与回蓝提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "instrument"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 3,
+    "energyCost": 8,
+    "target": "self",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "initiative",
+        "base": 5,
+        "perLevel": 0.3,
+        "duration": 3
+      },
+      {
+        "type": "mod",
+        "kind": "energyRegen",
+        "base": 2,
+        "perLevel": 0.2,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "instrument-passive-a",
+    "name": "雨鼓节奏",
+    "description": "雨点一样的鼓声让队伍始终快半拍：回蓝与先攻提升，并熟练使用乐器、匕首。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "energyRegen",
+          "amount": 2
+        },
+        {
+          "kind": "initiative",
+          "amount": 3
+        }
+      ],
+      "hooks": {},
+      "weaponProficiencies": [
+        "instrument",
+        "dagger"
+      ]
+    }
+  },
+  {
+    "id": "instrument-passive-b",
+    "name": "拾音共鸣",
+    "description": "能从噪声里听出节奏：先攻、回蓝提升，技能冷却缩短。",
+    "kind": "passive",
+    "category": "class",
+    "maxLevel": 1,
+    "passive": {
+      "hpPct": 0,
+      "manaPct": 0,
+      "base": {},
+      "modifiers": [
+        {
+          "kind": "initiative",
+          "amount": 2
+        },
+        {
+          "kind": "energyRegen",
+          "amount": 2
+        }
+      ],
+      "hooks": {
+        "cooldownReduction": 1
+      },
+      "weaponProficiencies": [
+        "instrument"
+      ]
+    }
+  },
+  {
+    "id": "instrument-link-left",
+    "name": "战歌·乐器式",
+    "description": "把战歌推到最高音：全队造成伤害提升，持续 3 回合。",
+    "kind": "buff",
+    "category": "class",
+    "maxLevel": 20,
+    "weaponTypes": [
+      "instrument",
+      "book"
+    ],
+    "levelScale": 0,
+    "weaponScale": 0,
+    "power": 0,
+    "cooldown": 4,
+    "energyCost": 14,
+    "target": "all-allies",
+    "effects": [
+      {
+        "type": "mod",
+        "kind": "damageDealt",
+        "base": 8,
+        "perLevel": 0.6,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "id": "trait-high-ground",
+    "name": "高处切入",
+    "description": "攻击敌方后排时暴击率 +15%；命中后排后获得 1 回合闪避 +8 与暴击 +15%，可叠加。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {},
+      "backlineHunter": {
+        "critBonus": 15,
+        "evasionBonus": 8,
+        "duration": 2,
+        "maxStacks": 5
+      }
+    }
+  },
+  {
+    "id": "trait-gate-guard",
+    "name": "闸前不退",
+    "description": "受到伤害 -8%，护甲 +6。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [
+        {
+          "kind": "damageTaken",
+          "amount": -8
+        },
+        {
+          "kind": "armor",
+          "amount": 6
+        }
+      ],
+      "hooks": {}
+    }
+  },
+  {
+    "id": "trait-pipe-lines",
+    "name": "管线脉络",
+    "description": "先攻 +4，闪避 +6。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [
+        {
+          "kind": "initiative",
+          "amount": 4
+        },
+        {
+          "kind": "evasion",
+          "amount": 6
+        }
+      ],
+      "hooks": {}
+    }
+  },
+  {
+    "id": "trait-echo-location",
+    "name": "回声定位",
+    "description": "每回合额外行动 +1。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {
+        "extraActions": 1
+      }
+    }
+  },
+  {
+    "id": "trait-raven-spiral",
+    "name": "鸦群盘旋",
+    "description": "群攻每多命中 1 个目标，伤害 +10%。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {
+        "multiTargetBonusPct": 0.1
+      }
+    }
+  },
+  {
+    "id": "trait-filtered-body",
+    "name": "滤净体质",
+    "description": "受到的负面效果持续 -1 回合。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {
+        "debuffDurationReduction": 1
+      }
+    }
+  },
+  {
+    "id": "trait-mirror-return",
+    "name": "镜像折返",
+    "description": "受到负面效果时 25% 概率反弹给施加者。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {
+        "debuffReflectChance": 0.25
+      }
+    }
+  },
+  {
+    "id": "trait-old-school",
+    "name": "旧校舍底子",
+    "description": "增益类技能等级 +2。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {
+        "skillLevelBonus": {
+          "buff": 2
+        }
+      }
+    }
+  },
+  {
+    "id": "trait-disassembly",
+    "name": "拆件经验",
+    "description": "技能法力消耗 -20%。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {
+        "energyCostPct": -0.2
+      }
+    }
+  },
+  {
+    "id": "trait-rain-gamble",
+    "name": "雨夜赌命",
+    "description": "生命低于 40% 时造成伤害 +30%。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {
+        "lowHpFuryPct": 0.3
+      }
+    }
+  },
+  {
+    "id": "trait-lamp-warmth",
+    "name": "守灯余温",
+    "description": "法力低于 30% 时每回合额外恢复 4 点法力。",
+    "kind": "trait",
+    "category": "class",
+    "maxLevel": 1,
+    "target": "self",
+    "trait": {
+      "modifiers": [],
+      "hooks": {
+        "energySurgeRegen": 4
+      }
+    }
+  }
+]

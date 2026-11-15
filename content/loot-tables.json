@@ -1,0 +1,1145 @@
+[
+  {
+    "id": "mine-common",
+    "chance": 0.4,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "copper-ring",
+        "weight": 3
+      },
+      {
+        "templateId": "leather-armor",
+        "weight": 3
+      },
+      {
+        "templateId": "traveler-cloak",
+        "weight": 2
+      },
+      {
+        "templateId": "iron-sword",
+        "weight": 1
+      },
+      {
+        "templateId": "hunting-bow",
+        "weight": 1
+      },
+      {
+        "templateId": "oak-staff",
+        "weight": 1
+      },
+      {
+        "templateId": "prayer-book",
+        "weight": 1
+      },
+      {
+        "templateId": "twin-daggers",
+        "weight": 1
+      },
+      {
+        "templateId": "iron-band",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "mine-boss",
+    "chance": 1,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "chainmail",
+        "weight": 3
+      },
+      {
+        "templateId": "steel-axe",
+        "weight": 2
+      },
+      {
+        "templateId": "hunter-charm",
+        "weight": 2
+      },
+      {
+        "templateId": "amulet-of-focus",
+        "weight": 2
+      },
+      {
+        "templateId": "wolf-fang",
+        "weight": 1
+      },
+      {
+        "templateId": "lucky-coin",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "starter-cache",
+    "chance": 1,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "chainmail",
+        "weight": 3
+      },
+      {
+        "templateId": "steel-axe",
+        "weight": 2
+      },
+      {
+        "templateId": "hunter-charm",
+        "weight": 2
+      },
+      {
+        "templateId": "amulet-of-focus",
+        "weight": 2
+      },
+      {
+        "templateId": "lucky-coin",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "crypt-common",
+    "chance": 0.4,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "chainmail",
+        "weight": 2
+      },
+      {
+        "templateId": "amulet-of-focus",
+        "weight": 2
+      },
+      {
+        "templateId": "hunter-charm",
+        "weight": 2
+      },
+      {
+        "templateId": "wolf-fang",
+        "weight": 1
+      },
+      {
+        "templateId": "oathkeeper",
+        "weight": 1
+      },
+      {
+        "templateId": "yew-longbow",
+        "weight": 1
+      },
+      {
+        "templateId": "ashwalker-mail",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "crypt-boss",
+    "chance": 1,
+    "rolls": 2,
+    "entries": [
+      {
+        "templateId": "frostweave-robe",
+        "weight": 3
+      },
+      {
+        "templateId": "shadow-leather",
+        "weight": 3
+      },
+      {
+        "templateId": "wolf-fang",
+        "weight": 2
+      },
+      {
+        "templateId": "oathkeeper",
+        "weight": 2
+      },
+      {
+        "templateId": "ember-heart",
+        "weight": 1
+      },
+      {
+        "templateId": "guardian-plate",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "crypt-treasure",
+    "chance": 1,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "frostweave-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "shadow-leather",
+        "weight": 2
+      },
+      {
+        "templateId": "oathkeeper",
+        "weight": 2
+      },
+      {
+        "templateId": "wolf-fang",
+        "weight": 2
+      },
+      {
+        "templateId": "ember-heart",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "altar-common",
+    "chance": 0.45,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "ashwalker-mail",
+        "weight": 2
+      },
+      {
+        "templateId": "frostweave-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "shadow-leather",
+        "weight": 2
+      },
+      {
+        "templateId": "wolf-fang",
+        "weight": 2
+      },
+      {
+        "templateId": "oathkeeper",
+        "weight": 2
+      },
+      {
+        "templateId": "ember-heart",
+        "weight": 1
+      },
+      {
+        "templateId": "guardian-plate",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "altar-boss",
+    "chance": 1,
+    "rolls": 2,
+    "entries": [
+      {
+        "templateId": "ember-heart",
+        "weight": 3
+      },
+      {
+        "templateId": "guardian-plate",
+        "weight": 3
+      },
+      {
+        "templateId": "frostweave-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "ashwalker-mail",
+        "weight": 2
+      },
+      {
+        "templateId": "oathkeeper",
+        "weight": 2
+      },
+      {
+        "templateId": "sun-verdict",
+        "weight": 1
+      },
+      {
+        "templateId": "resonance-lute",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "foundry-common",
+    "chance": 0.4,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "foundry-longsword",
+        "weight": 2
+      },
+      {
+        "templateId": "ashwood-bow",
+        "weight": 2
+      },
+      {
+        "templateId": "slag-staff",
+        "weight": 2
+      },
+      {
+        "templateId": "iron-prayer-book",
+        "weight": 2
+      },
+      {
+        "templateId": "forge-lute",
+        "weight": 1
+      },
+      {
+        "templateId": "cinder-dagger",
+        "weight": 2
+      },
+      {
+        "templateId": "foundry-plate",
+        "weight": 1
+      },
+      {
+        "templateId": "ash-leather",
+        "weight": 2
+      },
+      {
+        "templateId": "slag-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "forge-heart-pendant",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "foundry-treasure",
+    "chance": 1,
+    "rolls": 2,
+    "entries": [
+      {
+        "templateId": "slagbreaker",
+        "weight": 2
+      },
+      {
+        "templateId": "overseer-cinder-crown",
+        "weight": 2
+      },
+      {
+        "templateId": "foundry-plate",
+        "weight": 2
+      },
+      {
+        "templateId": "slag-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "forge-heart-pendant",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "archive-common",
+    "chance": 0.4,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "whisper-blade",
+        "weight": 2
+      },
+      {
+        "templateId": "inkline-bow",
+        "weight": 2
+      },
+      {
+        "templateId": "forbidden-staff",
+        "weight": 2
+      },
+      {
+        "templateId": "silent-grimoire",
+        "weight": 2
+      },
+      {
+        "templateId": "archive-lute",
+        "weight": 1
+      },
+      {
+        "templateId": "page-cutter",
+        "weight": 2
+      },
+      {
+        "templateId": "archive-mail",
+        "weight": 1
+      },
+      {
+        "templateId": "ink-leather",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "index-eye",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "archive-treasure",
+    "chance": 1,
+    "rolls": 2,
+    "entries": [
+      {
+        "templateId": "forbidden-grimoire",
+        "weight": 2
+      },
+      {
+        "templateId": "scribe-crown",
+        "weight": 2
+      },
+      {
+        "templateId": "archive-mail",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "index-eye",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "vault-common",
+    "chance": 0.4,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "rime-longsword",
+        "weight": 2
+      },
+      {
+        "templateId": "froststring-bow",
+        "weight": 2
+      },
+      {
+        "templateId": "glacier-staff",
+        "weight": 2
+      },
+      {
+        "templateId": "winter-prayer",
+        "weight": 2
+      },
+      {
+        "templateId": "frost-chime-lute",
+        "weight": 1
+      },
+      {
+        "templateId": "icefang-dagger",
+        "weight": 2
+      },
+      {
+        "templateId": "vault-plate",
+        "weight": 1
+      },
+      {
+        "templateId": "rime-leather",
+        "weight": 2
+      },
+      {
+        "templateId": "absolute-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "everfrost-heart",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "vault-treasure",
+    "chance": 1,
+    "rolls": 2,
+    "entries": [
+      {
+        "templateId": "ice-warden-plate",
+        "weight": 2
+      },
+      {
+        "templateId": "absolute-zero-staff",
+        "weight": 2
+      },
+      {
+        "templateId": "vault-plate",
+        "weight": 2
+      },
+      {
+        "templateId": "absolute-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "everfrost-heart",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "throne-common",
+    "chance": 0.4,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "obsidian-longsword",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute",
+        "weight": 1
+      },
+      {
+        "templateId": "shadowfang-dagger",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-armor",
+        "weight": 1
+      },
+      {
+        "templateId": "shadow-leather",
+        "weight": 2
+      },
+      {
+        "templateId": "void-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-eye",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "id": "throne-treasure",
+    "chance": 1,
+    "rolls": 2,
+    "entries": [
+      {
+        "templateId": "tyrant-blade",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-armor",
+        "weight": 2
+      },
+      {
+        "templateId": "void-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-eye",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "deep-foundry-cache",
+    "chance": 0.45,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "tyrant-blade-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t40",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "deep-archive-cache",
+    "chance": 0.45,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "tyrant-blade-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t40",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "deep-throne-cache",
+    "chance": 0.45,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "tyrant-blade-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t25",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t30",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t35",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-blade-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "executioner-axe-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "earthbreaker-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "voidstring-bow-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "shadowfang-dagger-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "throne-staff-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "dark-prayer-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "silence-lute-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "obsidian-throne-plate-t40",
+        "weight": 2
+      },
+      {
+        "templateId": "tyrant-crown-t40",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "mine-treasure",
+    "chance": 1,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "copper-ring",
+        "weight": 3
+      },
+      {
+        "templateId": "leather-armor",
+        "weight": 3
+      },
+      {
+        "templateId": "traveler-cloak",
+        "weight": 2
+      },
+      {
+        "templateId": "iron-sword",
+        "weight": 1
+      },
+      {
+        "templateId": "hunting-bow",
+        "weight": 1
+      },
+      {
+        "templateId": "oak-staff",
+        "weight": 1
+      },
+      {
+        "templateId": "prayer-book",
+        "weight": 1
+      },
+      {
+        "templateId": "twin-daggers",
+        "weight": 1
+      },
+      {
+        "templateId": "iron-band",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "id": "altar-treasure",
+    "chance": 1,
+    "rolls": 1,
+    "entries": [
+      {
+        "templateId": "ashwalker-mail",
+        "weight": 2
+      },
+      {
+        "templateId": "frostweave-robe",
+        "weight": 2
+      },
+      {
+        "templateId": "shadow-leather",
+        "weight": 2
+      },
+      {
+        "templateId": "wolf-fang",
+        "weight": 2
+      },
+      {
+        "templateId": "oathkeeper",
+        "weight": 2
+      },
+      {
+        "templateId": "ember-heart",
+        "weight": 1
+      },
+      {
+        "templateId": "guardian-plate",
+        "weight": 1
+      }
+    ]
+  }
+]

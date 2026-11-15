@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.vite/
+.zcode/
+.hp-ui-tmpdir
+data/*.db
+data/*.db-*
+data/*-backup*/
+data/*.cmd
+.env
+*.log
+.DS_Store

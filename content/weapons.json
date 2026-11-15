@@ -1,0 +1,98 @@
+[
+  {
+    "id": "sword",
+    "name": "剑",
+    "description": "直刃、平衡、可靠。荒原上最常见的近战武器。",
+    "color": "#c87941",
+    "icon": "sword",
+    "startingItemIds": [
+      "iron-sword",
+      "leather-armor"
+    ],
+    "rootSkillId": "heavy-strike"
+  },
+  {
+    "id": "axe",
+    "name": "斧",
+    "description": "重心靠前，靠一次抡圆了的劈砍解决问题。",
+    "color": "#a65434",
+    "icon": "axe",
+    "startingItemIds": [
+      "iron-axe",
+      "leather-armor"
+    ],
+    "rootSkillId": "cleave"
+  },
+  {
+    "id": "hammer",
+    "name": "锤",
+    "description": "不需要锋利，只需要足够重。专治护甲和骨头。",
+    "color": "#8c96a8",
+    "icon": "hammer",
+    "startingItemIds": [
+      "iron-hammer",
+      "leather-armor"
+    ],
+    "rootSkillId": "armor-breaker"
+  },
+  {
+    "id": "bow",
+    "name": "弓",
+    "description": "在雨线里算提前量，把危险留在自己够不着的地方。",
+    "color": "#7d9b4e",
+    "icon": "bow",
+    "startingItemIds": [
+      "hunting-bow",
+      "leather-armor"
+    ],
+    "rootSkillId": "quick-shot"
+  },
+  {
+    "id": "dagger",
+    "name": "匕首",
+    "description": "短、快、贴身。斗笼和暗巷里活下来的人都懂它的好。",
+    "color": "#b8723a",
+    "icon": "dagger",
+    "startingItemIds": [
+      "twin-daggers",
+      "leather-armor"
+    ],
+    "rootSkillId": "twin-strike"
+  },
+  {
+    "id": "staff",
+    "name": "法杖",
+    "description": "旧电池、线圈和一根趁手的棍子，足够放一场小型雷暴。",
+    "color": "#5d8fd6",
+    "icon": "staff",
+    "startingItemIds": [
+      "oak-staff",
+      "apprentice-robe"
+    ],
+    "rootSkillId": "arcane-missile"
+  },
+  {
+    "id": "book",
+    "name": "经卷",
+    "description": "把祷词、药方和旧文明的只言片语夹在书页里。",
+    "color": "#d6bd6a",
+    "icon": "book",
+    "startingItemIds": [
+      "prayer-book",
+      "cloth-vest"
+    ],
+    "rootSkillId": "lesser-heal"
+  },
+  {
+    "id": "instrument",
+    "name": "乐器",
+    "description": "锈铁皮和旧琴弦也能敲出节奏。鼓点一响，队伍就知道该冲了。",
+    "color": "#c46b8f",
+    "icon": "instrument",
+    "startingItemIds": [
+      "lute",
+      "traveler-cloak"
+    ],
+    "rootSkillId": "discordant-note"
+  }
+]

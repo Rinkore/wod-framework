@@ -1,0 +1,3187 @@
+[
+  {
+    "id": "mine-bat",
+    "name": "洞巢雨蝠",
+    "subtitle": "积水穹顶的雨蝠",
+    "description": "在沉井的穹顶筑巢，靠回声和雨声分辨猎物。",
+    "level": 1,
+    "damageMultiplier": 1.6500000000000001,
+    "skillIds": [
+      "bite"
+    ],
+    "xp": 800,
+    "gold": [
+      1,
+      3
+    ],
+    "lootTableId": "mine-common",
+    "resist": {},
+    "base": {
+      "hp": 11,
+      "mana": 18,
+      "attack": 0,
+      "armor": 2,
+      "hit": 5,
+      "evasion": 4,
+      "initiative": 6,
+      "crit": 4.4
+    },
+    "hpMultiplier": 1.5625
+  },
+  {
+    "id": "goblin-scavenger",
+    "name": "苔皮游荡者",
+    "subtitle": "浑身苔藓的游荡生物",
+    "description": "被孢毒改变了皮肤的人形生物，早已不再成群居住，只在废弃巷道里游荡。",
+    "level": 2,
+    "damageMultiplier": 1.7249999999999999,
+    "skillIds": [
+      "wild-slash"
+    ],
+    "xp": 1200,
+    "gold": [
+      2,
+      4
+    ],
+    "lootTableId": "mine-common",
+    "resist": {},
+    "base": {
+      "hp": 13,
+      "mana": 22,
+      "attack": 0,
+      "armor": 5,
+      "hit": 5,
+      "evasion": 4,
+      "initiative": 6,
+      "crit": 4.4
+    },
+    "hpMultiplier": 1.5625
+  },
+  {
+    "id": "goblin-overseer",
+    "name": "苔皮巢主",
+    "subtitle": "盘踞在旧工棚里的苔皮生物",
+    "description": "它戴着从旧世界工头身上剥下来的头盔，把工棚当成巢穴。",
+    "level": 5,
+    "hpMultiplier": 3.75,
+    "damageMultiplier": 2.0749999999999997,
+    "skillIds": [
+      "crushing-blow",
+      "sweeping-pick",
+      "war-cry",
+      "wild-slash"
+    ],
+    "xp": 5000,
+    "gold": [
+      9,
+      15
+    ],
+    "lootTableId": "mine-boss",
+    "resist": {},
+    "base": {
+      "hp": 21,
+      "mana": 24,
+      "attack": 0,
+      "armor": 11,
+      "hit": 8,
+      "evasion": 6,
+      "initiative": 9,
+      "crit": 4.6
+    }
+  },
+  {
+    "id": "skeleton-guard",
+    "name": "锈甲守骸",
+    "subtitle": "旧防暴部队的残骸",
+    "description": "防暴装甲还扣在身上，骨头早已被水泡成了灰色。它只认得巡逻路线。",
+    "level": 4,
+    "hpMultiplier": 1.875,
+    "damageMultiplier": 1.7999999999999998,
+    "resist": {
+      "chaos": 0.05
+    },
+    "skillIds": [
+      "heavy-strike",
+      "bone-shield"
+    ],
+    "xp": 2500,
+    "gold": [
+      3,
+      6
+    ],
+    "lootTableId": "crypt-common",
+    "base": {
+      "hp": 17,
+      "mana": 16,
+      "attack": 0,
+      "armor": 13,
+      "hit": 8,
+      "evasion": 6,
+      "initiative": 9,
+      "crit": 4.6
+    }
+  },
+  {
+    "id": "frost-wraith",
+    "name": "冻眠游魂",
+    "subtitle": "在墓窖里继续值班的人",
+    "description": "眠舱启动过应急程序，值班人员的意识被留在了冷雾里。",
+    "level": 11,
+    "damageMultiplier": 1.0385375,
+    "resist": {
+      "elemental": 0.35
+    },
+    "skillIds": [
+      "frost-bolt",
+      "wail"
+    ],
+    "xp": 6000,
+    "gold": [
+      5,
+      8
+    ],
+    "lootTableId": "crypt-common",
+    "base": {
+      "hp": 15,
+      "mana": 34,
+      "attack": 0,
+      "armor": 35,
+      "hit": 10,
+      "evasion": 8,
+      "initiative": 12,
+      "crit": 4.8
+    },
+    "hpMultiplier": 0.3
+  },
+  {
+    "id": "frost-banshee",
+    "name": "冻眠哀鸣者",
+    "subtitle": "循环播放的警报声",
+    "description": "警报系统坏掉了，只剩下哀鸣。它会用同样的声音回应活人。",
+    "level": 12,
+    "hpMultiplier": 0.8999999999999999,
+    "damageMultiplier": 1.1869,
+    "resist": {
+      "elemental": 0.3,
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "dark-mend",
+      "frost-nova",
+      "wail",
+      "frost-bolt"
+    ],
+    "xp": 8000,
+    "gold": [
+      18,
+      27
+    ],
+    "lootTableId": "crypt-boss",
+    "base": {
+      "hp": 23,
+      "mana": 40,
+      "attack": 0,
+      "armor": 27,
+      "hit": 10,
+      "evasion": 8,
+      "initiative": 12,
+      "crit": 4.8
+    }
+  },
+  {
+    "id": "ash-hound",
+    "name": "燃烬猎犬",
+    "subtitle": "被燃烬腌过的犬形生物",
+    "description": "毛发间常燃不灭，叼走余燃者的供品，也叼走迷路的拾荒者。",
+    "level": 6,
+    "damageMultiplier": 0.83,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "ember-bite"
+    ],
+    "xp": 4000,
+    "gold": [
+      4,
+      7
+    ],
+    "lootTableId": "altar-common",
+    "base": {
+      "hp": 15,
+      "mana": 22,
+      "attack": 0,
+      "armor": 6,
+      "hit": 10,
+      "evasion": 8,
+      "initiative": 12,
+      "crit": 4.8
+    }
+  },
+  {
+    "id": "ash-cultist",
+    "name": "余燃者",
+    "subtitle": "被祭火余温改变的人形",
+    "description": "它已经不记得为什么要守火，只记得火不能灭。",
+    "level": 7,
+    "damageMultiplier": 0.83,
+    "resist": {
+      "elemental": 0.35
+    },
+    "skillIds": [
+      "ember-bolt",
+      "sacrificial-flame",
+      "fire-chorus"
+    ],
+    "xp": 6000,
+    "gold": [
+      6,
+      11
+    ],
+    "lootTableId": "altar-common",
+    "base": {
+      "hp": 15,
+      "mana": 36,
+      "attack": 0,
+      "armor": 6,
+      "hit": 10,
+      "evasion": 8,
+      "initiative": 12,
+      "crit": 4.8
+    }
+  },
+  {
+    "id": "lava-elemental",
+    "name": "熔芯构装",
+    "subtitle": "祭坛底下的旧世界机器",
+    "description": "冷却管路早已失效，它还在按最后一个指令继续浇筑。",
+    "level": 9,
+    "hpMultiplier": 3,
+    "damageMultiplier": 1.16,
+    "resist": {
+      "elemental": 0.4
+    },
+    "skillIds": [
+      "magma-slam",
+      "eruption",
+      "harden"
+    ],
+    "xp": 8000,
+    "gold": [
+      30,
+      42
+    ],
+    "lootTableId": "altar-boss",
+    "base": {
+      "hp": 31,
+      "mana": 28,
+      "attack": 0,
+      "armor": 29,
+      "hit": 12,
+      "evasion": 10,
+      "initiative": 15,
+      "crit": 4.8
+    }
+  },
+  {
+    "id": "cinder-slug",
+    "name": "燃渣蛞蝓",
+    "subtitle": "在锈炉废料堆里爬行的东西",
+    "description": "表面结着烧过的渣壳，爬过的地方会留下一道温热的痕迹。",
+    "level": 8,
+    "hpMultiplier": 1.16,
+    "damageMultiplier": 0.95,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "slag-spit",
+      "bite"
+    ],
+    "xp": 5000,
+    "gold": [
+      10,
+      16
+    ],
+    "lootTableId": "foundry-common",
+    "base": {
+      "hp": 31,
+      "mana": 28,
+      "attack": 0,
+      "armor": 11,
+      "hit": 19,
+      "evasion": 14,
+      "initiative": 20,
+      "crit": 5.6
+    }
+  },
+  {
+    "id": "forge-ghoul",
+    "name": "炉底食骸",
+    "subtitle": "在锈炉底层啃食废料的人形",
+    "description": "它们不再需要食物，只是本能地咀嚼一切能咬碎的东西。",
+    "level": 20,
+    "hpMultiplier": 1.35,
+    "damageMultiplier": 0.95,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "crushing-blow",
+      "wail"
+    ],
+    "xp": 9000,
+    "gold": [
+      12,
+      18
+    ],
+    "lootTableId": "foundry-common",
+    "base": {
+      "hp": 39,
+      "mana": 24,
+      "attack": 0,
+      "armor": 16,
+      "hit": 19,
+      "evasion": 14,
+      "initiative": 20,
+      "crit": 5.6
+    }
+  },
+  {
+    "id": "slag-hound",
+    "name": "熔渣猎犬",
+    "subtitle": "熔渣堆里守食的犬形生物",
+    "description": "移动时不断掉落冷却的渣块，喉咙深处透出微光。",
+    "level": 10,
+    "hpMultiplier": 1.16,
+    "damageMultiplier": 0.95,
+    "resist": {
+      "elemental": 0.3
+    },
+    "skillIds": [
+      "ember-bite",
+      "wild-slash"
+    ],
+    "xp": 7000,
+    "gold": [
+      11,
+      17
+    ],
+    "lootTableId": "foundry-common",
+    "base": {
+      "hp": 29,
+      "mana": 24,
+      "attack": 0,
+      "armor": 10,
+      "hit": 28,
+      "evasion": 20,
+      "initiative": 30,
+      "crit": 6.4
+    }
+  },
+  {
+    "id": "slag-golem",
+    "name": "熔渣构装",
+    "subtitle": "锈炉的搬运单元",
+    "description": "它还在执行搬运熔渣的旧任务，把挡路的一切都扫进坩埚。",
+    "level": 10,
+    "hpMultiplier": 2.71,
+    "damageMultiplier": 1.19,
+    "resist": {
+      "elemental": 0.3
+    },
+    "skillIds": [
+      "magma-slam",
+      "slag-wave",
+      "harden"
+    ],
+    "xp": 12000,
+    "gold": [
+      60,
+      90
+    ],
+    "lootTableId": "foundry-treasure",
+    "base": {
+      "hp": 63,
+      "mana": 34,
+      "attack": 0,
+      "armor": 43,
+      "hit": 24,
+      "evasion": 17,
+      "initiative": 25,
+      "crit": 6
+    }
+  },
+  {
+    "id": "ink-wraith",
+    "name": "墨蚀幽灵",
+    "subtitle": "档案库墨池的产物",
+    "description": "被墨与酸蚀浸泡过的数据载体，会用旧文明口音念出档案编号。",
+    "level": 16,
+    "hpMultiplier": 1.59,
+    "damageMultiplier": 2.34,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "arcane-missile",
+      "wail"
+    ],
+    "xp": 8000,
+    "gold": [
+      14,
+      22
+    ],
+    "lootTableId": "archive-common",
+    "base": {
+      "hp": 39,
+      "mana": 96,
+      "attack": 0,
+      "armor": 12,
+      "hit": 28,
+      "evasion": 20,
+      "initiative": 30,
+      "crit": 6.4
+    }
+  },
+  {
+    "id": "archive-sentinel",
+    "name": "档案防卫机",
+    "subtitle": "档案库的安保单元",
+    "description": "它把一切未登记的活体识别为入侵者，并执行隔离程序。",
+    "level": 17,
+    "hpMultiplier": 1.55,
+    "damageMultiplier": 1.08,
+    "resist": {},
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield"
+    ],
+    "xp": 9000,
+    "gold": [
+      16,
+      24
+    ],
+    "lootTableId": "archive-common",
+    "base": {
+      "hp": 63,
+      "mana": 36,
+      "attack": 0,
+      "armor": 40,
+      "hit": 26,
+      "evasion": 17,
+      "initiative": 25,
+      "crit": 6.4
+    }
+  },
+  {
+    "id": "page-eater",
+    "name": "蚀页兽",
+    "subtitle": "啃食档案的软体生物",
+    "description": "它把纸质档案吃掉后，会在身上显出吃下去的文字。",
+    "level": 18,
+    "hpMultiplier": 1.35,
+    "damageMultiplier": 1.1,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "wild-slash",
+      "venom-cloud"
+    ],
+    "xp": 9000,
+    "gold": [
+      15,
+      22
+    ],
+    "lootTableId": "archive-common",
+    "base": {
+      "hp": 43,
+      "mana": 40,
+      "attack": 0,
+      "armor": 14,
+      "hit": 32,
+      "evasion": 22,
+      "initiative": 34,
+      "crit": 6.8
+    }
+  },
+  {
+    "id": "forbidden-scribe",
+    "name": "禁读抄录者",
+    "subtitle": "被档案同化的人形",
+    "description": "它抄录了太多不该读的内容，如今只剩下抄写这个动作。",
+    "level": 19,
+    "hpMultiplier": 2.71,
+    "damageMultiplier": 1.46,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend"
+    ],
+    "xp": 10000,
+    "gold": [
+      70,
+      100
+    ],
+    "lootTableId": "archive-treasure",
+    "base": {
+      "hp": 67,
+      "mana": 128,
+      "attack": 0,
+      "armor": 24,
+      "hit": 31,
+      "evasion": 21,
+      "initiative": 31,
+      "crit": 6.8
+    }
+  },
+  {
+    "id": "rime-stalker",
+    "name": "冻痕潜行者",
+    "subtitle": "冰层下的伏击者",
+    "description": "皮肤与霜冻融在一起，移动时几乎没有声音。",
+    "level": 13,
+    "hpMultiplier": 0.46499999999999997,
+    "damageMultiplier": 0.9576125,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "frost-bolt",
+      "wail"
+    ],
+    "xp": 6500,
+    "gold": [
+      18,
+      28
+    ],
+    "lootTableId": "vault-common",
+    "base": {
+      "hp": 43,
+      "mana": 30,
+      "attack": 0,
+      "armor": 15,
+      "hit": 38,
+      "evasion": 26,
+      "initiative": 40,
+      "crit": 7.2
+    }
+  },
+  {
+    "id": "frost-revenant",
+    "name": "冻归遗骸",
+    "subtitle": "从冰层里爬回来的旧守望者",
+    "description": "冰窖守卫的遗骸重新站了起来，还认得古老的哨位。",
+    "level": 14,
+    "hpMultiplier": 0.525,
+    "damageMultiplier": 0.9576125,
+    "resist": {
+      "elemental": 0.5
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "frost-bolt"
+    ],
+    "xp": 9000,
+    "gold": [
+      20,
+      32
+    ],
+    "lootTableId": "vault-common",
+    "base": {
+      "hp": 71,
+      "mana": 40,
+      "attack": 0,
+      "armor": 44,
+      "hit": 31,
+      "evasion": 20,
+      "initiative": 30,
+      "crit": 6.8
+    }
+  },
+  {
+    "id": "hail-caller",
+    "name": "唤雹者",
+    "subtitle": "站在高处呼唤冰雨的人",
+    "description": "它相信一场足够大的冰雹能洗掉废土上的所有痕迹。",
+    "level": 15,
+    "hpMultiplier": 0.46499999999999997,
+    "damageMultiplier": 0.9576125,
+    "resist": {
+      "elemental": 0.4
+    },
+    "skillIds": [
+      "frost-nova",
+      "hailstorm",
+      "wail"
+    ],
+    "xp": 10000,
+    "gold": [
+      19,
+      30
+    ],
+    "lootTableId": "vault-common",
+    "base": {
+      "hp": 47,
+      "mana": 128,
+      "attack": 0,
+      "armor": 15,
+      "hit": 36,
+      "evasion": 24,
+      "initiative": 36,
+      "crit": 7.2
+    }
+  },
+  {
+    "id": "ice-warden",
+    "name": "冰窖守望者",
+    "subtitle": "冻库的最后守卫",
+    "description": "它冻在军械库的门前，却从没放下过手里的武器。",
+    "level": 15,
+    "hpMultiplier": 0.867,
+    "damageMultiplier": 1.7264,
+    "resist": {
+      "elemental": 0.35
+    },
+    "skillIds": [
+      "frost-nova",
+      "absolute-zero",
+      "bone-shield",
+      "hailstorm"
+    ],
+    "xp": 15000,
+    "gold": [
+      95,
+      135
+    ],
+    "lootTableId": "vault-treasure",
+    "base": {
+      "hp": 87,
+      "mana": 48,
+      "attack": 0,
+      "armor": 61,
+      "hit": 38,
+      "evasion": 23,
+      "initiative": 35,
+      "crit": 7.6
+    }
+  },
+  {
+    "id": "obsidian-knight",
+    "name": "黑曜执刃者",
+    "subtitle": "王庭的旧卫队",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 20,
+    "hpMultiplier": 2.27,
+    "damageMultiplier": 0.7,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield"
+    ],
+    "xp": 12000,
+    "gold": [
+      24,
+      36
+    ],
+    "lootTableId": "throne-common",
+    "base": {
+      "hp": 79,
+      "mana": 42,
+      "attack": 0,
+      "armor": 56,
+      "hit": 42,
+      "evasion": 26,
+      "initiative": 40,
+      "crit": 8
+    }
+  },
+  {
+    "id": "void-priest",
+    "name": "虚空执礼者",
+    "subtitle": "王庭仪式的执行者",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 20,
+    "hpMultiplier": 2.02,
+    "damageMultiplier": 1.48,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend"
+    ],
+    "xp": 12000,
+    "gold": [
+      26,
+      38
+    ],
+    "lootTableId": "throne-common",
+    "base": {
+      "hp": 55,
+      "mana": 144,
+      "attack": 0,
+      "armor": 19,
+      "hit": 41,
+      "evasion": 25,
+      "initiative": 37,
+      "crit": 8
+    }
+  },
+  {
+    "id": "shadow-drake",
+    "name": "影鳞巨蜥",
+    "subtitle": "王庭地下的爬行巨兽",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 20,
+    "hpMultiplier": 2.95,
+    "damageMultiplier": 1.48,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail"
+    ],
+    "xp": 15000,
+    "gold": [
+      30,
+      45
+    ],
+    "lootTableId": "throne-common",
+    "base": {
+      "hp": 83,
+      "mana": 68,
+      "attack": 0,
+      "armor": 32,
+      "hit": 46,
+      "evasion": 29,
+      "initiative": 44,
+      "crit": 8.4
+    }
+  },
+  {
+    "id": "throne-tyrant",
+    "name": "王庭暴君",
+    "subtitle": "坐在王庭最深处的东西",
+    "description": "没人知道它原本是什么。它只是从未离开过那张椅子，也从未让任何人离开。",
+    "level": 20,
+    "hpMultiplier": 5.24,
+    "damageMultiplier": 0.9,
+    "resist": {
+      "chaos": 0.1
+    },
+    "skillIds": [
+      "tyrant-cleave",
+      "dominate",
+      "dark-mend",
+      "war-cry"
+    ],
+    "xp": 15000,
+    "gold": [
+      140,
+      200
+    ],
+    "lootTableId": "throne-treasure",
+    "base": {
+      "hp": 113,
+      "mana": 116,
+      "attack": 0,
+      "armor": 77,
+      "hit": 50,
+      "evasion": 30,
+      "initiative": 46,
+      "crit": 8.8
+    }
+  },
+  {
+    "id": "foundry-depths-forge-ghoul-d0",
+    "name": "炉底食骸",
+    "subtitle": "炉底食骸·深层0",
+    "description": "它们不再需要食物，只是本能地咀嚼一切能咬碎的东西。",
+    "level": 20,
+    "base": {
+      "hp": 39,
+      "mana": 24,
+      "attack": 0,
+      "armor": 16,
+      "hit": 19,
+      "evasion": 14,
+      "initiative": 20,
+      "crit": 5.6
+    },
+    "hpMultiplier": 1.35,
+    "damageMultiplier": 1.1875,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "crushing-blow",
+      "wail",
+      "chain-lightning"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "foundry-common"
+  },
+  {
+    "id": "foundry-depths-forge-ghoul-d1",
+    "name": "炉底食骸",
+    "subtitle": "炉底食骸·深层I",
+    "description": "它们不再需要食物，只是本能地咀嚼一切能咬碎的东西。",
+    "level": 25,
+    "base": {
+      "hp": 49,
+      "mana": 30,
+      "attack": 0,
+      "armor": 20,
+      "hit": 24,
+      "evasion": 18,
+      "initiative": 25,
+      "crit": 5.6
+    },
+    "hpMultiplier": 1.4175,
+    "damageMultiplier": 1.0924999999999998,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "crushing-blow",
+      "wail",
+      "chain-lightning"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-forge-ghoul-d2",
+    "name": "炉底食骸",
+    "subtitle": "炉底食骸·深层II",
+    "description": "它们不再需要食物，只是本能地咀嚼一切能咬碎的东西。",
+    "level": 30,
+    "base": {
+      "hp": 59,
+      "mana": 36,
+      "attack": 0,
+      "armor": 24,
+      "hit": 29,
+      "evasion": 21,
+      "initiative": 30,
+      "crit": 5.6
+    },
+    "hpMultiplier": 3.6450000000000005,
+    "damageMultiplier": 0.9262499999999999,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "crushing-blow",
+      "wail",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-forge-ghoul-d3",
+    "name": "炉底食骸",
+    "subtitle": "炉底食骸·深层III",
+    "description": "它们不再需要食物，只是本能地咀嚼一切能咬碎的东西。",
+    "level": 35,
+    "base": {
+      "hp": 68,
+      "mana": 42,
+      "attack": 0,
+      "armor": 28,
+      "hit": 33,
+      "evasion": 25,
+      "initiative": 35,
+      "crit": 5.6
+    },
+    "hpMultiplier": 1.1137500000000002,
+    "damageMultiplier": 1.29140625,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "crushing-blow",
+      "wail",
+      "chain-lightning"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-forge-ghoul-d4",
+    "name": "炉底食骸",
+    "subtitle": "炉底食骸·深层IV",
+    "description": "它们不再需要食物，只是本能地咀嚼一切能咬碎的东西。",
+    "level": 40,
+    "base": {
+      "hp": 78,
+      "mana": 48,
+      "attack": 0,
+      "armor": 32,
+      "hit": 38,
+      "evasion": 28,
+      "initiative": 40,
+      "crit": 5.6
+    },
+    "hpMultiplier": 1.4040000000000001,
+    "damageMultiplier": 1.1400000000000001,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "crushing-blow",
+      "wail",
+      "chain-lightning"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-slag-golem-d0",
+    "name": "熔渣构装",
+    "subtitle": "熔渣构装·深层0",
+    "description": "它还在执行搬运熔渣的旧任务，把挡路的一切都扫进坩埚。",
+    "level": 20,
+    "base": {
+      "hp": 126,
+      "mana": 68,
+      "attack": 0,
+      "armor": 86,
+      "hit": 48,
+      "evasion": 34,
+      "initiative": 50,
+      "crit": 6
+    },
+    "hpMultiplier": 2.71,
+    "damageMultiplier": 1.19,
+    "resist": {
+      "elemental": 0.3
+    },
+    "skillIds": [
+      "magma-slam",
+      "slag-wave",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "foundry-treasure"
+  },
+  {
+    "id": "foundry-depths-slag-golem-d1",
+    "name": "熔渣构装",
+    "subtitle": "熔渣构装·深层I",
+    "description": "它还在执行搬运熔渣的旧任务，把挡路的一切都扫进坩埚。",
+    "level": 25,
+    "base": {
+      "hp": 158,
+      "mana": 85,
+      "attack": 0,
+      "armor": 108,
+      "hit": 60,
+      "evasion": 43,
+      "initiative": 63,
+      "crit": 6
+    },
+    "hpMultiplier": 2.8454999999999995,
+    "damageMultiplier": 1.3684999999999998,
+    "resist": {
+      "elemental": 0.3
+    },
+    "skillIds": [
+      "magma-slam",
+      "slag-wave",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-slag-golem-d2",
+    "name": "熔渣构装",
+    "subtitle": "熔渣构装·深层II",
+    "description": "它还在执行搬运熔渣的旧任务，把挡路的一切都扫进坩埚。",
+    "level": 30,
+    "base": {
+      "hp": 189,
+      "mana": 102,
+      "attack": 0,
+      "armor": 129,
+      "hit": 72,
+      "evasion": 51,
+      "initiative": 75,
+      "crit": 6
+    },
+    "hpMultiplier": 7.317,
+    "damageMultiplier": 1.16025,
+    "resist": {
+      "elemental": 0.3
+    },
+    "skillIds": [
+      "magma-slam",
+      "slag-wave",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-slag-golem-d3",
+    "name": "熔渣构装",
+    "subtitle": "熔渣构装·深层III",
+    "description": "它还在执行搬运熔渣的旧任务，把挡路的一切都扫进坩埚。",
+    "level": 35,
+    "base": {
+      "hp": 221,
+      "mana": 119,
+      "attack": 0,
+      "armor": 151,
+      "hit": 84,
+      "evasion": 60,
+      "initiative": 88,
+      "crit": 6
+    },
+    "hpMultiplier": 2.2357500000000003,
+    "damageMultiplier": 1.6176562499999996,
+    "resist": {
+      "elemental": 0.3
+    },
+    "skillIds": [
+      "magma-slam",
+      "slag-wave",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-slag-golem-d4",
+    "name": "熔渣构装",
+    "subtitle": "熔渣构装·深层IV",
+    "description": "它还在执行搬运熔渣的旧任务，把挡路的一切都扫进坩埚。",
+    "level": 40,
+    "base": {
+      "hp": 252,
+      "mana": 136,
+      "attack": 0,
+      "armor": 172,
+      "hit": 96,
+      "evasion": 68,
+      "initiative": 100,
+      "crit": 6
+    },
+    "hpMultiplier": 2.8184000000000005,
+    "damageMultiplier": 1.428,
+    "resist": {
+      "elemental": 0.3
+    },
+    "skillIds": [
+      "magma-slam",
+      "slag-wave",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-obsidian-knight-d0",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层0",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 20,
+    "base": {
+      "hp": 79,
+      "mana": 42,
+      "attack": 0,
+      "armor": 56,
+      "hit": 42,
+      "evasion": 26,
+      "initiative": 40,
+      "crit": 8
+    },
+    "hpMultiplier": 2.27,
+    "damageMultiplier": 0.7,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "chain-lightning"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "throne-common"
+  },
+  {
+    "id": "foundry-depths-obsidian-knight-d1",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层I",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 25,
+    "base": {
+      "hp": 99,
+      "mana": 53,
+      "attack": 0,
+      "armor": 70,
+      "hit": 53,
+      "evasion": 33,
+      "initiative": 50,
+      "crit": 8
+    },
+    "hpMultiplier": 2.3834999999999997,
+    "damageMultiplier": 0.8049999999999999,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "chain-lightning"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-obsidian-knight-d2",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层II",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 30,
+    "base": {
+      "hp": 119,
+      "mana": 63,
+      "attack": 0,
+      "armor": 84,
+      "hit": 63,
+      "evasion": 39,
+      "initiative": 60,
+      "crit": 8
+    },
+    "hpMultiplier": 6.1290000000000004,
+    "damageMultiplier": 0.6824999999999999,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-obsidian-knight-d3",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层III",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 35,
+    "base": {
+      "hp": 138,
+      "mana": 74,
+      "attack": 0,
+      "armor": 98,
+      "hit": 74,
+      "evasion": 46,
+      "initiative": 70,
+      "crit": 8
+    },
+    "hpMultiplier": 1.8727500000000004,
+    "damageMultiplier": 0.9515625,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "chain-lightning"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-obsidian-knight-d4",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层IV",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 40,
+    "base": {
+      "hp": 158,
+      "mana": 84,
+      "attack": 0,
+      "armor": 112,
+      "hit": 84,
+      "evasion": 52,
+      "initiative": 80,
+      "crit": 8
+    },
+    "hpMultiplier": 2.3608000000000002,
+    "damageMultiplier": 0.8399999999999999,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "chain-lightning"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-lava-elemental-d0",
+    "name": "熔芯构装",
+    "subtitle": "熔芯构装·深层0",
+    "description": "冷却管路早已失效，它还在按最后一个指令继续浇筑。",
+    "level": 20,
+    "base": {
+      "hp": 69,
+      "mana": 62,
+      "attack": 0,
+      "armor": 64,
+      "hit": 27,
+      "evasion": 22,
+      "initiative": 33,
+      "crit": 4.8
+    },
+    "hpMultiplier": 3,
+    "damageMultiplier": 1.16,
+    "resist": {
+      "elemental": 0.4
+    },
+    "skillIds": [
+      "magma-slam",
+      "eruption",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "altar-boss"
+  },
+  {
+    "id": "foundry-depths-lava-elemental-d1",
+    "name": "熔芯构装",
+    "subtitle": "熔芯构装·深层I",
+    "description": "冷却管路早已失效，它还在按最后一个指令继续浇筑。",
+    "level": 25,
+    "base": {
+      "hp": 86,
+      "mana": 78,
+      "attack": 0,
+      "armor": 81,
+      "hit": 33,
+      "evasion": 28,
+      "initiative": 42,
+      "crit": 4.8
+    },
+    "hpMultiplier": 4.199999999999999,
+    "damageMultiplier": 1.3339999999999999,
+    "resist": {
+      "elemental": 0.4
+    },
+    "skillIds": [
+      "magma-slam",
+      "eruption",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-lava-elemental-d2",
+    "name": "熔芯构装",
+    "subtitle": "熔芯构装·深层II",
+    "description": "冷却管路早已失效，它还在按最后一个指令继续浇筑。",
+    "level": 30,
+    "base": {
+      "hp": 103,
+      "mana": 93,
+      "attack": 0,
+      "armor": 97,
+      "hit": 40,
+      "evasion": 33,
+      "initiative": 50,
+      "crit": 4.8
+    },
+    "hpMultiplier": 8.100000000000001,
+    "damageMultiplier": 1.131,
+    "resist": {
+      "elemental": 0.4
+    },
+    "skillIds": [
+      "magma-slam",
+      "eruption",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-lava-elemental-d3",
+    "name": "熔芯构装",
+    "subtitle": "熔芯构装·深层III",
+    "description": "冷却管路早已失效，它还在按最后一个指令继续浇筑。",
+    "level": 35,
+    "base": {
+      "hp": 121,
+      "mana": 109,
+      "attack": 0,
+      "armor": 113,
+      "hit": 47,
+      "evasion": 39,
+      "initiative": 58,
+      "crit": 4.8
+    },
+    "hpMultiplier": 2.475,
+    "damageMultiplier": 1.5768749999999998,
+    "resist": {
+      "elemental": 0.4
+    },
+    "skillIds": [
+      "magma-slam",
+      "eruption",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "foundry-depths-lava-elemental-d4",
+    "name": "熔芯构装",
+    "subtitle": "熔芯构装·深层IV",
+    "description": "冷却管路早已失效，它还在按最后一个指令继续浇筑。",
+    "level": 40,
+    "base": {
+      "hp": 138,
+      "mana": 124,
+      "attack": 0,
+      "armor": 129,
+      "hit": 53,
+      "evasion": 44,
+      "initiative": 67,
+      "crit": 4.8
+    },
+    "hpMultiplier": 3.1200000000000006,
+    "damageMultiplier": 1.392,
+    "resist": {
+      "elemental": 0.4
+    },
+    "skillIds": [
+      "magma-slam",
+      "eruption",
+      "harden",
+      "chain-lightning"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-foundry-cache"
+  },
+  {
+    "id": "whispering-archive-ink-wraith-d0",
+    "name": "墨蚀幽灵",
+    "subtitle": "墨蚀幽灵·深层0",
+    "description": "被墨与酸蚀浸泡过的数据载体，会用旧文明口音念出档案编号。",
+    "level": 20,
+    "base": {
+      "hp": 49,
+      "mana": 120,
+      "attack": 0,
+      "armor": 15,
+      "hit": 35,
+      "evasion": 25,
+      "initiative": 38,
+      "crit": 6.4
+    },
+    "hpMultiplier": 1.59,
+    "damageMultiplier": 3.51,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "arcane-missile",
+      "wail",
+      "ember-bolt"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "archive-common"
+  },
+  {
+    "id": "whispering-archive-ink-wraith-d1",
+    "name": "墨蚀幽灵",
+    "subtitle": "墨蚀幽灵·深层I",
+    "description": "被墨与酸蚀浸泡过的数据载体，会用旧文明口音念出档案编号。",
+    "level": 25,
+    "base": {
+      "hp": 61,
+      "mana": 150,
+      "attack": 0,
+      "armor": 19,
+      "hit": 44,
+      "evasion": 31,
+      "initiative": 47,
+      "crit": 6.4
+    },
+    "hpMultiplier": 1.6695,
+    "damageMultiplier": 2.691,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "arcane-missile",
+      "wail",
+      "frost-bolt"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-ink-wraith-d2",
+    "name": "墨蚀幽灵",
+    "subtitle": "墨蚀幽灵·深层II",
+    "description": "被墨与酸蚀浸泡过的数据载体，会用旧文明口音念出档案编号。",
+    "level": 30,
+    "base": {
+      "hp": 73,
+      "mana": 180,
+      "attack": 0,
+      "armor": 23,
+      "hit": 53,
+      "evasion": 38,
+      "initiative": 56,
+      "crit": 6.4
+    },
+    "hpMultiplier": 2.862,
+    "damageMultiplier": 1.9012499999999999,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "arcane-missile",
+      "wail",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-ink-wraith-d3",
+    "name": "墨蚀幽灵",
+    "subtitle": "墨蚀幽灵·深层III",
+    "description": "被墨与酸蚀浸泡过的数据载体，会用旧文明口音念出档案编号。",
+    "level": 35,
+    "base": {
+      "hp": 85,
+      "mana": 210,
+      "attack": 0,
+      "armor": 26,
+      "hit": 61,
+      "evasion": 44,
+      "initiative": 66,
+      "crit": 6.4
+    },
+    "hpMultiplier": 2.1862500000000002,
+    "damageMultiplier": 2.120625,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "arcane-missile",
+      "wail",
+      "ember-bolt"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-ink-wraith-d4",
+    "name": "墨蚀幽灵",
+    "subtitle": "墨蚀幽灵·深层IV",
+    "description": "被墨与酸蚀浸泡过的数据载体，会用旧文明口音念出档案编号。",
+    "level": 40,
+    "base": {
+      "hp": 98,
+      "mana": 240,
+      "attack": 0,
+      "armor": 30,
+      "hit": 70,
+      "evasion": 50,
+      "initiative": 75,
+      "crit": 6.4
+    },
+    "hpMultiplier": 4.134,
+    "damageMultiplier": 1.8719999999999999,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "arcane-missile",
+      "wail",
+      "frost-bolt"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-archive-sentinel-d0",
+    "name": "档案防卫机",
+    "subtitle": "档案防卫机·深层0",
+    "description": "它把一切未登记的活体识别为入侵者，并执行隔离程序。",
+    "level": 20,
+    "base": {
+      "hp": 74,
+      "mana": 42,
+      "attack": 0,
+      "armor": 47,
+      "hit": 31,
+      "evasion": 20,
+      "initiative": 29,
+      "crit": 6.4
+    },
+    "hpMultiplier": 1.55,
+    "damageMultiplier": 0.54,
+    "resist": {},
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "void-lance",
+      "ember-bolt"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "archive-common"
+  },
+  {
+    "id": "whispering-archive-archive-sentinel-d1",
+    "name": "档案防卫机",
+    "subtitle": "档案防卫机·深层I",
+    "description": "它把一切未登记的活体识别为入侵者，并执行隔离程序。",
+    "level": 25,
+    "base": {
+      "hp": 93,
+      "mana": 53,
+      "attack": 0,
+      "armor": 59,
+      "hit": 38,
+      "evasion": 25,
+      "initiative": 37,
+      "crit": 6.4
+    },
+    "hpMultiplier": 1.6275,
+    "damageMultiplier": 1.242,
+    "resist": {},
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "void-lance",
+      "frost-bolt"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-archive-sentinel-d2",
+    "name": "档案防卫机",
+    "subtitle": "档案防卫机·深层II",
+    "description": "它把一切未登记的活体识别为入侵者，并执行隔离程序。",
+    "level": 30,
+    "base": {
+      "hp": 111,
+      "mana": 64,
+      "attack": 0,
+      "armor": 71,
+      "hit": 46,
+      "evasion": 30,
+      "initiative": 44,
+      "crit": 6.4
+    },
+    "hpMultiplier": 2.79,
+    "damageMultiplier": 0.7020000000000001,
+    "resist": {},
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "void-lance",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-archive-sentinel-d3",
+    "name": "档案防卫机",
+    "subtitle": "档案防卫机·深层III",
+    "description": "它把一切未登记的活体识别为入侵者，并执行隔离程序。",
+    "level": 35,
+    "base": {
+      "hp": 130,
+      "mana": 74,
+      "attack": 0,
+      "armor": 82,
+      "hit": 54,
+      "evasion": 35,
+      "initiative": 51,
+      "crit": 6.4
+    },
+    "hpMultiplier": 2.1312500000000005,
+    "damageMultiplier": 0.97875,
+    "resist": {},
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "void-lance",
+      "ember-bolt"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-archive-sentinel-d4",
+    "name": "档案防卫机",
+    "subtitle": "档案防卫机·深层IV",
+    "description": "它把一切未登记的活体识别为入侵者，并执行隔离程序。",
+    "level": 40,
+    "base": {
+      "hp": 148,
+      "mana": 85,
+      "attack": 0,
+      "armor": 94,
+      "hit": 61,
+      "evasion": 40,
+      "initiative": 59,
+      "crit": 6.4
+    },
+    "hpMultiplier": 4.03,
+    "damageMultiplier": 0.8640000000000001,
+    "resist": {},
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "void-lance",
+      "frost-bolt"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-page-eater-d0",
+    "name": "蚀页兽",
+    "subtitle": "蚀页兽·深层0",
+    "description": "它把纸质档案吃掉后，会在身上显出吃下去的文字。",
+    "level": 20,
+    "base": {
+      "hp": 48,
+      "mana": 44,
+      "attack": 0,
+      "armor": 16,
+      "hit": 36,
+      "evasion": 24,
+      "initiative": 38,
+      "crit": 6.8
+    },
+    "hpMultiplier": 1.35,
+    "damageMultiplier": 0.55,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "wild-slash",
+      "venom-cloud",
+      "void-lance",
+      "ember-bolt"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "archive-common"
+  },
+  {
+    "id": "whispering-archive-page-eater-d1",
+    "name": "蚀页兽",
+    "subtitle": "蚀页兽·深层I",
+    "description": "它把纸质档案吃掉后，会在身上显出吃下去的文字。",
+    "level": 25,
+    "base": {
+      "hp": 60,
+      "mana": 56,
+      "attack": 0,
+      "armor": 19,
+      "hit": 44,
+      "evasion": 31,
+      "initiative": 47,
+      "crit": 6.8
+    },
+    "hpMultiplier": 1.4175,
+    "damageMultiplier": 1.265,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "wild-slash",
+      "venom-cloud",
+      "void-lance",
+      "frost-bolt"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-page-eater-d2",
+    "name": "蚀页兽",
+    "subtitle": "蚀页兽·深层II",
+    "description": "它把纸质档案吃掉后，会在身上显出吃下去的文字。",
+    "level": 30,
+    "base": {
+      "hp": 72,
+      "mana": 67,
+      "attack": 0,
+      "armor": 23,
+      "hit": 53,
+      "evasion": 37,
+      "initiative": 57,
+      "crit": 6.8
+    },
+    "hpMultiplier": 2.43,
+    "damageMultiplier": 0.89375,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "wild-slash",
+      "venom-cloud",
+      "void-lance",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-page-eater-d3",
+    "name": "蚀页兽",
+    "subtitle": "蚀页兽·深层III",
+    "description": "它把纸质档案吃掉后，会在身上显出吃下去的文字。",
+    "level": 35,
+    "base": {
+      "hp": 84,
+      "mana": 78,
+      "attack": 0,
+      "armor": 27,
+      "hit": 62,
+      "evasion": 43,
+      "initiative": 66,
+      "crit": 6.8
+    },
+    "hpMultiplier": 1.8562500000000004,
+    "damageMultiplier": 0.996875,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "wild-slash",
+      "venom-cloud",
+      "void-lance",
+      "ember-bolt"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-page-eater-d4",
+    "name": "蚀页兽",
+    "subtitle": "蚀页兽·深层IV",
+    "description": "它把纸质档案吃掉后，会在身上显出吃下去的文字。",
+    "level": 40,
+    "base": {
+      "hp": 96,
+      "mana": 89,
+      "attack": 0,
+      "armor": 31,
+      "hit": 71,
+      "evasion": 49,
+      "initiative": 76,
+      "crit": 6.8
+    },
+    "hpMultiplier": 3.5100000000000002,
+    "damageMultiplier": 0.8800000000000001,
+    "resist": {
+      "elemental": 0.2
+    },
+    "skillIds": [
+      "wild-slash",
+      "venom-cloud",
+      "void-lance",
+      "frost-bolt"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-forbidden-scribe-d0",
+    "name": "禁读抄录者",
+    "subtitle": "禁读抄录者·深层0",
+    "description": "它抄录了太多不该读的内容，如今只剩下抄写这个动作。",
+    "level": 20,
+    "base": {
+      "hp": 71,
+      "mana": 135,
+      "attack": 0,
+      "armor": 25,
+      "hit": 33,
+      "evasion": 22,
+      "initiative": 33,
+      "crit": 6.8
+    },
+    "hpMultiplier": 2.71,
+    "damageMultiplier": 0.73,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "ember-bolt"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "archive-treasure"
+  },
+  {
+    "id": "whispering-archive-forbidden-scribe-d1",
+    "name": "禁读抄录者",
+    "subtitle": "禁读抄录者·深层I",
+    "description": "它抄录了太多不该读的内容，如今只剩下抄写这个动作。",
+    "level": 25,
+    "base": {
+      "hp": 88,
+      "mana": 168,
+      "attack": 0,
+      "armor": 32,
+      "hit": 41,
+      "evasion": 28,
+      "initiative": 41,
+      "crit": 6.8
+    },
+    "hpMultiplier": 3.7939999999999996,
+    "damageMultiplier": 0.8394999999999999,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "frost-bolt"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-forbidden-scribe-d2",
+    "name": "禁读抄录者",
+    "subtitle": "禁读抄录者·深层II",
+    "description": "它抄录了太多不该读的内容，如今只剩下抄写这个动作。",
+    "level": 30,
+    "base": {
+      "hp": 106,
+      "mana": 202,
+      "attack": 0,
+      "armor": 38,
+      "hit": 49,
+      "evasion": 33,
+      "initiative": 49,
+      "crit": 6.8
+    },
+    "hpMultiplier": 4.878,
+    "damageMultiplier": 1.18625,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-forbidden-scribe-d3",
+    "name": "禁读抄录者",
+    "subtitle": "禁读抄录者·深层III",
+    "description": "它抄录了太多不该读的内容，如今只剩下抄写这个动作。",
+    "level": 35,
+    "base": {
+      "hp": 123,
+      "mana": 236,
+      "attack": 0,
+      "armor": 44,
+      "hit": 57,
+      "evasion": 39,
+      "initiative": 57,
+      "crit": 6.8
+    },
+    "hpMultiplier": 3.7262500000000003,
+    "damageMultiplier": 1.323125,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "ember-bolt"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-forbidden-scribe-d4",
+    "name": "禁读抄录者",
+    "subtitle": "禁读抄录者·深层IV",
+    "description": "它抄录了太多不该读的内容，如今只剩下抄写这个动作。",
+    "level": 40,
+    "base": {
+      "hp": 141,
+      "mana": 269,
+      "attack": 0,
+      "armor": 51,
+      "hit": 65,
+      "evasion": 44,
+      "initiative": 65,
+      "crit": 6.8
+    },
+    "hpMultiplier": 7.046,
+    "damageMultiplier": 1.168,
+    "resist": {
+      "chaos": 0.2
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "frost-bolt"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-void-priest-d0",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层0",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 20,
+    "base": {
+      "hp": 55,
+      "mana": 144,
+      "attack": 0,
+      "armor": 19,
+      "hit": 41,
+      "evasion": 25,
+      "initiative": 37,
+      "crit": 8
+    },
+    "hpMultiplier": 2.02,
+    "damageMultiplier": 0.74,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "ember-bolt"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "throne-common"
+  },
+  {
+    "id": "whispering-archive-void-priest-d1",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层I",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 25,
+    "base": {
+      "hp": 69,
+      "mana": 180,
+      "attack": 0,
+      "armor": 24,
+      "hit": 51,
+      "evasion": 31,
+      "initiative": 46,
+      "crit": 8
+    },
+    "hpMultiplier": 2.121,
+    "damageMultiplier": 1.702,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "frost-bolt"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-void-priest-d2",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层II",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 30,
+    "base": {
+      "hp": 83,
+      "mana": 216,
+      "attack": 0,
+      "armor": 29,
+      "hit": 62,
+      "evasion": 38,
+      "initiative": 56,
+      "crit": 8
+    },
+    "hpMultiplier": 3.636,
+    "damageMultiplier": 1.2025,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-void-priest-d3",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层III",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 35,
+    "base": {
+      "hp": 96,
+      "mana": 252,
+      "attack": 0,
+      "armor": 33,
+      "hit": 72,
+      "evasion": 44,
+      "initiative": 65,
+      "crit": 8
+    },
+    "hpMultiplier": 2.7775000000000007,
+    "damageMultiplier": 1.34125,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "ember-bolt"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-void-priest-d4",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层IV",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 40,
+    "base": {
+      "hp": 110,
+      "mana": 288,
+      "attack": 0,
+      "armor": 38,
+      "hit": 82,
+      "evasion": 50,
+      "initiative": 74,
+      "crit": 8
+    },
+    "hpMultiplier": 5.252000000000001,
+    "damageMultiplier": 1.184,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "frost-bolt"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-shadow-drake-d0",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层0",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 20,
+    "base": {
+      "hp": 83,
+      "mana": 68,
+      "attack": 0,
+      "armor": 32,
+      "hit": 46,
+      "evasion": 29,
+      "initiative": 44,
+      "crit": 8.4
+    },
+    "hpMultiplier": 2.95,
+    "damageMultiplier": 0.74,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "ember-bolt"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "throne-common"
+  },
+  {
+    "id": "whispering-archive-shadow-drake-d1",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层I",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 25,
+    "base": {
+      "hp": 104,
+      "mana": 85,
+      "attack": 0,
+      "armor": 40,
+      "hit": 58,
+      "evasion": 36,
+      "initiative": 55,
+      "crit": 8.4
+    },
+    "hpMultiplier": 3.0975,
+    "damageMultiplier": 1.702,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "frost-bolt"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-shadow-drake-d2",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层II",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 30,
+    "base": {
+      "hp": 125,
+      "mana": 102,
+      "attack": 0,
+      "armor": 48,
+      "hit": 69,
+      "evasion": 44,
+      "initiative": 66,
+      "crit": 8.4
+    },
+    "hpMultiplier": 5.3100000000000005,
+    "damageMultiplier": 1.2025,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "chain-lightning"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-shadow-drake-d3",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层III",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 35,
+    "base": {
+      "hp": 145,
+      "mana": 119,
+      "attack": 0,
+      "armor": 56,
+      "hit": 81,
+      "evasion": 51,
+      "initiative": 77,
+      "crit": 8.4
+    },
+    "hpMultiplier": 4.05625,
+    "damageMultiplier": 1.34125,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "ember-bolt"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "whispering-archive-shadow-drake-d4",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层IV",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 40,
+    "base": {
+      "hp": 166,
+      "mana": 136,
+      "attack": 0,
+      "armor": 64,
+      "hit": 92,
+      "evasion": 58,
+      "initiative": 88,
+      "crit": 8.4
+    },
+    "hpMultiplier": 7.670000000000001,
+    "damageMultiplier": 1.184,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "frost-bolt"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-archive-cache"
+  },
+  {
+    "id": "obsidian-throne-obsidian-knight-d0",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层0",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 20,
+    "base": {
+      "hp": 79,
+      "mana": 42,
+      "attack": 0,
+      "armor": 56,
+      "hit": 42,
+      "evasion": 26,
+      "initiative": 40,
+      "crit": 8
+    },
+    "hpMultiplier": 0.908,
+    "damageMultiplier": 0.875,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "tyrant-cleave"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "throne-common",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-obsidian-knight-d1",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层I",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 25,
+    "base": {
+      "hp": 99,
+      "mana": 53,
+      "attack": 0,
+      "armor": 70,
+      "hit": 53,
+      "evasion": 33,
+      "initiative": 50,
+      "crit": 8
+    },
+    "hpMultiplier": 6.356,
+    "damageMultiplier": 0.8049999999999999,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "tyrant-cleave"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-obsidian-knight-d2",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层II",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 30,
+    "base": {
+      "hp": 119,
+      "mana": 63,
+      "attack": 0,
+      "armor": 84,
+      "hit": 63,
+      "evasion": 39,
+      "initiative": 60,
+      "crit": 8
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 0.8462999999999998,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "tyrant-cleave"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-obsidian-knight-d3",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层III",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 35,
+    "base": {
+      "hp": 138,
+      "mana": 74,
+      "attack": 0,
+      "armor": 98,
+      "hit": 74,
+      "evasion": 46,
+      "initiative": 70,
+      "crit": 8
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 0.94395,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "tyrant-cleave"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-obsidian-knight-d4",
+    "name": "黑曜执刃者",
+    "subtitle": "黑曜执刃者·深层IV",
+    "description": "黑曜石甲片下没有活人，只有一个不断巡逻的姿势。",
+    "level": 40,
+    "base": {
+      "hp": 158,
+      "mana": 84,
+      "attack": 0,
+      "armor": 112,
+      "hit": 84,
+      "evasion": 52,
+      "initiative": 80,
+      "crit": 8
+    },
+    "hpMultiplier": 1.1804000000000001,
+    "damageMultiplier": 0.8399999999999999,
+    "resist": {
+      "chaos": 0.15
+    },
+    "skillIds": [
+      "crushing-blow",
+      "bone-shield",
+      "tyrant-cleave"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-throne-tyrant-d0",
+    "name": "王庭暴君",
+    "subtitle": "王庭暴君·深层0",
+    "description": "没人知道它原本是什么。它只是从未离开过那张椅子，也从未让任何人离开。",
+    "level": 20,
+    "base": {
+      "hp": 113,
+      "mana": 116,
+      "attack": 0,
+      "armor": 77,
+      "hit": 50,
+      "evasion": 30,
+      "initiative": 46,
+      "crit": 8.8
+    },
+    "hpMultiplier": 5.24,
+    "damageMultiplier": 0.9,
+    "resist": {
+      "chaos": 0.1
+    },
+    "skillIds": [
+      "tyrant-cleave",
+      "dominate",
+      "dark-mend",
+      "war-cry"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "throne-treasure",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-throne-tyrant-d1",
+    "name": "王庭暴君",
+    "subtitle": "王庭暴君·深层I",
+    "description": "没人知道它原本是什么。它只是从未离开过那张椅子，也从未让任何人离开。",
+    "level": 25,
+    "base": {
+      "hp": 141,
+      "mana": 145,
+      "attack": 0,
+      "armor": 96,
+      "hit": 63,
+      "evasion": 38,
+      "initiative": 58,
+      "crit": 8.8
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 1.035,
+    "resist": {
+      "chaos": 0.1
+    },
+    "skillIds": [
+      "tyrant-cleave",
+      "dominate",
+      "dark-mend",
+      "war-cry"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-throne-tyrant-d2",
+    "name": "王庭暴君",
+    "subtitle": "王庭暴君·深层II",
+    "description": "没人知道它原本是什么。它只是从未离开过那张椅子，也从未让任何人离开。",
+    "level": 30,
+    "base": {
+      "hp": 170,
+      "mana": 174,
+      "attack": 0,
+      "armor": 116,
+      "hit": 75,
+      "evasion": 45,
+      "initiative": 69,
+      "crit": 8.8
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 1.0881000000000003,
+    "resist": {
+      "chaos": 0.1
+    },
+    "skillIds": [
+      "tyrant-cleave",
+      "dominate",
+      "dark-mend",
+      "war-cry"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-throne-tyrant-d3",
+    "name": "王庭暴君",
+    "subtitle": "王庭暴君·深层III",
+    "description": "没人知道它原本是什么。它只是从未离开过那张椅子，也从未让任何人离开。",
+    "level": 35,
+    "base": {
+      "hp": 198,
+      "mana": 203,
+      "attack": 0,
+      "armor": 135,
+      "hit": 88,
+      "evasion": 53,
+      "initiative": 81,
+      "crit": 8.8
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 1.21365,
+    "resist": {
+      "chaos": 0.1
+    },
+    "skillIds": [
+      "tyrant-cleave",
+      "dominate",
+      "dark-mend",
+      "war-cry"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-throne-tyrant-d4",
+    "name": "王庭暴君",
+    "subtitle": "王庭暴君·深层IV",
+    "description": "没人知道它原本是什么。它只是从未离开过那张椅子，也从未让任何人离开。",
+    "level": 40,
+    "base": {
+      "hp": 226,
+      "mana": 232,
+      "attack": 0,
+      "armor": 154,
+      "hit": 100,
+      "evasion": 60,
+      "initiative": 92,
+      "crit": 8.8
+    },
+    "hpMultiplier": 2,
+    "damageMultiplier": 1.08,
+    "resist": {
+      "chaos": 0.1
+    },
+    "skillIds": [
+      "tyrant-cleave",
+      "dominate",
+      "dark-mend",
+      "war-cry"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-shadow-drake-d0",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层0",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 20,
+    "base": {
+      "hp": 83,
+      "mana": 68,
+      "attack": 0,
+      "armor": 32,
+      "hit": 46,
+      "evasion": 29,
+      "initiative": 44,
+      "crit": 8.4
+    },
+    "hpMultiplier": 2.95,
+    "damageMultiplier": 0.74,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "tyrant-cleave"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "throne-common",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-shadow-drake-d1",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层I",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 25,
+    "base": {
+      "hp": 104,
+      "mana": 85,
+      "attack": 0,
+      "armor": 40,
+      "hit": 58,
+      "evasion": 36,
+      "initiative": 55,
+      "crit": 8.4
+    },
+    "hpMultiplier": 8.26,
+    "damageMultiplier": 0.851,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "tyrant-cleave"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-shadow-drake-d2",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层II",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 30,
+    "base": {
+      "hp": 125,
+      "mana": 102,
+      "attack": 0,
+      "armor": 48,
+      "hit": 69,
+      "evasion": 44,
+      "initiative": 66,
+      "crit": 8.4
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 0.89466,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "tyrant-cleave"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-shadow-drake-d3",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层III",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 35,
+    "base": {
+      "hp": 145,
+      "mana": 119,
+      "attack": 0,
+      "armor": 56,
+      "hit": 81,
+      "evasion": 51,
+      "initiative": 77,
+      "crit": 8.4
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 0.9978899999999999,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "tyrant-cleave"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-shadow-drake-d4",
+    "name": "影鳞巨蜥",
+    "subtitle": "影鳞巨蜥·深层IV",
+    "description": "鳞片吸光，呼吸带蚀。它把王庭的回廊当作自己的洞穴。",
+    "level": 40,
+    "base": {
+      "hp": 166,
+      "mana": 136,
+      "attack": 0,
+      "armor": 64,
+      "hit": 92,
+      "evasion": 58,
+      "initiative": 88,
+      "crit": 8.4
+    },
+    "hpMultiplier": 1.5340000000000003,
+    "damageMultiplier": 0.8879999999999999,
+    "resist": {
+      "elemental": 0.2,
+      "chaos": 0.35
+    },
+    "skillIds": [
+      "shadow-breath",
+      "ember-bite",
+      "wail",
+      "tyrant-cleave"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-void-priest-d0",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层0",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 20,
+    "base": {
+      "hp": 55,
+      "mana": 144,
+      "attack": 0,
+      "armor": 19,
+      "hit": 41,
+      "evasion": 25,
+      "initiative": 37,
+      "crit": 8
+    },
+    "hpMultiplier": 2.02,
+    "damageMultiplier": 0.74,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "tyrant-cleave"
+    ],
+    "xp": 5000,
+    "gold": [
+      0,
+      10
+    ],
+    "lootTableId": "throne-common",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-void-priest-d1",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层I",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 25,
+    "base": {
+      "hp": 69,
+      "mana": 180,
+      "attack": 0,
+      "armor": 24,
+      "hit": 51,
+      "evasion": 31,
+      "initiative": 46,
+      "crit": 8
+    },
+    "hpMultiplier": 2.828,
+    "damageMultiplier": 0.851,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "tyrant-cleave"
+    ],
+    "xp": 7813,
+    "gold": [
+      500,
+      885
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-void-priest-d2",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层II",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 30,
+    "base": {
+      "hp": 83,
+      "mana": 216,
+      "attack": 0,
+      "armor": 29,
+      "hit": 62,
+      "evasion": 38,
+      "initiative": 56,
+      "crit": 8
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 0.89466,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "tyrant-cleave"
+    ],
+    "xp": 11250,
+    "gold": [
+      1200,
+      2110
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-void-priest-d3",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层III",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 35,
+    "base": {
+      "hp": 96,
+      "mana": 252,
+      "attack": 0,
+      "armor": 33,
+      "hit": 72,
+      "evasion": 44,
+      "initiative": 65,
+      "crit": 8
+    },
+    "hpMultiplier": 10,
+    "damageMultiplier": 0.9978899999999999,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "tyrant-cleave"
+    ],
+    "xp": 15313,
+    "gold": [
+      2100,
+      3685
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  },
+  {
+    "id": "obsidian-throne-void-priest-d4",
+    "name": "虚空执礼者",
+    "subtitle": "虚空执礼者·深层IV",
+    "description": "它把虚空当作新的神，把每一个闯入者当作祭品。",
+    "level": 40,
+    "base": {
+      "hp": 110,
+      "mana": 288,
+      "attack": 0,
+      "armor": 38,
+      "hit": 82,
+      "evasion": 50,
+      "initiative": 74,
+      "crit": 8
+    },
+    "hpMultiplier": 1.0504000000000002,
+    "damageMultiplier": 0.8879999999999999,
+    "resist": {
+      "chaos": 0.25
+    },
+    "skillIds": [
+      "void-lance",
+      "forbidden-word",
+      "dark-mend",
+      "tyrant-cleave"
+    ],
+    "xp": 20000,
+    "gold": [
+      3200,
+      5610
+    ],
+    "lootTableId": "deep-throne-cache",
+    "ailmentEfficiency": 4
+  }
+]

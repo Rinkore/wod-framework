@@ -1,0 +1,424 @@
+[
+  {
+    "kind": "modifier",
+    "id": "fierce",
+    "name": "凶猛",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "min": 2,
+        "max": 5
+      }
+    ],
+    "slots": [
+      "weapon",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "heavy",
+    "name": "沉重",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "min": 3,
+        "max": 6
+      },
+      {
+        "kind": "hit",
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "slots": [
+      "weapon"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "precise",
+    "name": "精准",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "min": 2,
+        "max": 5
+      }
+    ],
+    "slots": [
+      "weapon",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "deadly",
+    "name": "致命",
+    "modifiers": [
+      {
+        "kind": "crit",
+        "min": 2,
+        "max": 5
+      }
+    ],
+    "slots": [
+      "weapon",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "brutal",
+    "name": "野蛮",
+    "modifiers": [
+      {
+        "kind": "critDamage",
+        "min": 5,
+        "max": 12
+      }
+    ],
+    "slots": [
+      "weapon"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "vampiric",
+    "name": "吸血",
+    "modifiers": [
+      {
+        "kind": "lifesteal",
+        "min": 2,
+        "max": 5
+      }
+    ],
+    "slots": [
+      "weapon",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "festering",
+    "name": "腐化",
+    "modifiers": [
+      {
+        "kind": "dotPotency",
+        "min": 4,
+        "max": 10
+      }
+    ],
+    "slots": [
+      "weapon",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "stalwart",
+    "name": "坚毅",
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "min": -5,
+        "max": -2
+      }
+    ],
+    "slots": [
+      "armor",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "guarded",
+    "name": "防护",
+    "modifiers": [
+      {
+        "kind": "armor",
+        "min": 3,
+        "max": 8
+      }
+    ],
+    "slots": [
+      "armor"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "warded",
+    "name": "庇护",
+    "modifiers": [
+      {
+        "kind": "elementalResist",
+        "min": 3,
+        "max": 8
+      }
+    ],
+    "slots": [
+      "armor",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "hexwarded",
+    "name": "御咒",
+    "modifiers": [
+      {
+        "kind": "chaosResist",
+        "min": 3,
+        "max": 8
+      }
+    ],
+    "slots": [
+      "armor",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "nimble",
+    "name": "轻捷",
+    "modifiers": [
+      {
+        "kind": "evasion",
+        "min": 2,
+        "max": 5
+      }
+    ],
+    "slots": [
+      "armor",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "swift",
+    "name": "迅捷",
+    "modifiers": [
+      {
+        "kind": "initiative",
+        "min": 2,
+        "max": 4
+      }
+    ],
+    "slots": [
+      "armor",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "mending",
+    "name": "回春",
+    "modifiers": [
+      {
+        "kind": "healing",
+        "min": 3,
+        "max": 8
+      }
+    ],
+    "slots": [
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "clearheaded",
+    "name": "清明",
+    "modifiers": [
+      {
+        "kind": "energyRegen",
+        "min": 1,
+        "max": 3
+      }
+    ],
+    "slots": [
+      "trinket",
+      "armor"
+    ]
+  },
+  {
+    "kind": "effect",
+    "id": "smoldering",
+    "name": "阴燃",
+    "effect": {
+      "trigger": "onHit",
+      "chance": 0.2,
+      "target": "victim",
+      "payload": {
+        "type": "dot",
+        "base": 4,
+        "duration": 2,
+        "damageType": "fire"
+      }
+    },
+    "slots": [
+      "weapon"
+    ]
+  },
+  {
+    "kind": "effect",
+    "id": "venomous",
+    "name": "淬毒",
+    "effect": {
+      "trigger": "onHit",
+      "chance": 0.2,
+      "target": "victim",
+      "payload": {
+        "type": "dot",
+        "base": 4,
+        "duration": 3,
+        "damageType": "poison"
+      }
+    },
+    "slots": [
+      "weapon"
+    ]
+  },
+  {
+    "kind": "effect",
+    "id": "chilling",
+    "name": "凛冽",
+    "effect": {
+      "trigger": "onHit",
+      "chance": 0.2,
+      "target": "victim",
+      "payload": {
+        "type": "mod",
+        "kind": "initiative",
+        "amount": -5,
+        "duration": 2
+      }
+    },
+    "slots": [
+      "weapon"
+    ]
+  },
+  {
+    "kind": "effect",
+    "id": "shattering",
+    "name": "碎甲",
+    "effect": {
+      "trigger": "onHit",
+      "chance": 0.25,
+      "target": "victim",
+      "payload": {
+        "type": "mod",
+        "kind": "armor",
+        "amount": -6,
+        "duration": 2
+      }
+    },
+    "slots": [
+      "weapon"
+    ]
+  },
+  {
+    "kind": "effect",
+    "id": "bulwark",
+    "name": "壁垒",
+    "effect": {
+      "trigger": "onHurt",
+      "chance": 0.2,
+      "target": "self",
+      "payload": {
+        "type": "shield",
+        "base": 15,
+        "duration": 2
+      }
+    },
+    "slots": [
+      "armor",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "effect",
+    "id": "thorned",
+    "name": "荆棘",
+    "effect": {
+      "trigger": "onHurt",
+      "chance": 0.2,
+      "target": "self",
+      "payload": {
+        "type": "reflect",
+        "percent": 0.15,
+        "duration": 2
+      }
+    },
+    "slots": [
+      "armor"
+    ]
+  },
+  {
+    "kind": "effect",
+    "id": "focused",
+    "name": "凝神",
+    "effect": {
+      "trigger": "onCrit",
+      "chance": 0.25,
+      "target": "self",
+      "payload": {
+        "type": "energy",
+        "amount": 8
+      }
+    },
+    "slots": [
+      "weapon",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "effect",
+    "id": "bloodthirsty",
+    "name": "嗜血",
+    "effect": {
+      "trigger": "onKill",
+      "chance": 0.35,
+      "target": "self",
+      "payload": {
+        "type": "energy",
+        "amount": 10
+      }
+    },
+    "slots": [
+      "weapon",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "attuned",
+    "name": "同调",
+    "modifiers": [
+      {
+        "kind": "ailmentEfficiency",
+        "min": 1,
+        "max": 2
+      }
+    ],
+    "slots": [
+      "weapon",
+      "trinket"
+    ]
+  },
+  {
+    "kind": "modifier",
+    "id": "clear-mind",
+    "name": "澄心",
+    "modifiers": [
+      {
+        "kind": "ailmentResistance",
+        "min": 4,
+        "max": 8
+      }
+    ],
+    "slots": [
+      "armor",
+      "trinket"
+    ]
+  }
+]

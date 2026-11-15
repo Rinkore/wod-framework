@@ -1,0 +1,44 @@
+{
+  "name": "wod-framework",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "World of Dungeons 风格的多人在线迷宫探险框架（数据驱动）",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "npm run dev -w @wod/server",
+    "dev:web": "npm run dev -w @wod/web",
+    "build": "npm run build -w @wod/web",
+    "start": "npm run start -w @wod/server",
+    "test": "npm run test -w @wod/engine",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "content:check": "npm run content:check -w @wod/server",
+    "simulate": "tsx scripts/simulate.ts",
+    "demo": "node scripts/demo.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "group:smoke": "node scripts/group-smoke.mjs",
+    "group-settings:smoke": "node scripts/group-settings-smoke.mjs",
+    "auction:smoke": "node scripts/auction-smoke.mjs",
+    "arena-season:smoke": "node scripts/arena-season-smoke.mjs",
+    "arena-team:smoke": "node scripts/arena-team-smoke.mjs",
+    "phase4:smoke": "node scripts/phase4-smoke.mjs",
+    "phase5:smoke": "node scripts/phase5-smoke.mjs",
+    "equipment:smoke": "node scripts/equipment-smoke.mjs",
+    "presets:smoke": "node scripts/presets-smoke.mjs",
+    "combat-settings:smoke": "node scripts/combat-settings-smoke.mjs",
+    "quest:smoke": "node scripts/quest-smoke.mjs",
+    "journey:smoke": "node scripts/journey-smoke.mjs",
+    "phase-b:smoke": "node scripts/phase-b-smoke.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

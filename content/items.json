@@ -1,0 +1,4219 @@
+[
+  {
+    "id": "iron-sword",
+    "name": "铁剑",
+    "description": "荒原铁匠铺里最常见的制式长剑，胜在可靠。",
+    "slot": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "weaponDamage": 6,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "hunting-bow",
+    "name": "猎弓",
+    "description": "用整根白蜡木弯成的短弓，适合在林间快速出手。",
+    "slot": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "weaponDamage": 5,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "oak-staff",
+    "name": "橡木法杖",
+    "description": "杖头镶着一枚温热的琥珀，能稳定施法者的呼吸。",
+    "slot": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "weaponDamage": 2,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "prayer-book",
+    "name": "祝祷经卷",
+    "description": "封面被反复摩挲得发亮，边角写满前人的批注。",
+    "slot": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "weaponDamage": 2,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 4
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "twin-daggers",
+    "name": "双匕首",
+    "description": "一长一短的一对匕首，适合在狭窄处贴身解决麻烦。",
+    "slot": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "weaponDamage": 4,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "lute",
+    "name": "旅行鲁特琴",
+    "description": "琴箱上刻着前一位主人的名字，音色倒还清亮。",
+    "slot": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "weaponDamage": 2,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "steel-axe",
+    "name": "精钢战斧",
+    "description": "斧刃上留着一道深痕，据说是某次守城留下的。",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "level": 2,
+    "value": 55,
+    "weaponDamage": 10,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 3
+      },
+      {
+        "kind": "crit",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "yew-longbow",
+    "name": "紫杉长弓",
+    "description": "紫杉木纹理细密，拉满时几乎听不见声音。",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "level": 3,
+    "value": 70,
+    "weaponDamage": 9,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 3
+      },
+      {
+        "kind": "crit",
+        "amount": 3
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "ember-staff",
+    "name": "余烬法杖",
+    "description": "杖身由烧焦的赤木雕成，靠近时能感到细微的热流。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 4,
+    "value": 140,
+    "weaponDamage": 4,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      },
+      {
+        "kind": "crit",
+        "amount": 3
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "moonlit-daggers",
+    "name": "月影双匕",
+    "description": "刃面泛着冷白的光，出手时像是从月光里抽出来。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 4,
+    "value": 130,
+    "weaponDamage": 8,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      },
+      {
+        "kind": "crit",
+        "amount": 3
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.25,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "warden-hammer",
+    "name": "守誓战锤",
+    "description": "锤头刻着旧军团的誓言，握柄处的皮革被汗水浸黑。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 5,
+    "value": 150,
+    "weaponDamage": 12,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      },
+      {
+        "kind": "crit",
+        "amount": 4
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "sun-verdict",
+    "name": "日曜判决",
+    "description": "一本镶着金边的圣典，翻页时会有细小的光屑落下。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 6,
+    "value": 280,
+    "weaponDamage": 10,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 5
+      },
+      {
+        "kind": "crit",
+        "amount": 3
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "resonance-lute",
+    "name": "共鸣鲁特琴",
+    "description": "琴弦由某种银色丝线制成，弹奏时整个房间都在轻轻共振。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 5,
+    "value": 145,
+    "weaponDamage": 5,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      },
+      {
+        "kind": "crit",
+        "amount": 4
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 7,
+          "duration": 2,
+          "damageType": "crushing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "leather-armor",
+    "name": "皮甲",
+    "description": "鞣制过的厚牛皮，关键部位加了铜钉。",
+    "slot": "armor",
+    "rarity": "common",
+    "level": 1,
+    "value": 22,
+    "armor": 6,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -3
+      },
+      {
+        "kind": "elementalResist",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "apprentice-robe",
+    "name": "学徒长袍",
+    "description": "袍角绣着褪色的符文，能帮助集中精神。",
+    "slot": "armor",
+    "rarity": "common",
+    "level": 1,
+    "value": 20,
+    "armor": 3,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -3
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "cloth-vest",
+    "name": "布制祭袍",
+    "description": "洗得发白的祭袍，内衬缝着几片护身符纸。",
+    "slot": "armor",
+    "rarity": "common",
+    "level": 1,
+    "value": 16,
+    "armor": 3,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -3
+      },
+      {
+        "kind": "elementalResist",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "traveler-cloak",
+    "name": "旅者斗篷",
+    "description": "层层叠叠的短斗篷，兜帽压得很低。",
+    "slot": "armor",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "armor": 4,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -3
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "chainmail",
+    "name": "锁子甲",
+    "description": "环环相扣的旧锁甲，沉，但挡得住大多数刀锋。",
+    "slot": "armor",
+    "rarity": "uncommon",
+    "level": 2,
+    "value": 60,
+    "armor": 12,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -3
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "frostweave-robe",
+    "name": "霜纹长袍",
+    "description": "织物里像冻结着细小的冰晶，触手却并不寒冷。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 4,
+    "value": 150,
+    "armor": 8,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -4
+      },
+      {
+        "kind": "elementalResist",
+        "amount": 3
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "evasion",
+          "amount": -6,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ashwalker-mail",
+    "name": "灰行者锁甲",
+    "description": "甲片间积着洗不掉的灰，穿上后脚步却意外地轻。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 5,
+    "value": 160,
+    "armor": 14,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -5
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 3
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "evasion",
+          "amount": -6,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "guardian-plate",
+    "name": "守卫板甲",
+    "description": "厚重的胸甲上留着一道从肩到腰的旧裂纹，被重新铆合。",
+    "slot": "armor",
+    "rarity": "epic",
+    "level": 6,
+    "value": 300,
+    "armor": 22,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -5
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 3
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "evasion",
+          "amount": -6,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "copper-ring",
+    "name": "铜戒",
+    "description": "一枚样式普通的铜戒，内侧刻着一个看不清的字母。",
+    "slot": "trinket",
+    "rarity": "common",
+    "level": 1,
+    "value": 12,
+    "modifiers": [
+      {
+        "kind": "initiative",
+        "amount": 3
+      },
+      {
+        "kind": "evasion",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "iron-band",
+    "name": "铁指环",
+    "description": "沉甸甸的黑色铁环，戴久了会在手指上留下印子。",
+    "slot": "trinket",
+    "rarity": "common",
+    "level": 2,
+    "value": 20,
+    "modifiers": [
+      {
+        "kind": "crit",
+        "amount": 3
+      },
+      {
+        "kind": "crit",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "lucky-coin",
+    "name": "幸运硬币",
+    "description": "边缘磨得发亮的旧硬币，据说正反面都算数。",
+    "slot": "trinket",
+    "rarity": "uncommon",
+    "level": 1,
+    "value": 30,
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 3
+      },
+      {
+        "kind": "lifesteal",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "amulet-of-focus",
+    "name": "凝神护符",
+    "description": "一块打磨光滑的黑曜石，握着它时杂念会安静下来。",
+    "slot": "trinket",
+    "rarity": "uncommon",
+    "level": 2,
+    "value": 45,
+    "modifiers": [
+      {
+        "kind": "energyRegen",
+        "amount": 3
+      },
+      {
+        "kind": "initiative",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "hunter-charm",
+    "name": "猎手护符",
+    "description": "串着三枚兽牙的皮绳，据说能让人在瞄准时忘记呼吸。",
+    "slot": "trinket",
+    "rarity": "uncommon",
+    "level": 2,
+    "value": 45,
+    "modifiers": [
+      {
+        "kind": "initiative",
+        "amount": 3
+      },
+      {
+        "kind": "lifesteal",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "wolf-fang",
+    "name": "狼牙项链",
+    "description": "巨大的狼牙被银丝缠住，牙根处还留着暗色痕迹。",
+    "slot": "trinket",
+    "rarity": "rare",
+    "level": 3,
+    "value": 110,
+    "modifiers": [
+      {
+        "kind": "evasion",
+        "amount": 4
+      },
+      {
+        "kind": "healing",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 13,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "oathkeeper",
+    "name": "守誓符印",
+    "description": "一枚没有图案的银牌，握住时会想起某个未完成的承诺。",
+    "slot": "trinket",
+    "rarity": "rare",
+    "level": 4,
+    "value": 130,
+    "modifiers": [
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "initiative",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.15,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.15,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ember-heart",
+    "name": "余烬之心",
+    "description": "琥珀里封着一小簇永不熄灭的火，靠近时能听见极轻的噼啪声。",
+    "slot": "trinket",
+    "rarity": "epic",
+    "level": 6,
+    "value": 320,
+    "modifiers": [
+      {
+        "kind": "healing",
+        "amount": 5
+      },
+      {
+        "kind": "lifesteal",
+        "amount": 3
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "evasion",
+          "amount": -6,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "foundry-longsword",
+    "name": "铸渣长剑",
+    "description": "剑刃在炉火里反复折叠，边缘仍留着暗红的氧化纹。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 8,
+    "value": 220,
+    "weaponDamage": 18,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 5
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.25,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "ashwood-bow",
+    "name": "烬木长弓",
+    "description": "弓臂取自被雷火烧过的老树，拉满时会落下细灰。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 8,
+    "value": 210,
+    "weaponDamage": 16,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 5
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.25,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "slag-staff",
+    "name": "熔渣法杖",
+    "description": "杖头是一枚未冷却的矿渣核，握久了掌心发烫。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 8,
+    "value": 215,
+    "weaponDamage": 10,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 5
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "iron-prayer-book",
+    "name": "铁页祷书",
+    "description": "书页是薄铁片，翻动时发出沉闷的金属声。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 8,
+    "value": 220,
+    "weaponDamage": 14,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 6
+      },
+      {
+        "kind": "crit",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "forge-lute",
+    "name": "炉心诗琴",
+    "description": "琴身嵌着冷却的炉渣，弹奏时低音像风箱。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 8,
+    "value": 205,
+    "weaponDamage": 10,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 5
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "cinder-dagger",
+    "name": "焦痕匕首",
+    "description": "刃口被磨得极薄，刀柄缠着隔热布条。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 8,
+    "value": 200,
+    "weaponDamage": 14,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 5
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 9,
+          "duration": 2,
+          "damageType": "piercing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "foundry-plate",
+    "name": "锈炉胸甲",
+    "description": "胸甲上留着几道被铁水灼出的凹坑。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 8,
+    "value": 240,
+    "armor": 18,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -6
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 20,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ash-leather",
+    "name": "灰皮护甲",
+    "description": "鞣制过的厚皮上覆着一层洗不掉的灰。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 8,
+    "value": 210,
+    "armor": 13,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -6
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.15,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.15,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "slag-robe",
+    "name": "熔渣长袍",
+    "description": "袍角被烧出许多小洞，内衬却意外地凉爽。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 8,
+    "value": 220,
+    "armor": 10,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -6
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.15,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.15,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "forge-heart-pendant",
+    "name": "炉心吊坠",
+    "description": "一枚仍在微微发热的炉渣核，用细铁链串着。",
+    "slot": "trinket",
+    "rarity": "rare",
+    "level": 8,
+    "value": 230,
+    "modifiers": [
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "evasion",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 20,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "whisper-blade",
+    "name": "低语之刃",
+    "description": "挥动时刃口会发出极轻的耳语，听久了让人分神。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 11,
+    "value": 340,
+    "weaponDamage": 24,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 7
+      },
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.25,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "inkline-bow",
+    "name": "墨线长弓",
+    "description": "弓弦是一根拉直的黑线，箭矢飞过会留下墨迹。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 11,
+    "value": 330,
+    "weaponDamage": 22,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 7
+      },
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "forbidden-staff",
+    "name": "禁书杖",
+    "description": "杖身缠着写满禁忌书名的布条。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 11,
+    "value": 350,
+    "weaponDamage": 14,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 7
+      },
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.25,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "silent-grimoire",
+    "name": "缄默经卷",
+    "description": "翻开时没有声音，连翻页的风都被吞掉了。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 11,
+    "value": 340,
+    "weaponDamage": 19,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 12,
+          "duration": 2,
+          "damageType": "lightning"
+        }
+      }
+    ]
+  },
+  {
+    "id": "archive-lute",
+    "name": "索引诗琴",
+    "description": "琴弦按字母顺序排列，弹错一个音就会走调。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 11,
+    "value": 320,
+    "weaponDamage": 14,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 7
+      },
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "page-cutter",
+    "name": "裁页匕首",
+    "description": "刃身薄如纸页，专门用来裁开装订线。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 11,
+    "value": 320,
+    "weaponDamage": 19,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 7
+      },
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.25,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 6
+        }
+      }
+    ]
+  },
+  {
+    "id": "archive-mail",
+    "name": "档案库锁甲",
+    "description": "甲片间夹着薄铜页，走动能听见书页摩擦。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 11,
+    "value": 360,
+    "armor": 24,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -8
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 25,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ink-leather",
+    "name": "墨纹皮甲",
+    "description": "皮面被墨水浸出细密的纹路。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 11,
+    "value": 330,
+    "armor": 18,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -8
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.15,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.15,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "silence-robe",
+    "name": "静默法袍",
+    "description": "袍子吸收声音，也吸收一部分寒意。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 11,
+    "value": 340,
+    "armor": 14,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -8
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 25,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "index-eye",
+    "name": "索引之眼",
+    "description": "一枚打磨成眼球形状的铜片，能自动指向想找的东西。",
+    "slot": "trinket",
+    "rarity": "rare",
+    "level": 11,
+    "value": 350,
+    "modifiers": [
+      {
+        "kind": "lifesteal",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "evasion",
+          "amount": -6,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "rime-longsword",
+    "name": "冰棱长剑",
+    "description": "剑身像一截凝固的冰柱，握柄处却始终温热。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 14,
+    "value": 480,
+    "weaponDamage": 30,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "froststring-bow",
+    "name": "霜弦长弓",
+    "description": "弓弦在低温下会凝出细霜，射出的箭带着白雾。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 14,
+    "value": 470,
+    "weaponDamage": 28,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "glacier-staff",
+    "name": "冰川法杖",
+    "description": "杖头封着一小块不会融化的冰川。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 14,
+    "value": 490,
+    "weaponDamage": 18,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "winter-prayer",
+    "name": "寒祷经卷",
+    "description": "书页在翻动时会落下细小的冰晶。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 14,
+    "value": 480,
+    "weaponDamage": 24,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 10
+      },
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 14,
+          "duration": 2,
+          "damageType": "lightning"
+        }
+      }
+    ]
+  },
+  {
+    "id": "frost-chime-lute",
+    "name": "霜鸣诗琴",
+    "description": "琴弦结着薄霜，弹奏时声音像冰面开裂。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 14,
+    "value": 460,
+    "weaponDamage": 18,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "icefang-dagger",
+    "name": "冰痕匕首",
+    "description": "刃口泛着淡蓝，伤口周围会迅速失去知觉。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 14,
+    "value": 460,
+    "weaponDamage": 24,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 14,
+          "duration": 2,
+          "damageType": "piercing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vault-plate",
+    "name": "冰穹板甲",
+    "description": "甲片接缝里凝着细冰，能缓冲重击。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 14,
+    "value": 500,
+    "armor": 30,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -9
+      },
+      {
+        "kind": "elementalResist",
+        "amount": 7
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.15,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.15,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "rime-leather",
+    "name": "霜皮甲",
+    "description": "皮革被冻得发硬，行动时却有奇异的弹性。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 14,
+    "value": 470,
+    "armor": 23,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -9
+      },
+      {
+        "kind": "elementalResist",
+        "amount": 7
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 29,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "absolute-robe",
+    "name": "极寒法袍",
+    "description": "袍内温度极低，穿久了连呼吸都变慢。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 14,
+    "value": 480,
+    "armor": 18,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -9
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 7
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 29,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "everfrost-heart",
+    "name": "永冻之心",
+    "description": "一颗永不融化的冰核，贴近胸口时能听见远处的风声。",
+    "slot": "trinket",
+    "rarity": "rare",
+    "level": 14,
+    "value": 520,
+    "modifiers": [
+      {
+        "kind": "elementalResist",
+        "amount": 12
+      },
+      {
+        "kind": "energyRegen",
+        "amount": 2
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 25,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "obsidian-longsword",
+    "name": "黑曜长剑",
+    "description": "剑身黑得发亮，映出的雨灯像被吞掉了一半。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 17,
+    "value": 680,
+    "weaponDamage": 38,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 9
+      },
+      {
+        "kind": "crit",
+        "amount": 9
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "cutting"
+        }
+      }
+    ]
+  },
+  {
+    "id": "voidstring-bow",
+    "name": "虚空长弓",
+    "description": "拉开时弓弦会短暂消失在空气里。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 17,
+    "value": 670,
+    "weaponDamage": 35,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 9
+      },
+      {
+        "kind": "crit",
+        "amount": 9
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "piercing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "throne-staff",
+    "name": "王庭法杖",
+    "description": "杖头是一块从王庭底座上撬下来的黑曜石。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 17,
+    "value": 700,
+    "weaponDamage": 23,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 9
+      },
+      {
+        "kind": "crit",
+        "amount": 9
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "dark-prayer",
+    "name": "暗祷经卷",
+    "description": "封面没有书名，只有一枚被磨平的印痕。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 17,
+    "value": 690,
+    "weaponDamage": 30,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 11
+      },
+      {
+        "kind": "crit",
+        "amount": 7
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "lightning"
+        }
+      }
+    ]
+  },
+  {
+    "id": "silence-lute",
+    "name": "寂灭诗琴",
+    "description": "弹奏时听不见声音，但周围的影子会随之摇晃。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 17,
+    "value": 660,
+    "weaponDamage": 23,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 9
+      },
+      {
+        "kind": "crit",
+        "amount": 9
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "crushing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "shadowfang-dagger",
+    "name": "影刃匕首",
+    "description": "刀身像一段凝固的影子，刺入后伤口不会立刻流血。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 17,
+    "value": 660,
+    "weaponDamage": 30,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 9
+      },
+      {
+        "kind": "crit",
+        "amount": 9
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "obsidian-armor",
+    "name": "黑曜板甲",
+    "description": "整块黑曜石打磨成的胸甲，沉重但几乎不反射光。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 17,
+    "value": 720,
+    "armor": 38,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -10
+      },
+      {
+        "kind": "elementalResist",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.2,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 34,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "shadow-leather",
+    "name": "影皮甲",
+    "description": "皮面在暗处会变得几乎透明。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 17,
+    "value": 680,
+    "armor": 29,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -10
+      },
+      {
+        "kind": "chaosResist",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "evasion",
+          "amount": -6,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "void-robe",
+    "name": "虚空法袍",
+    "description": "袍摆边缘不断有细小的黑影脱落。",
+    "slot": "armor",
+    "rarity": "rare",
+    "level": 17,
+    "value": 690,
+    "armor": 23,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -10
+      },
+      {
+        "kind": "elementalResist",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.15,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.15,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "throne-eye",
+    "name": "王庭之眼",
+    "description": "一枚从王庭扶手上取下的黑曜石眼，视线总比人快一步。",
+    "slot": "trinket",
+    "rarity": "rare",
+    "level": 17,
+    "value": 740,
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 11
+      },
+      {
+        "kind": "evasion",
+        "amount": 7
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "evasion",
+          "amount": -6,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "slagbreaker",
+    "name": "碎渣巨剑",
+    "description": "剑背厚得能当锤子用，刃口上嵌着没清干净的炉渣。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 10,
+    "value": 420,
+    "weaponDamage": 24,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 8
+      },
+      {
+        "kind": "hit",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 6,
+          "duration": 2,
+          "damageType": "fire"
+        }
+      }
+    ]
+  },
+  {
+    "id": "overseer-cinder-crown",
+    "name": "监工烬冠",
+    "description": "一顶被烧变形的铁冠，内侧刻着监工的名字。",
+    "slot": "trinket",
+    "rarity": "epic",
+    "level": 10,
+    "value": 400,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -6
+      },
+      {
+        "kind": "energyRegen",
+        "amount": 2
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.25,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 15,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "forbidden-grimoire",
+    "name": "禁断魔典",
+    "description": "书页会用细小的牙齿咬住翻页的手指。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 13,
+    "value": 620,
+    "weaponDamage": 24,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "dotPotency",
+        "amount": 12
+      },
+      {
+        "kind": "damageDealt",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "chaosResist",
+          "amount": -10,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "scribe-crown",
+    "name": "抄写者之冠",
+    "description": "由一圈圈书脊压成的冠，戴上后耳边全是翻页声。",
+    "slot": "trinket",
+    "rarity": "epic",
+    "level": 13,
+    "value": 600,
+    "modifiers": [
+      {
+        "kind": "initiative",
+        "amount": 4
+      },
+      {
+        "kind": "energyRegen",
+        "amount": 3
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "hit",
+          "amount": -8,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "ice-warden-plate",
+    "name": "冰穹守望甲",
+    "description": "整副甲胄封在一层透明冰壳里，敲上去像钟。",
+    "slot": "armor",
+    "rarity": "epic",
+    "level": 16,
+    "value": 820,
+    "armor": 36,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -10
+      },
+      {
+        "kind": "elementalResist",
+        "amount": 10
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.25,
+        "target": "self",
+        "payload": {
+          "type": "shield",
+          "base": 30,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "absolute-zero-staff",
+    "name": "绝对零度法杖",
+    "description": "杖尖悬着一粒不落地的冰晶，靠近时连雨灯都会变暗。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 16,
+    "value": 840,
+    "weaponDamage": 24,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.3,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "initiative",
+          "amount": -8,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-blade",
+    "name": "暴君之刃",
+    "description": "王庭前那把从未入鞘的重剑，刃口上还有旧时代的缺口。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 20,
+    "value": 1100,
+    "weaponDamage": 46,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 12
+      },
+      {
+        "kind": "critDamage",
+        "amount": 20
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.3,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 12,
+          "duration": 3,
+          "damageType": "cutting"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-crown",
+    "name": "暴君王冠",
+    "description": "黑曜石冠冕的内侧刻满了被划掉的名字。",
+    "slot": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "value": 1200,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -8
+      },
+      {
+        "kind": "lifesteal",
+        "amount": 8
+      },
+      {
+        "kind": "energyRegen",
+        "amount": 2
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onKill",
+        "chance": 0.4,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "obsidian-throne-plate",
+    "name": "王庭黑曜甲",
+    "description": "甲面像一面黑镜，靠近时能看见自己的影子先动了一下。",
+    "slot": "armor",
+    "rarity": "epic",
+    "level": 20,
+    "value": 1150,
+    "armor": 44,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": -12
+      },
+      {
+        "kind": "armor",
+        "amount": 15
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 5
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.3,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.2,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "iron-axe",
+    "name": "铁斧",
+    "description": "斧柄缠着防滑的旧布条，刃口有几处崩缺。",
+    "slot": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "weaponDamage": 7,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 3
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "battle-axe",
+    "name": "战斧",
+    "description": "专门为劈开旧世界防暴盾而打造的宽刃斧。",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "level": 8,
+    "value": 90,
+    "weaponDamage": 14,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 3
+      },
+      {
+        "kind": "crit",
+        "amount": 2
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "ruin-axe",
+    "name": "废墟巨斧",
+    "description": "从坍塌的消防通道里拔出来的巨斧，刃口仍能映出雨光。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 14,
+    "value": 220,
+    "weaponDamage": 20,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      },
+      {
+        "kind": "crit",
+        "amount": 3
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "executioner-axe",
+    "name": "处刑斧",
+    "description": "旧王庭行刑者的遗物，斧背刻着一行无人能读的判词。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 20,
+    "value": 520,
+    "weaponDamage": 28,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 5
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "iron-hammer",
+    "name": "铁锤",
+    "description": "工地和拆解场里最常见的长柄锤，锤头被磨得发亮。",
+    "slot": "weapon",
+    "rarity": "common",
+    "level": 1,
+    "value": 18,
+    "weaponDamage": 8,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "maul",
+    "name": "重槌",
+    "description": "需要双手才能抡圆的重槌，专门用来敲碎机械外壳。",
+    "slot": "weapon",
+    "rarity": "uncommon",
+    "level": 11,
+    "value": 150,
+    "weaponDamage": 17,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 3
+      },
+      {
+        "kind": "crit",
+        "amount": 2
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "siege-hammer",
+    "name": "攻城锤",
+    "description": "从旧军团攻城器械上拆下来的锤头，柄是后来接的。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 17,
+    "value": 320,
+    "weaponDamage": 24,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 4
+      },
+      {
+        "kind": "crit",
+        "amount": 3
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "earthbreaker",
+    "name": "碎地者",
+    "description": "传说中一锤能震塌半条街的巨锤，如今只剩锤头还在。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 20,
+    "value": 540,
+    "weaponDamage": 30,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 5
+      },
+      {
+        "kind": "crit",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "tyrant-blade-t25",
+    "name": "暴君之刃·深层25",
+    "description": "王庭前那把从未入鞘的重剑，刃口上还有旧时代的缺口。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 25,
+    "value": 1375,
+    "weaponDamage": 58,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 15
+      },
+      {
+        "kind": "critDamage",
+        "amount": 25
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.3,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 12,
+          "duration": 3,
+          "damageType": "cutting"
+        }
+      }
+    ]
+  },
+  {
+    "id": "executioner-axe-t25",
+    "name": "处刑斧·深层25",
+    "description": "旧王庭行刑者的遗物，斧背刻着一行无人能读的判词。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 25,
+    "value": 650,
+    "weaponDamage": 35,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 6
+      },
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "earthbreaker-t25",
+    "name": "碎地者·深层25",
+    "description": "传说中一锤能震塌半条街的巨锤，如今只剩锤头还在。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 25,
+    "value": 675,
+    "weaponDamage": 38,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 6
+      },
+      {
+        "kind": "crit",
+        "amount": 5
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "voidstring-bow-t25",
+    "name": "虚空长弓·深层25",
+    "description": "拉开时弓弦会短暂消失在空气里。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 25,
+    "value": 985,
+    "weaponDamage": 51,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 13
+      },
+      {
+        "kind": "crit",
+        "amount": 13
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "piercing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "shadowfang-dagger-t25",
+    "name": "影刃匕首·深层25",
+    "description": "刀身像一段凝固的影子，刺入后伤口不会立刻流血。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 25,
+    "value": 971,
+    "weaponDamage": 44,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 13
+      },
+      {
+        "kind": "crit",
+        "amount": 13
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "throne-staff-t25",
+    "name": "王庭法杖·深层25",
+    "description": "杖头是一块从王庭底座上撬下来的黑曜石。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 25,
+    "value": 1029,
+    "weaponDamage": 34,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 13
+      },
+      {
+        "kind": "crit",
+        "amount": 13
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "dark-prayer-t25",
+    "name": "暗祷经卷·深层25",
+    "description": "封面没有书名，只有一枚被磨平的印痕。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 25,
+    "value": 1015,
+    "weaponDamage": 44,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 16
+      },
+      {
+        "kind": "crit",
+        "amount": 10
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "lightning"
+        }
+      }
+    ]
+  },
+  {
+    "id": "silence-lute-t25",
+    "name": "寂灭诗琴·深层25",
+    "description": "弹奏时听不见声音，但周围的影子会随之摇晃。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 25,
+    "value": 971,
+    "weaponDamage": 34,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 13
+      },
+      {
+        "kind": "crit",
+        "amount": 13
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 1
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "crushing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "obsidian-throne-plate-t25",
+    "name": "王庭黑曜甲·深层25",
+    "description": "甲面像一面黑镜，靠近时能看见自己的影子先动了一下。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "armor",
+    "rarity": "epic",
+    "level": 25,
+    "value": 1438,
+    "armor": 55,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": 1
+      },
+      {
+        "kind": "armor",
+        "amount": 19
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 6
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.3,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.2,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-crown-t25",
+    "name": "暴君王冠·深层25",
+    "description": "黑曜石冠冕的内侧刻满了被划掉的名字。 深层的锻造工艺把它强化到了 25 级。",
+    "slot": "trinket",
+    "rarity": "epic",
+    "level": 25,
+    "value": 1500,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": 1
+      },
+      {
+        "kind": "lifesteal",
+        "amount": 10
+      },
+      {
+        "kind": "energyRegen",
+        "amount": 3
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 6
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onKill",
+        "chance": 0.4,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-blade-t30",
+    "name": "暴君之刃·深层30",
+    "description": "王庭前那把从未入鞘的重剑，刃口上还有旧时代的缺口。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 30,
+    "value": 1650,
+    "weaponDamage": 69,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 18
+      },
+      {
+        "kind": "critDamage",
+        "amount": 30
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.3,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 12,
+          "duration": 3,
+          "damageType": "cutting"
+        }
+      }
+    ]
+  },
+  {
+    "id": "executioner-axe-t30",
+    "name": "处刑斧·深层30",
+    "description": "旧王庭行刑者的遗物，斧背刻着一行无人能读的判词。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 30,
+    "value": 780,
+    "weaponDamage": 42,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "earthbreaker-t30",
+    "name": "碎地者·深层30",
+    "description": "传说中一锤能震塌半条街的巨锤，如今只剩锤头还在。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 30,
+    "value": 810,
+    "weaponDamage": 45,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 8
+      },
+      {
+        "kind": "crit",
+        "amount": 6
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "voidstring-bow-t30",
+    "name": "虚空长弓·深层30",
+    "description": "拉开时弓弦会短暂消失在空气里。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 30,
+    "value": 1182,
+    "weaponDamage": 62,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 16
+      },
+      {
+        "kind": "crit",
+        "amount": 16
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "piercing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "shadowfang-dagger-t30",
+    "name": "影刃匕首·深层30",
+    "description": "刀身像一段凝固的影子，刺入后伤口不会立刻流血。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 30,
+    "value": 1165,
+    "weaponDamage": 53,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 16
+      },
+      {
+        "kind": "crit",
+        "amount": 16
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "throne-staff-t30",
+    "name": "王庭法杖·深层30",
+    "description": "杖头是一块从王庭底座上撬下来的黑曜石。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 30,
+    "value": 1235,
+    "weaponDamage": 41,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 16
+      },
+      {
+        "kind": "crit",
+        "amount": 16
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "dark-prayer-t30",
+    "name": "暗祷经卷·深层30",
+    "description": "封面没有书名，只有一枚被磨平的印痕。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 30,
+    "value": 1218,
+    "weaponDamage": 53,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 19
+      },
+      {
+        "kind": "crit",
+        "amount": 12
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "lightning"
+        }
+      }
+    ]
+  },
+  {
+    "id": "silence-lute-t30",
+    "name": "寂灭诗琴·深层30",
+    "description": "弹奏时听不见声音，但周围的影子会随之摇晃。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 30,
+    "value": 1165,
+    "weaponDamage": 41,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 16
+      },
+      {
+        "kind": "crit",
+        "amount": 16
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "crushing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "obsidian-throne-plate-t30",
+    "name": "王庭黑曜甲·深层30",
+    "description": "甲面像一面黑镜，靠近时能看见自己的影子先动了一下。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "armor",
+    "rarity": "epic",
+    "level": 30,
+    "value": 1725,
+    "armor": 66,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": 1
+      },
+      {
+        "kind": "armor",
+        "amount": 23
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 8
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.3,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.2,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-crown-t30",
+    "name": "暴君王冠·深层30",
+    "description": "黑曜石冠冕的内侧刻满了被划掉的名字。 深层的锻造工艺把它强化到了 30 级。",
+    "slot": "trinket",
+    "rarity": "epic",
+    "level": 30,
+    "value": 1800,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": 1
+      },
+      {
+        "kind": "lifesteal",
+        "amount": 12
+      },
+      {
+        "kind": "energyRegen",
+        "amount": 3
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 8
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onKill",
+        "chance": 0.4,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-blade-t35",
+    "name": "暴君之刃·深层35",
+    "description": "王庭前那把从未入鞘的重剑，刃口上还有旧时代的缺口。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 35,
+    "value": 1925,
+    "weaponDamage": 81,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 21
+      },
+      {
+        "kind": "critDamage",
+        "amount": 35
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.3,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 12,
+          "duration": 3,
+          "damageType": "cutting"
+        }
+      }
+    ]
+  },
+  {
+    "id": "executioner-axe-t35",
+    "name": "处刑斧·深层35",
+    "description": "旧王庭行刑者的遗物，斧背刻着一行无人能读的判词。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 35,
+    "value": 910,
+    "weaponDamage": 49,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 9
+      },
+      {
+        "kind": "crit",
+        "amount": 9
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "earthbreaker-t35",
+    "name": "碎地者·深层35",
+    "description": "传说中一锤能震塌半条街的巨锤，如今只剩锤头还在。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 35,
+    "value": 945,
+    "weaponDamage": 53,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 9
+      },
+      {
+        "kind": "crit",
+        "amount": 7
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "voidstring-bow-t35",
+    "name": "虚空长弓·深层35",
+    "description": "拉开时弓弦会短暂消失在空气里。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 35,
+    "value": 1379,
+    "weaponDamage": 72,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 19
+      },
+      {
+        "kind": "crit",
+        "amount": 19
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "piercing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "shadowfang-dagger-t35",
+    "name": "影刃匕首·深层35",
+    "description": "刀身像一段凝固的影子，刺入后伤口不会立刻流血。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 35,
+    "value": 1359,
+    "weaponDamage": 62,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 19
+      },
+      {
+        "kind": "crit",
+        "amount": 19
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "throne-staff-t35",
+    "name": "王庭法杖·深层35",
+    "description": "杖头是一块从王庭底座上撬下来的黑曜石。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 35,
+    "value": 1441,
+    "weaponDamage": 47,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 19
+      },
+      {
+        "kind": "crit",
+        "amount": 19
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "dark-prayer-t35",
+    "name": "暗祷经卷·深层35",
+    "description": "封面没有书名，只有一枚被磨平的印痕。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 35,
+    "value": 1421,
+    "weaponDamage": 62,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 23
+      },
+      {
+        "kind": "crit",
+        "amount": 14
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "lightning"
+        }
+      }
+    ]
+  },
+  {
+    "id": "silence-lute-t35",
+    "name": "寂灭诗琴·深层35",
+    "description": "弹奏时听不见声音，但周围的影子会随之摇晃。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 35,
+    "value": 1359,
+    "weaponDamage": 47,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 19
+      },
+      {
+        "kind": "crit",
+        "amount": 19
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "crushing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "obsidian-throne-plate-t35",
+    "name": "王庭黑曜甲·深层35",
+    "description": "甲面像一面黑镜，靠近时能看见自己的影子先动了一下。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "armor",
+    "rarity": "epic",
+    "level": 35,
+    "value": 2013,
+    "armor": 77,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": 1
+      },
+      {
+        "kind": "armor",
+        "amount": 26
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 9
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.3,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.2,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-crown-t35",
+    "name": "暴君王冠·深层35",
+    "description": "黑曜石冠冕的内侧刻满了被划掉的名字。 深层的锻造工艺把它强化到了 35 级。",
+    "slot": "trinket",
+    "rarity": "epic",
+    "level": 35,
+    "value": 2100,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": 1
+      },
+      {
+        "kind": "lifesteal",
+        "amount": 14
+      },
+      {
+        "kind": "energyRegen",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 9
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onKill",
+        "chance": 0.4,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 12
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-blade-t40",
+    "name": "暴君之刃·深层40",
+    "description": "王庭前那把从未入鞘的重剑，刃口上还有旧时代的缺口。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 40,
+    "value": 2200,
+    "weaponDamage": 92,
+    "damageType": "cutting",
+    "weaponType": "sword",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 24
+      },
+      {
+        "kind": "critDamage",
+        "amount": 40
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onCrit",
+        "chance": 0.3,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 12,
+          "duration": 3,
+          "damageType": "cutting"
+        }
+      }
+    ]
+  },
+  {
+    "id": "executioner-axe-t40",
+    "name": "处刑斧·深层40",
+    "description": "旧王庭行刑者的遗物，斧背刻着一行无人能读的判词。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 40,
+    "value": 1040,
+    "weaponDamage": 56,
+    "damageType": "cutting",
+    "weaponType": "axe",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 10
+      },
+      {
+        "kind": "crit",
+        "amount": 10
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "earthbreaker-t40",
+    "name": "碎地者·深层40",
+    "description": "传说中一锤能震塌半条街的巨锤，如今只剩锤头还在。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "weapon",
+    "rarity": "epic",
+    "level": 40,
+    "value": 1080,
+    "weaponDamage": 60,
+    "damageType": "crushing",
+    "weaponType": "hammer",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 10
+      },
+      {
+        "kind": "crit",
+        "amount": 8
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": []
+  },
+  {
+    "id": "voidstring-bow-t40",
+    "name": "虚空长弓·深层40",
+    "description": "拉开时弓弦会短暂消失在空气里。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 40,
+    "value": 1576,
+    "weaponDamage": 82,
+    "damageType": "piercing",
+    "weaponType": "bow",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 21
+      },
+      {
+        "kind": "crit",
+        "amount": 21
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "piercing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "shadowfang-dagger-t40",
+    "name": "影刃匕首·深层40",
+    "description": "刀身像一段凝固的影子，刺入后伤口不会立刻流血。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 40,
+    "value": 1553,
+    "weaponDamage": 71,
+    "damageType": "piercing",
+    "weaponType": "dagger",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 21
+      },
+      {
+        "kind": "crit",
+        "amount": 21
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "throne-staff-t40",
+    "name": "王庭法杖·深层40",
+    "description": "杖头是一块从王庭底座上撬下来的黑曜石。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 40,
+    "value": 1647,
+    "weaponDamage": 54,
+    "damageType": "fire",
+    "weaponType": "staff",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 21
+      },
+      {
+        "kind": "crit",
+        "amount": 21
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.25,
+        "target": "victim",
+        "payload": {
+          "type": "mod",
+          "kind": "armor",
+          "amount": -5,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "dark-prayer-t40",
+    "name": "暗祷经卷·深层40",
+    "description": "封面没有书名，只有一枚被磨平的印痕。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 40,
+    "value": 1624,
+    "weaponDamage": 71,
+    "damageType": "sleep",
+    "weaponType": "book",
+    "modifiers": [
+      {
+        "kind": "damageDealt",
+        "amount": 26
+      },
+      {
+        "kind": "crit",
+        "amount": 16
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "lightning"
+        }
+      }
+    ]
+  },
+  {
+    "id": "silence-lute-t40",
+    "name": "寂灭诗琴·深层40",
+    "description": "弹奏时听不见声音，但周围的影子会随之摇晃。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "weapon",
+    "rarity": "rare",
+    "level": 40,
+    "value": 1553,
+    "weaponDamage": 54,
+    "damageType": "lightning",
+    "weaponType": "instrument",
+    "modifiers": [
+      {
+        "kind": "hit",
+        "amount": 21
+      },
+      {
+        "kind": "crit",
+        "amount": 21
+      },
+      {
+        "kind": "ailmentEfficiency",
+        "amount": 2
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHit",
+        "chance": 0.2,
+        "target": "victim",
+        "payload": {
+          "type": "dot",
+          "base": 17,
+          "duration": 2,
+          "damageType": "crushing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "obsidian-throne-plate-t40",
+    "name": "王庭黑曜甲·深层40",
+    "description": "甲面像一面黑镜，靠近时能看见自己的影子先动了一下。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "armor",
+    "rarity": "epic",
+    "level": 40,
+    "value": 2300,
+    "armor": 88,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": 1
+      },
+      {
+        "kind": "armor",
+        "amount": 30
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 10
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onHurt",
+        "chance": 0.3,
+        "target": "self",
+        "payload": {
+          "type": "reflect",
+          "percent": 0.2,
+          "duration": 2
+        }
+      }
+    ]
+  },
+  {
+    "id": "tyrant-crown-t40",
+    "name": "暴君王冠·深层40",
+    "description": "黑曜石冠冕的内侧刻满了被划掉的名字。 深层的锻造工艺把它强化到了 40 级。",
+    "slot": "trinket",
+    "rarity": "epic",
+    "level": 40,
+    "value": 2400,
+    "modifiers": [
+      {
+        "kind": "damageTaken",
+        "amount": 1
+      },
+      {
+        "kind": "lifesteal",
+        "amount": 16
+      },
+      {
+        "kind": "energyRegen",
+        "amount": 4
+      },
+      {
+        "kind": "ailmentResistance",
+        "amount": 10
+      }
+    ],
+    "effects": [
+      {
+        "trigger": "onKill",
+        "chance": 0.4,
+        "target": "self",
+        "payload": {
+          "type": "energy",
+          "amount": 12
+        }
+      }
+    ]
+  }
+]

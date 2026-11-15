@@ -1,0 +1,353 @@
+[
+  {
+    "id": "first-light",
+    "name": "第一束雨灯",
+    "description": "行会需要有人证明沉井还能进去。你只需要走完一次。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "abandoned-mine",
+        "count": 1
+      }
+    ],
+    "rewards": {
+      "gold": 60,
+      "ep": 400,
+      "fame": 1
+    }
+  },
+  {
+    "id": "mine-echoes",
+    "name": "沉井的余响",
+    "description": "塌方、苔皮游荡者、监工。把这条路走熟，行会才会把更深的悬赏交给你。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "abandoned-mine",
+        "count": 3
+      }
+    ],
+    "rewards": {
+      "gold": 120,
+      "ep": 900,
+      "fame": 2
+    },
+    "prerequisiteQuestIds": [
+      "first-light"
+    ]
+  },
+  {
+    "id": "crypt-whispers",
+    "name": "冻眠中的名字",
+    "description": "墓穴的钟声每夜响起。去听一次，然后活着回来。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "frost-crypt",
+        "count": 1
+      }
+    ],
+    "rewards": {
+      "gold": 160,
+      "ep": 1400,
+      "fame": 2
+    },
+    "prerequisiteQuestIds": [
+      "first-light"
+    ]
+  },
+  {
+    "id": "crypt-watch",
+    "name": "墓穴守夜",
+    "description": "让冻眠墓穴安静三个夜晚。行会会记住这件事。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "frost-crypt",
+        "count": 3
+      }
+    ],
+    "rewards": {
+      "gold": 280,
+      "ep": 2600,
+      "fame": 3,
+      "titleId": "crypt-warden"
+    },
+    "prerequisiteQuestIds": [
+      "crypt-whispers"
+    ]
+  },
+  {
+    "id": "altar-prayer",
+    "name": "燃烬中的祷词",
+    "description": "祭坛的火烧了十七年。先看看它在等谁。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "ember-altar",
+        "count": 1
+      }
+    ],
+    "rewards": {
+      "gold": 320,
+      "ep": 3200,
+      "fame": 3
+    },
+    "prerequisiteQuestIds": [
+      "crypt-whispers"
+    ]
+  },
+  {
+    "id": "altar-silence",
+    "name": "让祭坛闭嘴",
+    "description": "火不需要再等一个名字。把它熄灭三次。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "ember-altar",
+        "count": 3
+      }
+    ],
+    "rewards": {
+      "gold": 520,
+      "ep": 5200,
+      "fame": 5,
+      "titleId": "altar-silencer"
+    },
+    "prerequisiteQuestIds": [
+      "altar-prayer"
+    ]
+  },
+  {
+    "id": "foundry-crack",
+    "name": "锈炉的第一道裂缝",
+    "description": "铁水没有冷却。下到炉道，看看是谁还在添柴。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "foundry-depths",
+        "count": 1
+      }
+    ],
+    "rewards": {
+      "gold": 700,
+      "ep": 7000,
+      "fame": 5
+    },
+    "prerequisiteQuestIds": [
+      "altar-silence"
+    ]
+  },
+  {
+    "id": "foundry-heat",
+    "name": "铁水之上",
+    "description": "炉心必须冷下来。至少让它记住你的名字。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "foundry-depths",
+        "count": 3
+      }
+    ],
+    "rewards": {
+      "gold": 1100,
+      "ep": 11000,
+      "fame": 8,
+      "titleId": "foundry-witness"
+    },
+    "prerequisiteQuestIds": [
+      "foundry-crack"
+    ]
+  },
+  {
+    "id": "archive-voice",
+    "name": "不要读出声",
+    "description": "档案库里的每一页都在说话。找到那本不该被打开的书。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "whispering-archive",
+        "count": 1
+      }
+    ],
+    "rewards": {
+      "gold": 1200,
+      "ep": 12000,
+      "fame": 8
+    },
+    "prerequisiteQuestIds": [
+      "foundry-crack"
+    ]
+  },
+  {
+    "id": "archive-last-page",
+    "name": "索引的最后一页",
+    "description": "把禁书抄写者的名字从索引里划掉。做三次。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "whispering-archive",
+        "count": 3
+      }
+    ],
+    "rewards": {
+      "gold": 1900,
+      "ep": 19000,
+      "fame": 12,
+      "titleId": "archive-reader"
+    },
+    "prerequisiteQuestIds": [
+      "archive-voice"
+    ]
+  },
+  {
+    "id": "vault-cold",
+    "name": "冰层之下",
+    "description": "军械库保存了旧时代的一切，包括不该醒来的东西。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "glacier-vault",
+        "count": 1
+      }
+    ],
+    "rewards": {
+      "gold": 2200,
+      "ep": 22000,
+      "fame": 12
+    },
+    "prerequisiteQuestIds": [
+      "archive-last-page"
+    ]
+  },
+  {
+    "id": "vault-unchanged",
+    "name": "军械库从不融化",
+    "description": "冰层每过一年就厚一寸。让它停止生长。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "glacier-vault",
+        "count": 3
+      }
+    ],
+    "rewards": {
+      "gold": 3200,
+      "ep": 32000,
+      "fame": 18,
+      "titleId": "vault-breaker"
+    },
+    "prerequisiteQuestIds": [
+      "vault-cold"
+    ]
+  },
+  {
+    "id": "throne-threshold",
+    "name": "王庭的门槛",
+    "description": "旧王朝的最后一座宫殿沉入地下。王庭还亮着。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "obsidian-throne",
+        "count": 1
+      }
+    ],
+    "rewards": {
+      "gold": 3800,
+      "ep": 38000,
+      "fame": 18
+    },
+    "prerequisiteQuestIds": [
+      "vault-unchanged"
+    ]
+  },
+  {
+    "id": "throne-never-empty",
+    "name": "王庭从来没有空过",
+    "description": "坐上那张椅子，然后证明你还能站起来。",
+    "category": "main",
+    "objectives": [
+      {
+        "type": "complete-dungeon",
+        "targetId": "obsidian-throne",
+        "count": 3
+      }
+    ],
+    "rewards": {
+      "gold": 5200,
+      "ep": 52000,
+      "fame": 25,
+      "titleId": "throne-challenger"
+    },
+    "prerequisiteQuestIds": [
+      "throne-threshold"
+    ]
+  },
+  {
+    "id": "duel-trials",
+    "name": "试刀",
+    "description": "竞技场不看理由，只看谁还站着。赢三场。",
+    "category": "side",
+    "objectives": [
+      {
+        "type": "win-duel",
+        "count": 3
+      }
+    ],
+    "rewards": {
+      "gold": 120,
+      "ep": 1200,
+      "fame": 1
+    }
+  },
+  {
+    "id": "monster-cleaner",
+    "name": "清道夫",
+    "description": "荒原的怪物比悬赏多。先杀五十只。",
+    "category": "side",
+    "objectives": [
+      {
+        "type": "defeat-monsters",
+        "count": 50
+      }
+    ],
+    "rewards": {
+      "gold": 180,
+      "ep": 1800,
+      "fame": 2
+    }
+  },
+  {
+    "id": "name-remembered",
+    "name": "名字被记住",
+    "description": "声望不是数字，是别人愿不愿意在黑暗里叫你的名字。积累 40 点声望。",
+    "category": "side",
+    "objectives": [
+      {
+        "type": "earn-fame",
+        "count": 40
+      }
+    ],
+    "rewards": {
+      "gold": 400,
+      "ep": 4000,
+      "fame": 3
+    },
+    "prerequisiteQuestIds": [
+      "first-light"
+    ]
+  }
+]

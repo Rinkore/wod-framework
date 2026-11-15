@@ -1,0 +1,6505 @@
+[
+  {
+    "id": "abandoned-mine",
+    "name": "沉井",
+    "subtitle": "雨声灌满了竖井",
+    "description": "文明停摆三百年后，这里再没有矿工。闸门守卫认得井口的旧闸编号，管道孩童在管壁上留过记号——井底还压着没来得及运走的滤水设备。",
+    "tags": [
+      "地下",
+      "积水",
+      "狭窄"
+    ],
+    "roomSeconds": 45,
+    "npcAssistIds": [
+      "npc-warrior",
+      "npc-priest"
+    ],
+    "theme": "mine",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "塌陷的入口",
+        "description": "矿车的残骸堵住了主道，蝙蝠从锈蚀的支架间扑下。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "mine-bat",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 60,
+        "gold": [
+          5,
+          10
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "苔皮游荡者的窝点",
+        "description": "坑道两侧堆满捡来的破烂，三只苔皮游荡者正为一块铁片争吵。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "goblin-scavenger",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 85,
+        "gold": [
+          8,
+          14
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "滴水暗渠",
+        "description": "渠顶不断滴水，蝙蝠倒挂在苔藓间。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "mine-bat",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 90,
+        "gold": [
+          6,
+          10
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "mine-bat",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 90,
+        "lootTableId": "mine-treasure",
+        "gold": [
+          6,
+          10
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "塌方矿脉",
+        "description": "碎石堆里露出半截铁轨，拾荒者正在撬上面的铁钉。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "goblin-scavenger",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 130,
+        "gold": [
+          8,
+          14
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "mine-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "监工的最后防线",
+        "description": "监工抡起碎矿镐，身后的骸骨守卫抬起骨盾。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "goblin-overseer",
+            "count": 1
+          },
+          {
+            "monsterId": "skeleton-guard",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 105,
+        "gold": [
+          15,
+          22
+        ]
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        35,
+        55
+      ],
+      "lootTableId": "starter-cache",
+      "ep": 8000,
+      "fame": 1
+    },
+    "seriesId": "abandoned-mine",
+    "depth": 0
+  },
+  {
+    "id": "frost-crypt",
+    "name": "眠舱",
+    "subtitle": "梦呓沉在冷舱里",
+    "description": "旧时代的休眠舱一排排沉在积水下。舱里的人早已不在，梦却还在管壁里回响；靠近的人会听见自己的名字，然后慢慢睡着。",
+    "tags": [
+      "地下",
+      "狭窄",
+      "旧文明"
+    ],
+    "roomSeconds": 45,
+    "theme": "crypt",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "梦呓门廊",
+        "description": "墨色的梦从舱缝里渗出，在门廊上留下潮湿的字迹。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "ink-wraith",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 250,
+        "gold": [
+          10,
+          16
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "归档侧廊",
+        "description": "守档傀还在核对不存在的名册，骨盾上刻满舱号。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "archive-sentinel",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 260,
+        "gold": [
+          10,
+          16
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "残页甬道",
+        "description": "被撕碎的病历在空中翻飞，食页者追着纸屑爬行。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "page-eater",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 340,
+        "gold": [
+          12,
+          18
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "睡眠舱的旧物资还压在梦呓下面，墨影在墙角聚散。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "ink-wraith",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 260,
+        "lootTableId": "crypt-treasure",
+        "gold": [
+          10,
+          16
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "低语回廊",
+        "description": "抄写者用听不见的声音念着禁词，每念一句，走廊就更暗一分。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "forbidden-scribe",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 350,
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "crypt-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "哀鸣者的门廊",
+        "description": "梦的尽头盘着一条暗影 Drake，虚空祭司在它身侧低声祷告。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "shadow-drake",
+            "count": 1
+          },
+          {
+            "monsterId": "void-priest",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 500,
+        "gold": [
+          25,
+          40
+        ]
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        70,
+        100
+      ],
+      "lootTableId": "crypt-treasure",
+      "ep": 20000,
+      "fame": 3
+    },
+    "seriesId": "frost-crypt",
+    "depth": 0
+  },
+  {
+    "id": "ember-altar",
+    "name": "燃祭场",
+    "subtitle": "火还在烧",
+    "description": "露天的祭火早该灭了，却一直在烧。余燃者围着火堆游荡，雨夜赌徒曾在火光里输掉最后一枚硬币。",
+    "tags": [
+      "露天",
+      "高温",
+      "旧文明"
+    ],
+    "roomSeconds": 45,
+    "theme": "altar",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "焦黑的石阶",
+        "description": "石阶上铺着一层温热的灰，两只猎犬从灰里抬起头。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "ash-hound",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 450,
+        "gold": [
+          12,
+          20
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "熔渣苗圃",
+        "description": "灼热的灰烬里，结壳的熔渣生物缓慢蠕动。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "cinder-slug",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 480,
+        "gold": [
+          12,
+          20
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "余燃者的唱诗",
+        "description": "三名余燃者围着一团不灭的火低声吟唱，谁也没有回头。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "ash-cultist",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 550,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "ash-hound",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 480,
+        "lootTableId": "altar-treasure",
+        "gold": [
+          12,
+          20
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "熔火温室",
+        "description": "熔岩从裂开的炉膛里漫出来，空气像被烧穿。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "lava-elemental",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 580,
+        "gold": [
+          20,
+          32
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "altar-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "熔岩之心",
+        "description": "熔渣巨像从炉心站起，猎犬在它脚边喷出火星。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "slag-golem",
+            "count": 1
+          },
+          {
+            "monsterId": "slag-hound",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 680,
+        "gold": [
+          40,
+          60
+        ]
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        120,
+        170
+      ],
+      "lootTableId": "altar-boss",
+      "ep": 15000,
+      "fame": 5
+    },
+    "seriesId": "ember-altar",
+    "depth": 0
+  },
+  {
+    "id": "foundry-depths",
+    "name": "断炉",
+    "subtitle": "机器还在空转",
+    "description": "断炉的机械臂还在空转，像在等一批永远不会来的工件。拆件匠认得这里的型号，电塔学徒想拆一根完好的线圈走。",
+    "tags": [
+      "地下",
+      "高温",
+      "机械"
+    ],
+    "roomSeconds": 45,
+    "theme": "foundry",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "塌陷的炉道",
+        "description": "炉渣堵住了半条通道，烬壳蠕虫从冷却的壳堆里慢慢抬起头。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 750,
+        "gold": [
+          30,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "冷却渠",
+        "description": "渠水冒着白汽，烬壳蠕虫在温热的石壁上缓慢爬行。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 760,
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "废料场",
+        "description": "废铁堆成小山，猎犬在铁片之间钻进钻出。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 820,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 760,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "熔渣坑",
+        "description": "坑底的铁水还在冒泡，锈炉食骸者拖着烧焦的工服在坑边徘徊。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 850,
+        "gold": [
+          40,
+          60
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "未冷的炉心",
+        "description": "炉心中央站着一尊由废铁和炉渣压成的魔像，胸口的裂缝正透出红光。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 1
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1040,
+        "gold": [
+          80,
+          120
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "断炉桥",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 3
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d0",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 950
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        500,
+        800
+      ],
+      "ep": 40000,
+      "lootTableId": "foundry-treasure",
+      "fame": 8
+    },
+    "seriesId": "foundry-depths",
+    "depth": 0,
+    "requiredLevel": 20
+  },
+  {
+    "id": "whispering-archive",
+    "name": "档案厅",
+    "subtitle": "纸页还在翻动",
+    "description": "无人归还的档案大厅，纸页在干燥的空气里继续翻动。旧校舍学徒在这里见过同款教材，信号解读者想找回最后一段广播。",
+    "tags": [
+      "室内",
+      "干燥",
+      "旧文明"
+    ],
+    "roomSeconds": 45,
+    "theme": "archive",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "借阅厅",
+        "description": "借阅台上堆着没还的书，墨影游魂从书脊之间渗出来。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1050,
+        "gold": [
+          60,
+          90
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "潮湿档案库",
+        "description": "书架在渗水，墨影游魂从湿透的书脊间渗出来。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1060,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "旧装订间",
+        "description": "压书机上还夹着一本没装完的书，食页兽在纸堆里筑巢。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1100,
+        "gold": [
+          26,
+          38
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1060,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "索引长廊",
+        "description": "成千上万的索引卡在空气里翻飞，食页兽在卡片下面追逐。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1150,
+        "gold": [
+          70,
+          100
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "最后一页",
+        "description": "禁书抄写者站在一张巨大的空白页前，手里的笔还在滴墨。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 1
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1370,
+        "gold": [
+          140,
+          200
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "抄写室",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d0",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1300
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        900,
+        1400
+      ],
+      "ep": 40000,
+      "lootTableId": "archive-treasure",
+      "fame": 12
+    },
+    "seriesId": "whispering-archive",
+    "depth": 0,
+    "requiredLevel": 20
+  },
+  {
+    "id": "glacier-vault",
+    "name": "冻库",
+    "subtitle": "冰层每年加厚",
+    "description": "军械冷库的冰层每年加厚一寸。冻库深处的门从未被打开过，镜面碎屑散在门口——碎镜拾荒者说，里面照得出人心里最怕的东西。",
+    "tags": [
+      "室内",
+      "低温",
+      "旧文明"
+    ],
+    "roomSeconds": 45,
+    "theme": "vault",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "冻封门廊",
+        "description": "霜魂贴着门缝滑出，呼出的白雾凝成冰针。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "frost-wraith",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1300,
+        "gold": [
+          100,
+          150
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "冻土花圃",
+        "description": "冻土下的哀鸣一层层翻上来，花圃早已没有活物。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "frost-banshee",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1320,
+        "gold": [
+          24,
+          36
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "冰层矿脉",
+        "description": "冰里冻着未开采的矿石，潜行者把这里当成巢穴。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "rime-stalker",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1350,
+        "gold": [
+          28,
+          42
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "rime-stalker",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1320,
+        "lootTableId": "vault-treasure",
+        "gold": [
+          24,
+          36
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "冻甲回廊",
+        "description": "一具具冻在冰里的甲胄突然动了，霜归亡魂拖着冰壳走来。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "frost-revenant",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1380,
+        "gold": [
+          120,
+          170
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "vault-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "永不融化的门",
+        "description": "冰川守望者站在军械库最深处，长戟与手臂冻成了一体。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "ice-warden",
+            "count": 1
+          },
+          {
+            "monsterId": "hail-caller",
+            "count": 1
+          },
+          {
+            "monsterId": "rime-stalker",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1690,
+        "gold": [
+          240,
+          320
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "冻库深处",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "rime-stalker",
+            "count": 3
+          },
+          {
+            "monsterId": "frost-revenant",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1620
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        1500,
+        2200
+      ],
+      "ep": 20000,
+      "lootTableId": "vault-treasure",
+      "fame": 18
+    },
+    "seriesId": "glacier-vault",
+    "depth": 0
+  },
+  {
+    "id": "obsidian-throne",
+    "name": "空庭",
+    "subtitle": "座位一直亮着",
+    "description": "旧权力中枢空了数百年，王座一直亮着。没有人继承它，也没有人敢把灯关掉。",
+    "tags": [
+      "室内",
+      "旧文明",
+      "宽敞"
+    ],
+    "roomSeconds": 45,
+    "theme": "throne",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "黑曜苔径",
+        "description": "苔藓覆盖了整条小径，骑士的靴子踩上去没有声音。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1600,
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "黑曜门厅",
+        "description": "门厅两侧站满了黑曜骑士，面甲后没有呼吸，只有金属摩擦声。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1650,
+        "gold": [
+          180,
+          240
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "断裂锻道",
+        "description": "锻道两侧堆着断裂的兵器，骑士仍在巡逻。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1650,
+        "gold": [
+          40,
+          55
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1600,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "虚空露池",
+        "description": "池水黑得像没有底，祭司在池边收集露水。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 2
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1700,
+        "gold": [
+          45,
+          65
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "空庭深处",
+        "description": "暴君从王庭上站起来，黑曜石冠冕下的脸被岁月磨得没有表情。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 1
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 1
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 2080,
+        "gold": [
+          400,
+          550
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "空庭阶梯",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 3
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d0",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 2020
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        2800,
+        3600
+      ],
+      "ep": 40000,
+      "lootTableId": "throne-treasure",
+      "fame": 25
+    },
+    "seriesId": "obsidian-throne",
+    "depth": 0,
+    "requiredLevel": 20
+  },
+  {
+    "id": "foundry-depths-d1",
+    "name": "断炉 · 深层 I",
+    "subtitle": "深层 I · 怪物等级 25",
+    "description": "断炉的机械臂还在空转，像在等一批永远不会来的工件。拆件匠认得这里的型号，电塔学徒想拆一根完好的线圈走。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "地下",
+      "高温",
+      "机械",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "foundry",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "塌陷的炉道",
+        "description": "炉渣堵住了半条通道，烬壳蠕虫从冷却的壳堆里慢慢抬起头。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 750,
+        "gold": [
+          30,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "冷却渠",
+        "description": "渠水冒着白汽，烬壳蠕虫在温热的石壁上缓慢爬行。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 760,
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "废料场",
+        "description": "废铁堆成小山，猎犬在铁片之间钻进钻出。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 820,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 760,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "熔渣坑",
+        "description": "坑底的铁水还在冒泡，锈炉食骸者拖着烧焦的工服在坑边徘徊。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 850,
+        "gold": [
+          40,
+          60
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "未冷的炉心",
+        "description": "炉心中央站着一尊由废铁和炉渣压成的魔像，胸口的裂缝正透出红光。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d1",
+            "count": 1
+          },
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1040,
+        "gold": [
+          80,
+          120
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "断炉桥",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 3
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 950
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1700
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d1",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1700
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        1000,
+        1600
+      ],
+      "ep": 60000,
+      "lootTableId": "deep-foundry-cache",
+      "fame": 8
+    },
+    "seriesId": "foundry-depths",
+    "depth": 1,
+    "requiredLevel": 20
+  },
+  {
+    "id": "foundry-depths-d2",
+    "name": "断炉 · 深层 II",
+    "subtitle": "深层 II · 怪物等级 30",
+    "description": "断炉的机械臂还在空转，像在等一批永远不会来的工件。拆件匠认得这里的型号，电塔学徒想拆一根完好的线圈走。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "地下",
+      "高温",
+      "机械",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "foundry",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "塌陷的炉道",
+        "description": "炉渣堵住了半条通道，烬壳蠕虫从冷却的壳堆里慢慢抬起头。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 750,
+        "gold": [
+          30,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "冷却渠",
+        "description": "渠水冒着白汽，烬壳蠕虫在温热的石壁上缓慢爬行。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 760,
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "废料场",
+        "description": "废铁堆成小山，猎犬在铁片之间钻进钻出。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 820,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 760,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "熔渣坑",
+        "description": "坑底的铁水还在冒泡，锈炉食骸者拖着烧焦的工服在坑边徘徊。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 850,
+        "gold": [
+          40,
+          60
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "未冷的炉心",
+        "description": "炉心中央站着一尊由废铁和炉渣压成的魔像，胸口的裂缝正透出红光。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d2",
+            "count": 1
+          },
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1040,
+        "gold": [
+          80,
+          120
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "断炉桥",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 3
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 950
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-lava-elemental-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        1500,
+        2400
+      ],
+      "ep": 80000,
+      "lootTableId": "deep-foundry-cache",
+      "fame": 8
+    },
+    "seriesId": "foundry-depths",
+    "depth": 2,
+    "requiredLevel": 20
+  },
+  {
+    "id": "foundry-depths-d3",
+    "name": "断炉 · 深层 III",
+    "subtitle": "深层 III · 怪物等级 35",
+    "description": "断炉的机械臂还在空转，像在等一批永远不会来的工件。拆件匠认得这里的型号，电塔学徒想拆一根完好的线圈走。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "地下",
+      "高温",
+      "机械",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "foundry",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "塌陷的炉道",
+        "description": "炉渣堵住了半条通道，烬壳蠕虫从冷却的壳堆里慢慢抬起头。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 750,
+        "gold": [
+          30,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "冷却渠",
+        "description": "渠水冒着白汽，烬壳蠕虫在温热的石壁上缓慢爬行。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 760,
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "废料场",
+        "description": "废铁堆成小山，猎犬在铁片之间钻进钻出。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 820,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 760,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "熔渣坑",
+        "description": "坑底的铁水还在冒泡，锈炉食骸者拖着烧焦的工服在坑边徘徊。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 850,
+        "gold": [
+          40,
+          60
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "未冷的炉心",
+        "description": "炉心中央站着一尊由废铁和炉渣压成的魔像，胸口的裂缝正透出红光。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d3",
+            "count": 1
+          },
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1040,
+        "gold": [
+          80,
+          120
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "断炉桥",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 3
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 950
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-lava-elemental-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-5",
+        "name": "深层回廊 5",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 6,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-lava-elemental-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-6",
+        "name": "深层回廊 6",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 7,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        2000,
+        3200
+      ],
+      "ep": 100000,
+      "lootTableId": "deep-foundry-cache",
+      "fame": 8
+    },
+    "seriesId": "foundry-depths",
+    "depth": 3,
+    "requiredLevel": 20
+  },
+  {
+    "id": "foundry-depths-d4",
+    "name": "断炉 · 深层 IV",
+    "subtitle": "深层 IV · 怪物等级 40",
+    "description": "断炉的机械臂还在空转，像在等一批永远不会来的工件。拆件匠认得这里的型号，电塔学徒想拆一根完好的线圈走。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "地下",
+      "高温",
+      "机械",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "foundry",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "塌陷的炉道",
+        "description": "炉渣堵住了半条通道，烬壳蠕虫从冷却的壳堆里慢慢抬起头。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 750,
+        "gold": [
+          30,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "冷却渠",
+        "description": "渠水冒着白汽，烬壳蠕虫在温热的石壁上缓慢爬行。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 760,
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "废料场",
+        "description": "废铁堆成小山，猎犬在铁片之间钻进钻出。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 820,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 760,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          15,
+          24
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "熔渣坑",
+        "description": "坑底的铁水还在冒泡，锈炉食骸者拖着烧焦的工服在坑边徘徊。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 2
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 850,
+        "gold": [
+          40,
+          60
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "foundry-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "未冷的炉心",
+        "description": "炉心中央站着一尊由废铁和炉渣压成的魔像，胸口的裂缝正透出红光。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d4",
+            "count": 1
+          },
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1040,
+        "gold": [
+          80,
+          120
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "断炉桥",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 3
+          },
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 950
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-lava-elemental-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-5",
+        "name": "深层回廊 5",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 6,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-forge-ghoul-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-6",
+        "name": "深层回廊 6",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 7,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-slag-golem-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-7",
+        "name": "深层回廊 7",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 8,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-obsidian-knight-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-8",
+        "name": "深层回廊 8",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 9,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "foundry-depths-lava-elemental-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-6",
+        "deep-7"
+      ],
+      [
+        "deep-6",
+        "deep-7"
+      ],
+      [
+        "deep-7",
+        "deep-8"
+      ],
+      [
+        "deep-7",
+        "deep-8"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        2500,
+        4000
+      ],
+      "ep": 120000,
+      "lootTableId": "deep-foundry-cache",
+      "fame": 8
+    },
+    "seriesId": "foundry-depths",
+    "depth": 4,
+    "requiredLevel": 20
+  },
+  {
+    "id": "whispering-archive-d1",
+    "name": "档案厅 · 深层 I",
+    "subtitle": "深层 I · 怪物等级 25",
+    "description": "无人归还的档案大厅，纸页在干燥的空气里继续翻动。旧校舍学徒在这里见过同款教材，信号解读者想找回最后一段广播。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "室内",
+      "干燥",
+      "旧文明",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "archive",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "借阅厅",
+        "description": "借阅台上堆着没还的书，墨影游魂从书脊之间渗出来。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1050,
+        "gold": [
+          60,
+          90
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "潮湿档案库",
+        "description": "书架在渗水，墨影游魂从湿透的书脊间渗出来。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1060,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "旧装订间",
+        "description": "压书机上还夹着一本没装完的书，食页兽在纸堆里筑巢。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d1",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1100,
+        "gold": [
+          26,
+          38
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1060,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "索引长廊",
+        "description": "成千上万的索引卡在空气里翻飞，食页兽在卡片下面追逐。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d1",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1150,
+        "gold": [
+          70,
+          100
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "最后一页",
+        "description": "禁书抄写者站在一张巨大的空白页前，手里的笔还在滴墨。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-shadow-drake-d1",
+            "count": 1
+          },
+          {
+            "monsterId": "whispering-archive-void-priest-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1370,
+        "gold": [
+          140,
+          200
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "抄写室",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d1",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1300
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-archive-sentinel-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1700
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-page-eater-d1",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1700
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        1800,
+        2800
+      ],
+      "ep": 60000,
+      "lootTableId": "deep-archive-cache",
+      "fame": 12
+    },
+    "seriesId": "whispering-archive",
+    "depth": 1,
+    "requiredLevel": 20
+  },
+  {
+    "id": "whispering-archive-d2",
+    "name": "档案厅 · 深层 II",
+    "subtitle": "深层 II · 怪物等级 30",
+    "description": "无人归还的档案大厅，纸页在干燥的空气里继续翻动。旧校舍学徒在这里见过同款教材，信号解读者想找回最后一段广播。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "室内",
+      "干燥",
+      "旧文明",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "archive",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "借阅厅",
+        "description": "借阅台上堆着没还的书，墨影游魂从书脊之间渗出来。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1050,
+        "gold": [
+          60,
+          90
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "潮湿档案库",
+        "description": "书架在渗水，墨影游魂从湿透的书脊间渗出来。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1060,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "旧装订间",
+        "description": "压书机上还夹着一本没装完的书，食页兽在纸堆里筑巢。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d2",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1100,
+        "gold": [
+          26,
+          38
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1060,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "索引长廊",
+        "description": "成千上万的索引卡在空气里翻飞，食页兽在卡片下面追逐。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1150,
+        "gold": [
+          70,
+          100
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "最后一页",
+        "description": "禁书抄写者站在一张巨大的空白页前，手里的笔还在滴墨。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-shadow-drake-d2",
+            "count": 1
+          },
+          {
+            "monsterId": "whispering-archive-void-priest-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1370,
+        "gold": [
+          140,
+          200
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "抄写室",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d2",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1300
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-page-eater-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-forbidden-scribe-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-void-priest-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-shadow-drake-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        2700,
+        4200
+      ],
+      "ep": 80000,
+      "lootTableId": "deep-archive-cache",
+      "fame": 12
+    },
+    "seriesId": "whispering-archive",
+    "depth": 2,
+    "requiredLevel": 20
+  },
+  {
+    "id": "whispering-archive-d3",
+    "name": "档案厅 · 深层 III",
+    "subtitle": "深层 III · 怪物等级 35",
+    "description": "无人归还的档案大厅，纸页在干燥的空气里继续翻动。旧校舍学徒在这里见过同款教材，信号解读者想找回最后一段广播。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "室内",
+      "干燥",
+      "旧文明",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "archive",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "借阅厅",
+        "description": "借阅台上堆着没还的书，墨影游魂从书脊之间渗出来。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1050,
+        "gold": [
+          60,
+          90
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "潮湿档案库",
+        "description": "书架在渗水，墨影游魂从湿透的书脊间渗出来。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1060,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "旧装订间",
+        "description": "压书机上还夹着一本没装完的书，食页兽在纸堆里筑巢。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1100,
+        "gold": [
+          26,
+          38
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1060,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "索引长廊",
+        "description": "成千上万的索引卡在空气里翻飞，食页兽在卡片下面追逐。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1150,
+        "gold": [
+          70,
+          100
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "最后一页",
+        "description": "禁书抄写者站在一张巨大的空白页前，手里的笔还在滴墨。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-shadow-drake-d3",
+            "count": 1
+          },
+          {
+            "monsterId": "whispering-archive-void-priest-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1370,
+        "gold": [
+          140,
+          200
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "抄写室",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1300
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-forbidden-scribe-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-void-priest-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-shadow-drake-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-5",
+        "name": "深层回廊 5",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 6,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-archive-sentinel-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-6",
+        "name": "深层回廊 6",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 7,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-page-eater-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        3600,
+        5600
+      ],
+      "ep": 100000,
+      "lootTableId": "deep-archive-cache",
+      "fame": 12
+    },
+    "seriesId": "whispering-archive",
+    "depth": 3,
+    "requiredLevel": 20
+  },
+  {
+    "id": "whispering-archive-d4",
+    "name": "档案厅 · 深层 IV",
+    "subtitle": "深层 IV · 怪物等级 40",
+    "description": "无人归还的档案大厅，纸页在干燥的空气里继续翻动。旧校舍学徒在这里见过同款教材，信号解读者想找回最后一段广播。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "室内",
+      "干燥",
+      "旧文明",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "archive",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "借阅厅",
+        "description": "借阅台上堆着没还的书，墨影游魂从书脊之间渗出来。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1050,
+        "gold": [
+          60,
+          90
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "潮湿档案库",
+        "description": "书架在渗水，墨影游魂从湿透的书脊间渗出来。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1060,
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "旧装订间",
+        "description": "压书机上还夹着一本没装完的书，食页兽在纸堆里筑巢。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1100,
+        "gold": [
+          26,
+          38
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1060,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          20,
+          30
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "索引长廊",
+        "description": "成千上万的索引卡在空气里翻飞，食页兽在卡片下面追逐。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1150,
+        "gold": [
+          70,
+          100
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "archive-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "最后一页",
+        "description": "禁书抄写者站在一张巨大的空白页前，手里的笔还在滴墨。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-shadow-drake-d4",
+            "count": 1
+          },
+          {
+            "monsterId": "whispering-archive-void-priest-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 1370,
+        "gold": [
+          140,
+          200
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "抄写室",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 2
+          },
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1300
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-void-priest-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-shadow-drake-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-ink-wraith-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-archive-sentinel-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-5",
+        "name": "深层回廊 5",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 6,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-page-eater-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-6",
+        "name": "深层回廊 6",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 7,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-forbidden-scribe-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-7",
+        "name": "深层回廊 7",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 8,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-void-priest-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-8",
+        "name": "深层回廊 8",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 9,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "whispering-archive-shadow-drake-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-6",
+        "deep-7"
+      ],
+      [
+        "deep-6",
+        "deep-7"
+      ],
+      [
+        "deep-7",
+        "deep-8"
+      ],
+      [
+        "deep-7",
+        "deep-8"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        4500,
+        7000
+      ],
+      "ep": 120000,
+      "lootTableId": "deep-archive-cache",
+      "fame": 12
+    },
+    "seriesId": "whispering-archive",
+    "depth": 4,
+    "requiredLevel": 20
+  },
+  {
+    "id": "obsidian-throne-d1",
+    "name": "空庭 · 深层 I",
+    "subtitle": "深层 I · 怪物等级 25",
+    "description": "旧权力中枢空了数百年，王座一直亮着。没有人继承它，也没有人敢把灯关掉。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "室内",
+      "旧文明",
+      "宽敞",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "throne",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "黑曜苔径",
+        "description": "苔藓覆盖了整条小径，骑士的靴子踩上去没有声音。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1600,
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "黑曜门厅",
+        "description": "门厅两侧站满了黑曜骑士，面甲后没有呼吸，只有金属摩擦声。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1650,
+        "gold": [
+          180,
+          240
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "断裂锻道",
+        "description": "锻道两侧堆着断裂的兵器，骑士仍在巡逻。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1650,
+        "gold": [
+          40,
+          55
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1600,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "虚空露池",
+        "description": "池水黑得像没有底，祭司在池边收集露水。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 2
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1700,
+        "gold": [
+          45,
+          65
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "空庭深处",
+        "description": "暴君从王庭上站起来，黑曜石冠冕下的脸被岁月磨得没有表情。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d1",
+            "count": 1
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 2080,
+        "gold": [
+          400,
+          550
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "空庭阶梯",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 3
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d1",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 2020
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d1",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1700
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-shadow-drake-d1",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1700
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        5600,
+        7200
+      ],
+      "ep": 60000,
+      "lootTableId": "deep-throne-cache",
+      "fame": 25
+    },
+    "seriesId": "obsidian-throne",
+    "depth": 1,
+    "requiredLevel": 20
+  },
+  {
+    "id": "obsidian-throne-d2",
+    "name": "空庭 · 深层 II",
+    "subtitle": "深层 II · 怪物等级 30",
+    "description": "旧权力中枢空了数百年，王座一直亮着。没有人继承它，也没有人敢把灯关掉。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "室内",
+      "旧文明",
+      "宽敞",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "throne",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "黑曜苔径",
+        "description": "苔藓覆盖了整条小径，骑士的靴子踩上去没有声音。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1600,
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "黑曜门厅",
+        "description": "门厅两侧站满了黑曜骑士，面甲后没有呼吸，只有金属摩擦声。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1650,
+        "gold": [
+          180,
+          240
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "断裂锻道",
+        "description": "锻道两侧堆着断裂的兵器，骑士仍在巡逻。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1650,
+        "gold": [
+          40,
+          55
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1600,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "虚空露池",
+        "description": "池水黑得像没有底，祭司在池边收集露水。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 2
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1700,
+        "gold": [
+          45,
+          65
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "空庭深处",
+        "description": "暴君从王庭上站起来，黑曜石冠冕下的脸被岁月磨得没有表情。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d2",
+            "count": 1
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 2080,
+        "gold": [
+          400,
+          550
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "空庭阶梯",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 3
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 2020
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-shadow-drake-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-void-priest-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d2",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d2",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1900
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        8400,
+        10800
+      ],
+      "ep": 80000,
+      "lootTableId": "deep-throne-cache",
+      "fame": 25
+    },
+    "seriesId": "obsidian-throne",
+    "depth": 2,
+    "requiredLevel": 20
+  },
+  {
+    "id": "obsidian-throne-d3",
+    "name": "空庭 · 深层 III",
+    "subtitle": "深层 III · 怪物等级 35",
+    "description": "旧权力中枢空了数百年，王座一直亮着。没有人继承它，也没有人敢把灯关掉。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "室内",
+      "旧文明",
+      "宽敞",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "throne",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "黑曜苔径",
+        "description": "苔藓覆盖了整条小径，骑士的靴子踩上去没有声音。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1600,
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "黑曜门厅",
+        "description": "门厅两侧站满了黑曜骑士，面甲后没有呼吸，只有金属摩擦声。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1650,
+        "gold": [
+          180,
+          240
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "断裂锻道",
+        "description": "锻道两侧堆着断裂的兵器，骑士仍在巡逻。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1650,
+        "gold": [
+          40,
+          55
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1600,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "虚空露池",
+        "description": "池水黑得像没有底，祭司在池边收集露水。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 2
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1700,
+        "gold": [
+          45,
+          65
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "空庭深处",
+        "description": "暴君从王庭上站起来，黑曜石冠冕下的脸被岁月磨得没有表情。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d3",
+            "count": 1
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 2080,
+        "gold": [
+          400,
+          550
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "空庭阶梯",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 3
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 2020
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-void-priest-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-shadow-drake-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-5",
+        "name": "深层回廊 5",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 6,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-void-priest-d3",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      },
+      {
+        "id": "deep-6",
+        "name": "深层回廊 6",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 7,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d3",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2100
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        11200,
+        14400
+      ],
+      "ep": 100000,
+      "lootTableId": "deep-throne-cache",
+      "fame": 25
+    },
+    "seriesId": "obsidian-throne",
+    "depth": 3,
+    "requiredLevel": 20
+  },
+  {
+    "id": "obsidian-throne-d4",
+    "name": "空庭 · 深层 IV",
+    "subtitle": "深层 IV · 怪物等级 40",
+    "description": "旧权力中枢空了数百年，王座一直亮着。没有人继承它，也没有人敢把灯关掉。 更深处的水位与梦呓都在变化，通路比外层更长。",
+    "tags": [
+      "室内",
+      "旧文明",
+      "宽敞",
+      "深层"
+    ],
+    "roomSeconds": 45,
+    "theme": "throne",
+    "rooms": [
+      {
+        "id": "start",
+        "name": "入口",
+        "description": "雨声被挡在门外。队伍在这里最后一次检查装备。",
+        "kind": "start",
+        "x": 2,
+        "y": 3,
+        "monsters": [],
+        "durationSeconds": 10,
+        "monsterPower": 0
+      },
+      {
+        "id": "combat-1",
+        "name": "黑曜苔径",
+        "description": "苔藓覆盖了整条小径，骑士的靴子踩上去没有声音。",
+        "kind": "combat",
+        "x": 0,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 45,
+        "monsterPower": 1600,
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-2",
+        "name": "黑曜门厅",
+        "description": "门厅两侧站满了黑曜骑士，面甲后没有呼吸，只有金属摩擦声。",
+        "kind": "combat",
+        "x": 2,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 50,
+        "monsterPower": 1650,
+        "gold": [
+          180,
+          240
+        ]
+      },
+      {
+        "id": "combat-3",
+        "name": "断裂锻道",
+        "description": "锻道两侧堆着断裂的兵器，骑士仍在巡逻。",
+        "kind": "combat",
+        "x": 4,
+        "y": 2,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 1650,
+        "gold": [
+          40,
+          55
+        ]
+      },
+      {
+        "id": "material",
+        "name": "回收点",
+        "description": "旧物资堆还压在雨棚下面，拆得动就能带走。",
+        "kind": "combat",
+        "x": 0,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 40,
+        "monsterPower": 1600,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          35,
+          50
+        ]
+      },
+      {
+        "id": "combat-4",
+        "name": "虚空露池",
+        "description": "池水黑得像没有底，祭司在池边收集露水。",
+        "kind": "combat",
+        "x": 2,
+        "y": 1,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 2
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 1700,
+        "gold": [
+          45,
+          65
+        ]
+      },
+      {
+        "id": "treasure",
+        "name": "藏匿处",
+        "description": "有人把东西藏在这里，然后再也没回来取。",
+        "kind": "treasure",
+        "x": 4,
+        "y": 1,
+        "monsters": [],
+        "durationSeconds": 20,
+        "monsterPower": 0,
+        "lootTableId": "throne-treasure",
+        "gold": [
+          5,
+          20
+        ]
+      },
+      {
+        "id": "boss",
+        "name": "空庭深处",
+        "description": "暴君从王庭上站起来，黑曜石冠冕下的脸被岁月磨得没有表情。",
+        "kind": "boss",
+        "x": 2,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d4",
+            "count": 1
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 90,
+        "monsterPower": 2080,
+        "gold": [
+          400,
+          550
+        ]
+      },
+      {
+        "id": "combat-5",
+        "name": "空庭阶梯",
+        "kind": "combat",
+        "x": 0,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 3
+          },
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 1
+          }
+        ],
+        "durationSeconds": 60,
+        "monsterPower": 2020
+      },
+      {
+        "id": "deep-1",
+        "name": "深层回廊 1",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 1,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-2",
+        "name": "深层回廊 2",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 3,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-3",
+        "name": "深层回廊 3",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 4,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-shadow-drake-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-4",
+        "name": "深层回廊 4",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 5,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-void-priest-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-5",
+        "name": "深层回廊 5",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 6,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-obsidian-knight-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-6",
+        "name": "深层回廊 6",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 7,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-throne-tyrant-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-7",
+        "name": "深层回廊 7",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 8,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-shadow-drake-d4",
+            "count": 2
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      },
+      {
+        "id": "deep-8",
+        "name": "深层回廊 8",
+        "description": "更深处开凿出的岔路，墙面上留着旧时代的刻痕。",
+        "kind": "combat",
+        "x": 9,
+        "y": 0,
+        "monsters": [
+          {
+            "monsterId": "obsidian-throne-void-priest-d4",
+            "count": 3
+          }
+        ],
+        "durationSeconds": 55,
+        "monsterPower": 2300
+      }
+    ],
+    "edges": [
+      [
+        "start",
+        "combat-1"
+      ],
+      [
+        "start",
+        "combat-2"
+      ],
+      [
+        "start",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "combat-2"
+      ],
+      [
+        "combat-2",
+        "combat-3"
+      ],
+      [
+        "combat-1",
+        "material"
+      ],
+      [
+        "combat-2",
+        "material"
+      ],
+      [
+        "combat-2",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "combat-4"
+      ],
+      [
+        "combat-3",
+        "treasure"
+      ],
+      [
+        "material",
+        "combat-4"
+      ],
+      [
+        "combat-4",
+        "treasure"
+      ],
+      [
+        "material",
+        "boss"
+      ],
+      [
+        "combat-4",
+        "boss"
+      ],
+      [
+        "treasure",
+        "boss"
+      ],
+      [
+        "material",
+        "combat-5"
+      ],
+      [
+        "combat-5",
+        "boss"
+      ],
+      [
+        "combat-1",
+        "deep-1"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-1",
+        "deep-2"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-2",
+        "deep-3"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-3",
+        "deep-4"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-4",
+        "deep-5"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-5",
+        "deep-6"
+      ],
+      [
+        "deep-6",
+        "deep-7"
+      ],
+      [
+        "deep-6",
+        "deep-7"
+      ],
+      [
+        "deep-7",
+        "deep-8"
+      ],
+      [
+        "deep-7",
+        "deep-8"
+      ]
+    ],
+    "completionReward": {
+      "gold": [
+        14000,
+        18000
+      ],
+      "ep": 120000,
+      "lootTableId": "deep-throne-cache",
+      "fame": 25
+    },
+    "seriesId": "obsidian-throne",
+    "depth": 4,
+    "requiredLevel": 20
+  }
+]
